@@ -1,0 +1,329 @@
+---
+title: "Lab 08 | R continued"
+author: "Sean Mussenden"
+date: "10/26/2019"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE, paged.print=TRUE)
+```
+
+## Objective
+
+The purpose of this lab is to continue learning a journalistic approach to data analysis in R. 
+
+We will continue to do things learned in previous labs:
+
+* Writing R code for data analysis and exploration in the R Studio environment, using R projects (.Rproj) and R markdown files (.Rmd).  
+* Loading, cleaning, making sense of and analyzing data using the Tidyverse framework of packages by selecting certain columns, sorting and filtering
+* Create new columns in our data set based on information in other columns.   
+* Summarizing data by grouping and calculating min, max, median and mean values.    
+* Store changes on GitHub.
+* Join together two related data sets on a common field.  
+* Do some additional data cleaning, including fixing dates so we can work with them. 
+* To make visualizations.
+
+Today, we'll also learn:
+
+* To do some basic mapping using the GGPlot2 package. 
+
+## How this works, tasks, turning it in, getting help
+
+This document is mostly set up for you to follow along and run code that I have written, and listen to me explain it.  
+
+At several points throughout this document, you will see the word **Task**.  
+
+That indicates I'm expecting you to modify the file I've given you, usually by creating a codeblock and writing some custom code. 
+
+When you are finished, you should save your R markdown file and Knit it as an HTML file. 
+
+You should upload it to GitHub, using GitHub desktop. 
+
+And the links to your project is what you'll post on ELMS. 
+
+Need help?  You are welcome to do the following things:
+
+* Use Google or search Stack Overflow. Try searching for your error message or translating your problem into basic terms.
+* Check out the excellent [R for Data Science](https://r4ds.had.co.nz/index.html)
+* Take a look at the [Cheatsheets](https://www.rstudio.com/resources/cheatsheets/) and [Tidyverse documentation](https://www.tidyverse.org/).
+  * [RStudio cheatsheet](https://www.rstudio.com/resources/cheatsheets/#ide)
+  * [Readr and Tidyr cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-import.pdf) and [Readr documentation](https://readr.tidyverse.org/) and [Tidyr documentation](https://tidyr.tidyverse.org/reference/index.html).
+  * [Dplyr cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf) and [Dplyr documentation](https://dplyr.tidyverse.org/)
+  * [Lubridate cheatsheet](https://rawgit.com/rstudio/cheatsheets/master/lubridate.pdf) and [Lubridate documentation](https://lubridate.tidyverse.org/).
+  * [GGPlot cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf) and [GGplot Documentation](https://ggplot2.tidyverse.org/reference/)
+  * [Mapping Tutorials](https://walkerke.github.io/tidycensus/articles/spatial-data.html)
+  * [GitHub desktop help](https://help.github.com/en/desktop/getting-started-with-github-desktop)
+* If you're really stuck, message me on ELMS. 
+
+## Setup
+
+Take the following steps to set up your document:
+
+1. Download the ZIP file and open the folder on your desktop. 
+2. Create a new folder in your git repo and move it in there. Unzip the folder.
+3. Open this file in RStudio.
+4. Rename this file "lab_07_FIRSTNAME_LASTNAME.Rmd".
+5. Create a new R project inside of this folder, which will set the working directory in this folder.   
+
+## Load Packages
+
+We're loading seven packages today. five of these we've loaded previously: the Tidyverse (for general data science goodness and visualizing charts and maps), janitor (for data cleaning), arcos (for loading WaPo opioid data) and tidycensus (for loading census data) and scales for cleaning up axis labels and legends.
+
+We're also going to load two new packages: [mapview](https://r-spatial.github.io/mapview/) (for making interactive maps) and [ggthemes](https://rdrr.io/cran/ggthemes/) (for doing cool styling stuff).  
+
+**Task**: In the code block below, load the packages we'll need for today. 
+
+```{r}
+
+# Load Tidyverse, janitor and arcos, tidycensus, mapview, ggthemes, scales
+library(tidyverse)
+library(janitor)
+library(arcos)
+library(tidycensus)
+library(scales)
+library(mapview)
+library(ggthemes)
+library(corrr)
+
+```
+
+## Using the ARCOS R Package
+
+For this exercise, we will be working with subsets of the DEA's ARCOS database, which documented shipments of 76 billion opioid pills between 2006 and 2012, during the peak of the opioid epidemic. 
+
+The data was obtained after a lengthy legal battle by the Washington Post and the Charleston Gazette-Mail, and released by the Washington Post in raw and aggregated form. [Washington Post "Digging into the DEA's pain pill database" page](https://www.washingtonpost.com/graphics/2019/investigations/dea-pain-pill-database/).
+
+A data dictionary is available here: [ARCOS Registrant Handbook](https://www.deadiversion.usdoj.gov/arcos/handbook/full.pdf).
+
+We're going to load the data exclusively from the arcos R package API [ARCOS API](https://wpinvestigative.github.io/arcos/) produced by the Washington Post, instead of uploading csvs and tsvs. 
+
+Remember, we need to store a password of sorts -- called an API key -- that will give us permission to access their data.  Here's a list of [API keys that will work](https://github.com/wpinvestigative/arcos-api/blob/master/keys/keys.txt).  
+
+Let's store the key first. 
+
+```{r}
+# store one of our API keys as an object called key
+key <- "uO4EK6I"
+```
+
+## Load ARCOS data
+
+
+```{r}
+
+arcos_county_pills_per_year <- summarized_county_annual(key = key) %>%
+  clean_names()
+
+arcos_county_population_per_year <- county_population(key = key) %>%
+  clean_names()
+
+pills_population <- arcos_county_population_per_year %>%
+  left_join(arcos_county_pills_per_year, by = c("countyfips", "year", "buyer_county","buyer_state")) %>%
+  group_by(countyfips, buyer_county, buyer_state) %>%
+  summarise(average_pills_per_year = mean(dosage_unit),
+            average_population_per_year = mean(population)) %>%
+  mutate(average_pills_per_person = round(average_pills_per_year/average_population_per_year,2))
+
+```
+
+# Load Death Rate Data
+
+```{r}
+opioid_deaths <- read_tsv("data/2006-2012.txt") %>%
+  clean_names() %>%
+  filter(!str_detect(age_adjusted_rate, "Unreliable|Suppressed|Missing")) %>%
+  select(county_code, county, deaths, age_adjusted_rate) %>%
+  mutate(deaths = as.numeric(deaths),
+         age_adjusted_rate = as.numeric(age_adjusted_rate))
+
+```
+
+# Join 
+
+End up with about 1066 records.  For smallest counties, where weren't lot of pill shipments, death rate data is unreliable. 
+
+```{r}
+death_rate_pills <- pills_population %>%
+  inner_join(opioid_deaths, by=c("countyfips" = "county_code"))
+
+```
+
+# Examine Table
+
+
+# Explore relationship
+Fairly tightly packed, but lots of exceptions, line moving up
+
+```{r}
+ggplot(death_rate_pills) +
+  geom_point(aes(average_pills_per_person, age_adjusted_rate)) +
+  geom_smooth(aes(average_pills_per_person, age_adjusted_rate), method = "lm", se = FALSE)  +
+  scale_y_continuous(labels = comma) +
+  scale_x_continuous(labels = comma)  +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(x="Average Annual Pills Per Person", y="age_adjusted Annual Opioid Death Rate", title="", caption = "Source: DEA ARCOS database, via Washington Post")
+```
+
+# Exact Correlation
+
+```{r}
+
+death_rate_pills %>%
+  ungroup() %>%
+  select(age_adjusted_rate, average_pills_per_person) %>%
+  correlate()
+
+```
+
+```{r}
+death_rate_pills %>%
+  ungroup() %>%
+  select_if(is.numeric) %>%
+  correlate()
+
+```
+
+# Now let's pull in census data 
+
+```{r}
+census_api_key("549950d36c22ff16455fe196bbbd01d63cfbe6cf")
+# acs_variables <- load_variables(2017, "acs5" )
+county_median_household_income <- get_acs(geography = "county", 
+              variables="B19013_001", year=2012, geometry = FALSE)
+
+```
+
+# Join it to our other data
+
+```{r}
+death_rate_pills_income <- death_rate_pills %>%
+  inner_join(county_median_household_income, by=c("countyfips" = "GEOID")) %>%
+  rename(median_household_income = estimate)
+
+glimpse(death_rate_pills_income)
+```
+
+# Task: make a scatterplot for deaths vs income
+
+```{r}
+ggplot(death_rate_pills_income) +
+  geom_point(aes(median_household_income, age_adjusted_rate)) +
+  geom_smooth(aes(median_household_income, age_adjusted_rate), method = "lm", se = FALSE)  +
+  scale_y_continuous(labels = comma) +
+  scale_x_continuous(labels = comma)  +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(x="Average Annual Pills Per Person", y="age_adjusted Annual Opioid Death Rate", title="", caption = "Source: DEA ARCOS database, via Washington Post")
+```
+
+# Task: make a scatterplot for shipments v income
+
+```{r}
+ggplot(death_rate_pills_income) +
+  geom_point(aes(average_pills_per_person, age_adjusted_rate)) +
+  geom_smooth(aes(average_pills_per_person, age_adjusted_rate), method = "lm", se = FALSE)  +
+  scale_y_continuous(labels = comma) +
+  scale_x_continuous(labels = comma)  +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(x="Average Annual Pills Per Person", y="age_adjusted Annual Opioid Death Rate", title="", caption = "Source: DEA ARCOS database, via Washington Post")
+```
+
+# Build a table that has all three. 
+
+```{r}
+death_rate_pills_income %>%
+  ungroup() %>%
+  select(median_household_income, age_adjusted_rate, average_pills_per_person) %>%
+  correlate()
+```
+
+# Task: Go out and get one more census variable. What is it
+
+# For Loops
+
+Repeatable 
+
+```{r}
+
+statelist <- c("Maryland", "Virginia","Texas")
+
+for (state in statelist) {
+  print(state)
+}
+
+```
+
+```{r}
+statelist <- c("Maryland", "Virginia","Texas")
+
+for (name in statelist) {
+  print(name)
+}
+
+```
+
+```{r}
+
+arcos_state_pills_per_year <- arcos_county_pills_per_year %>%
+  group_by(buyer_state, year) %>%
+  summarise(total_pills = sum(dosage_unit))
+
+```
+
+``` {r}
+
+arcos_state_pills_per_year %>%
+  filter(buyer_state == "MD") %>%
+  ggplot() + 
+  geom_bar(stat="identity", aes(year, total_pills), fill="royal blue") +
+  labs(x="Year", y="Total pills", title="") +
+  scale_x_continuous(breaks = c(2006, 2007, 2008, 2009, 2010, 2011, 2012)) +
+  scale_y_continuous(labels = comma)
+
+```
+```{r}
+
+arcos_state_pills_per_year %>%
+  filter(buyer_state == "MD" | buyer_state == "TX" | buyer_state == "VA") %>%
+  ggplot() + 
+  geom_bar(stat="identity", aes(year, total_pills), fill="royal blue") +
+  facet_grid(. ~ buyer_state) +
+  labs(x="Year", y="Total pills", title="") +
+  scale_x_continuous(breaks = c(2006, 2007, 2008, 2009, 2010, 2011, 2012)) +
+  scale_y_continuous(labels = comma)
+
+```
+
+```{r}
+
+statelist <- c("MD", "VA","TX")
+
+for (state in statelist) {
+
+plot <- arcos_state_pills_per_year %>%
+  filter(buyer_state == state) %>%
+  ggplot() + 
+  geom_bar(stat="identity", aes(year, total_pills), fill="royal blue") +
+  facet_grid(. ~ buyer_state) +
+  labs(x="Year", y="Total pills", title="") +
+  scale_x_continuous(breaks = c(2006, 2007, 2008, 2009, 2010, 2011, 2012)) +
+  scale_y_continuous(labels = comma)
+
+print(plot)
+
+}
+
+
+
+```
+
+# Task: what other cases could using a forloop be good for.  
+
+
+## Submission
+
+Save the R Markdown file.  Knit it to HTML and make sure it compiles correctly. Upload to GitHub, as instructed.  Provide links to GitHub in ELMS.   
