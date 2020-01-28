@@ -171,16 +171,26 @@ Sean Mussenden in the data editor for the Howard Center for Investigative Journa
 
 #### Week 2 - Feb. 4
 *Tuesday Class*
+
 TK
+
 *Online tutorial lab | Due by Sunday at 11:59 p.m.*
+
 TK
+
 *Optional study session*
+
 Held at regular time this week, Friday @ 11:30am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
+
 *Readings | Complete by Sunday at 11:59 p.m.*
+
 TK
+
 *Forum Posts | Due by Sunday at 11:59 p.m.*
+
 TK
 *Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
+
 TK
 
 #### Week 3 - Feb. 11
