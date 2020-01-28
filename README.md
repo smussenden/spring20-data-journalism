@@ -145,8 +145,8 @@ Sean Mussenden in the data editor for the Howard Center for Investigative Journa
 * Watch this video: [Data journalism basics with spreadsheets](https://www.youtube.com/watch?v=vJz3KauqY_0).
   * As you watch, follow along with the exercise step-by-step.
   * Either download the data directly from the Washington Post opioid files website, as I did.  Or, if you have trouble with that, [download it from here](labs/lab_01/arcos-wv-mingo-54059-pharmacy.tsv).
-  * Upload a link to your completed Google Sheet workbook to the [ELMS assignment]().
-  * Completed sheet for review after you're done: To come.    
+  * Upload a link to your completed Google Sheet workbook to the [ELMS assignment](https://umd.instructure.com/courses/1278976/assignments/5093727?module_item_id=9851163).
+  * Completed sheet for review after you're done: Link will be posted here and on ELMS on Sunday so you can review your work.     
 * Here are links mentioned in the video:
   * [Google Drive](https://drive.google.com/drive/u/0/my-drive)
   * [Drilling into the DEA's pain pill database | Washington Post](https://www.washingtonpost.com/graphics/2019/investigations/dea-pain-pill-database/?noredirect=on)
