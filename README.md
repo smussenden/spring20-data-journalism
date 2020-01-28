@@ -70,9 +70,9 @@ The tutorials were written using these specific software programs, so if you use
 ### Grading
 
 * Participation - 5%
-* Story discussion lead - 5% - teams of two will present
-* Data Acquisition Project - 20% - a project where you will learn to get data out of (often) reluctant government
-* Data Analysis Project - 30%
+* Story discussion lead - 5% - teams of two will present and lead discussion on a data journalism story.
+* Data Acquisition Project - 20% - a project where you will learn to get data out of (often) reluctant government.
+* Data Analysis Project - 30% - a project where you will learn to do complex, journalistic data analysis.
 * Homework and In-Class Lab Assignments - 40% (Not Turned In (0)/Unsatisfactory (1)/Satisfactory(2))
 * Note: there is no final exam in this course.
 
@@ -139,11 +139,11 @@ Sean Mussenden in the data editor for the Howard Center for Investigative Journa
   * [Google form with preferred email address for signing up for DataCamp](https://docs.google.com/forms/d/e/1FAIpQLSffbYAQmq7Gv25d955x9xgI1GNexIsqVkcSIG1Tf69oQzsJlg/viewform?usp=sf_link).   
 * What is data journalism?
   * Group Exercise: [What does the phrase "data journalism" mean to you?](https://docs.google.com/document/d/14umxQK1mYVqQ6wd7yyTZMEaiM28RLK3bvTfmS8dsj-E/edit#)
-  * Slides: [Link](https://docs.google.com/presentation/d/1Wol-o16bhaGAbUbd6LmmMrzlFYmOO2sMk-Bu4I4eyWU/edit#slide=id.g6056882942_0_5)
+  * Slides for discussion: [Link](https://docs.google.com/presentation/d/1Wol-o16bhaGAbUbd6LmmMrzlFYmOO2sMk-Bu4I4eyWU/edit#slide=id.g6056882942_0_5)
 
 *Online tutorial lab | Due by Sunday at 11:59 p.m.*
-* [Data journalism basics with spreadsheets](https://www.youtube.com/watch?v=vJz3KauqY_0).
-  * Follow along with the exercise step-by-step.
+* Watch this video: [Data journalism basics with spreadsheets](https://www.youtube.com/watch?v=vJz3KauqY_0).
+  * As you watch, follow along with the exercise step-by-step.
   * Either download the data directly from the Washington Post opioid files website, as I did.  Or, if you have trouble with that, [download it from here](labs/lab_01/arcos-wv-mingo-54059-pharmacy.tsv).
   * Upload a link to your completed Google Sheet workbook to the [ELMS assignment]().
   * Completed sheet for review after you're done: To come.    
@@ -161,7 +161,6 @@ Sean Mussenden in the data editor for the Howard Center for Investigative Journa
 * 7 Types of Data Stories: [Data Stories Brainstorming Guide | NYT Training](https://docs.google.com/document/d/13JYB19XekRAV8rSUisZMEjSTM-XPFeRPBwhbUqiWYZQ/edit) and [Examples of Census Data Stories | NYT Training](https://docs.google.com/document/d/18R26TlL9iguN-iv17QjpSqOnUpsYvjqFTQf0tIEMXik/edit)
 
 *Forum Posts | Due by Sunday at 11:59 p.m.*
-**Links to ELMS pages coming soon**
 * [Forum Post 1](https://umd.instructure.com/courses/1268776/discussion_topics/3706521?module_item_id=9690994): We will spend much of the semester working with a newly-released database of opioid shipments, made available by the Washington Post. The Washington Post has been breaking stories of national importance holding the government, drug companies, pharmacies and others to account for their role in the deadly opioid epidemic that killed nearly 100,000 people in the U.S. between 2006 and 2012. Carefully read the story "76 billion opioid pills: Newly released federal data unmasks the epidemic" and listen to the interview with one of the reporters on the story, Scott Higham.  In a forum post of 300 words or less, do the following:
   * Based on the information in the story, briefly explain the nature of the database analyzed by the Post.  What is it called? What information does it include?
   * Identify two sentences in the story -- facts -- that you think were the product of original data analysis by the Post.
@@ -189,69 +188,368 @@ TK
 *Forum Posts | Due by Sunday at 11:59 p.m.*
 
 TK
+
 *Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
 
-TK
+* Data acquisition project introduced
 
 #### Week 3 - Feb. 11
+*Tuesday Class*
+
 TK
+
+*Online tutorial lab | Due by Sunday at 11:59 p.m.*
+
+TK
+
+*Optional study session*
+
+Held at regular time this week, Friday @ 11:30am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
+
+*Readings | Complete by Sunday at 11:59 p.m.*
+
+TK
+
+*Forum Posts | Due by Sunday at 11:59 p.m.*
+
+TK
+
+*Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
+
+* Data acquisition project | Forum post with update on reporting and link to Google spreadsheet contact log.
+
 #### Week 4 - Feb. 18
+*Tuesday Class*
+
 TK
+
+*Online tutorial lab | Due by Sunday at 11:59 p.m.*
+
+TK
+
+*Optional study session*
+
+Held at regular time this week, Friday @ 11:30am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
+
+*Readings | Complete by Sunday at 11:59 p.m.*
+
+TK
+
+*Forum Posts | Due by Sunday at 11:59 p.m.*
+
+TK
+
+*Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
+
+* Data acquisition project | Forum post with update on reporting and link to Google spreadsheet contact log.
+
 #### Week 5 - Feb. 25
+*Tuesday Class*
+
 TK
+
+*Online tutorial lab | Due by Sunday at 11:59 p.m.*
+
+TK
+
+*Optional study session*
+
+Held at regular time this week, Friday @ 11:30am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
+
+*Readings | Complete by Sunday at 11:59 p.m.*
+
+TK
+
+*Forum Posts | Due by Sunday at 11:59 p.m.*
+
+TK
+
+*Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
+
+* Data acquisition project | Draft of public records request due by Sunday and link to Google spreadsheet contact log.  
+
 #### Week 6 - Mar. 3
+*Tuesday Class*
+
 TK
+
+*Online tutorial lab | Due by Sunday at 11:59 p.m.*
+
+TK
+
+*Optional study session*
+
 No study session this week, Sean at NICAR
 
+*Readings | Complete by Sunday at 11:59 p.m.*
+
+TK
+
+*Forum Posts | Due by Sunday at 11:59 p.m.*
+
+TK
+
+*Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
+
+* Data acquisition project | Send public records request letter.
+
 #### Week 7 - Mar. 10
+*Tuesday Class*
+
 TK
+
+*Online tutorial lab | Due by Sunday at 11:59 p.m.*
+
+TK
+
+*Optional study session*
+
+Held at regular time this week, Friday @ 11:30am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
+
+*Readings | Complete by Sunday at 11:59 p.m.*
+
+TK
+
+*Forum Posts | Due by Sunday at 11:59 p.m.*
+
+TK
+
+*Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
+
+* Data acquisition project | Send follow up email to check on status of request and/or quickly respond to questions from agency.
+
 #### Week 8 - Mar. 17
-TK
-No class or study session, spring break
+
+Spring break, no class or study session
 
 #### Week 9 - Mar. 24
+*Tuesday Class*
+
 TK
+
+*Online tutorial lab | Due by Sunday at 11:59 p.m.*
+
+TK
+
+*Optional study session*
+
+Held at regular time this week, Friday @ 11:30am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
+
+*Readings | Complete by Sunday at 11:59 p.m.*
+
+TK
+
+*Forum Posts | Due by Sunday at 11:59 p.m.*
+
+TK
+
+*Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
+
+* Data acquisition project | Send follow up email to check on status of request and/or quickly respond to questions from agency.
+* Data analysis project introduced.
+
+
 #### Week 10 - Mar. 31
+*Tuesday Class*
+
 TK
+
+*Online tutorial lab | Due by Sunday at 11:59 p.m.*
+
+TK
+
+*Optional study session*
+
+Held at regular time this week, Friday @ 11:30am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
+
+*Readings | Complete by Sunday at 11:59 p.m.*
+
+TK
+
+*Forum Posts | Due by Sunday at 11:59 p.m.*
+
+TK
+
+*Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
+
+* Data acquisition project | Send follow up email to check on status of request and/or quickly respond to questions from agency.
+
 #### Week 11 - Mar. 31
+*Tuesday Class*
+
 TK
+
+*Online tutorial lab | Due by Sunday at 11:59 p.m.*
+
+TK
+
+*Optional study session*
+
+Held at regular time this week, Friday @ 11:30am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
+
+*Readings | Complete by Sunday at 11:59 p.m.*
+
+TK
+
+*Forum Posts | Due by Sunday at 11:59 p.m.*
+
+TK
+
+*Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
+
+* Data acquisition project | Slide deck for project presentation and link to Google spreadsheet contact log.
+* Data analysis project | status memo outlining your idea for analysis.  
+ questions.  
+
+
 #### Week 12 - Apr. 7
+*Tuesday Class*
+
 TK
+
+*Online tutorial lab | Due by Sunday at 11:59 p.m.*
+
+TK
+
+*Optional study session*
+
+Held at regular time this week, Friday @ 11:30am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
+
+*Readings | Complete by Sunday at 11:59 p.m.*
+
+TK
+
+*Forum Posts | Due by Sunday at 11:59 p.m.*
+
+TK
+
+*Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
+
+* Data acquisition project | Final presentations in class.
+
 #### Week 13 - Apr. 14
+*Tuesday Class*
+
 TK
+
+*Online tutorial lab | Due by Sunday at 11:59 p.m.*
+
+TK
+
+*Optional study session*
+
+Held at regular time this week, Friday @ 11:30am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
+
+*Readings | Complete by Sunday at 11:59 p.m.*
+
+TK
+
+*Forum Posts | Due by Sunday at 11:59 p.m.*
+
+TK
+
+*Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
+* Data analysis project | status memo outlining your idea for analysis and draft markdown file.  
+
 #### Week 14 - Apr. 21
+*Tuesday Class*
+
 TK
+
+*Online tutorial lab | Due by Sunday at 11:59 p.m.*
+
+TK
+
+*Optional study session*
+
+Held at regular time this week, Friday @ 11:30am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
+
+*Readings | Complete by Sunday at 11:59 p.m.*
+
+TK
+
+*Forum Posts | Due by Sunday at 11:59 p.m.*
+
+TK
+
+*Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
+
+* Data analysis project | status memo outlining updating for analysis and updated draft markdown file.  
+
+
 #### Week 15 - Apr. 28
+*Tuesday Class*
+
 TK
+
+*Online tutorial lab | Due by Sunday at 11:59 p.m.*
+
+TK
+
+*Optional study session*
+
+Held at regular time this week, Friday @ 11:30am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
+
+*Readings | Complete by Sunday at 11:59 p.m.*
+
+TK
+
+*Forum Posts | Due by Sunday at 11:59 p.m.*
+
+TK
+
+*Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
+
+
+
 #### Week 16 - May. 5
+*Tuesday Class*
+
 TK
-#### Week 17 - May. 12
+
+*Online tutorial lab | Due by Sunday at 11:59 p.m.*
+
 TK
-Last class
 
-* Week 3 - Project introduced.  Forum post with update on reporting due by Sunday.
-* Week 4 - Forum post with update on reporting due by Sunday and link to Google spreadsheet contact log.
-* Week 6 - Forum post with update on reporting due by Sunday and link to Google spreadsheet contact log.
-* Week 7 - Draft of public records request due by Sunday and link to Google spreadsheet contact log.  
-* Week 8 - Send public records request by Sunday.
-* Week 11 - Forum post with update on post-request reporting due by Sunday and link to Google spreadsheet contact log.
-* Week 13 - Slide deck for project presentation due by Sunday and link to Google spreadsheet contact log.
-* Week 14 - Project presentations.
+*Optional study session*
 
-**Week 8:** project introduced
+Held at regular time this week, Friday @ 11:30am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
 
-**Week 9:** a 400-word max status memo as a forum post, explaining the following:
-  * What motivating questions you think might drive your work. You should have a few different groups of questions for approaches at this point.  We will work together to pick one.  
-  * What specific opioid data from the WashingARCOS API will help answer these questions.
-  * What additional data sources will be required to answer these questions.
-  * What else has been written (including links) that is related to your questions.  
+*Readings | Complete by Sunday at 11:59 p.m.*
 
-**Week 11:** Forum post update on exploratory analysis and draft markdown file.
-  * In less than 300 words, describe what you've done so far, what you've found so far, and where you plan to go next. You should pull this from your Markdown file. Is there something you're having problems with, either conceptually or technically? Post it here.
-  * Also provide a link to your class GitHub repo, where you've created a well commented R Markdown file that shows your initial attempts at loading, cleaning, understanding and analyzing the data. It should contain at least 15 specific questions, answers and code to produce the answers those questions.  Make sure the repo is public.
+TK
 
-**Week 14:** a link to your repo with updated data analysis. It should contain at least 30 specific questions, answers and code to produce the answers to those questions.  
+*Forum Posts | Due by Sunday at 11:59 p.m.*
 
-**Week 15:** Story pitch memo and a clean GitHub repo with R Markdown file that you used to produce the findings detailed in your memo.
+TK
+
+*Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
+
+* Data analysis project | final story pitch memo and clean GitHub repo with final R Markdown file.   
 
 **Week 16 (During Exam Block):** "pitch your editor" presentations.  
+
+#### Week 17 - May. 12
+*Tuesday Class*
+
+TK
+
+*Online tutorial lab | Due by Sunday at 11:59 p.m.*
+
+TK
+
+*Optional study session*
+
+No study session this week.
+
+*Readings | Complete by Sunday at 11:59 p.m.*
+
+TK
+
+*Forum Posts | Due by Sunday at 11:59 p.m.*
+
+TK
+
+*Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
+
+* Data analysis project | "pitch your editor" presentations.
