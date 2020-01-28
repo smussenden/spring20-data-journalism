@@ -70,9 +70,10 @@ The tutorials were written using these specific software programs, so if you use
 ### Grading
 
 * Participation - 5%
-* Data Acquisition Project - 20%
+* Story discussion lead - 5% - teams of two will present
+* Data Acquisition Project - 20% - a project where you will learn to get data out of (often) reluctant government
 * Data Analysis Project - 30%
-* Homework and In-Class Lab Assignments - 45% (Not Turned In (0)/Unsatisfactory (1)/Satisfactory(2))
+* Homework and In-Class Lab Assignments - 40% (Not Turned In (0)/Unsatisfactory (1)/Satisfactory(2))
 * Note: there is no final exam in this course.
 
 Minus and plus grading will be assessed as follows:
@@ -169,7 +170,19 @@ Sean Mussenden in the data editor for the Howard Center for Investigative Journa
 * [Forum Post 3](https://umd.instructure.com/courses/1268776/discussion_topics/3706531?module_item_id=9690996): The boundaries of what qualifies as "data journalism" are not easily defined. Read "Why Journalists Should Use Data" and "Why Data Journalism is Important".  In 200 words or less, write your own preferred definition, why you are interested in learning to do it, and how you hope to incorporate it in the journalism work you do going forward.
 
 #### Week 2 - Feb. 4
+*Tuesday Class*
 TK
+*Online tutorial lab | Due by Sunday at 11:59 p.m.*
+TK
+*Optional study session*
+Held at regular time this week, Friday @ 11:30am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
+*Readings | Complete by Sunday at 11:59 p.m.*
+TK
+*Forum Posts | Due by Sunday at 11:59 p.m.*
+TK
+*Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
+TK
+
 #### Week 3 - Feb. 11
 TK
 #### Week 4 - Feb. 18
@@ -205,3 +218,30 @@ TK
 #### Week 17 - May. 12
 TK
 Last class
+
+* Week 3 - Project introduced.  Forum post with update on reporting due by Sunday.
+* Week 4 - Forum post with update on reporting due by Sunday and link to Google spreadsheet contact log.
+* Week 6 - Forum post with update on reporting due by Sunday and link to Google spreadsheet contact log.
+* Week 7 - Draft of public records request due by Sunday and link to Google spreadsheet contact log.  
+* Week 8 - Send public records request by Sunday.
+* Week 11 - Forum post with update on post-request reporting due by Sunday and link to Google spreadsheet contact log.
+* Week 13 - Slide deck for project presentation due by Sunday and link to Google spreadsheet contact log.
+* Week 14 - Project presentations.
+
+**Week 8:** project introduced
+
+**Week 9:** a 400-word max status memo as a forum post, explaining the following:
+  * What motivating questions you think might drive your work. You should have a few different groups of questions for approaches at this point.  We will work together to pick one.  
+  * What specific opioid data from the WashingARCOS API will help answer these questions.
+  * What additional data sources will be required to answer these questions.
+  * What else has been written (including links) that is related to your questions.  
+
+**Week 11:** Forum post update on exploratory analysis and draft markdown file.
+  * In less than 300 words, describe what you've done so far, what you've found so far, and where you plan to go next. You should pull this from your Markdown file. Is there something you're having problems with, either conceptually or technically? Post it here.
+  * Also provide a link to your class GitHub repo, where you've created a well commented R Markdown file that shows your initial attempts at loading, cleaning, understanding and analyzing the data. It should contain at least 15 specific questions, answers and code to produce the answers those questions.  Make sure the repo is public.
+
+**Week 14:** a link to your repo with updated data analysis. It should contain at least 30 specific questions, answers and code to produce the answers to those questions.  
+
+**Week 15:** Story pitch memo and a clean GitHub repo with R Markdown file that you used to produce the findings detailed in your memo.
+
+**Week 16 (During Exam Block):** "pitch your editor" presentations.  
