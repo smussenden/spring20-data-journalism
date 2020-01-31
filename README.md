@@ -171,6 +171,8 @@ Sean Mussenden in the data editor for the Howard Center for Investigative Journa
 #### Week 2 - Feb. 4
 *Tuesday Class*
 
+* Data acquisition project assignment discussion. [Project overview](major_assignments/data_acquisition_project/readme.md)
+* In-class lab.
 TK
 
 *Online tutorial lab | Due by Sunday at 11:59 p.m.*

@@ -99,7 +99,28 @@ The gradings break down this way:
 * Final slide deck: 10%
 * Final presentation: 4%
 
-## City assignments
+## Municipality assignments
+
+You have each been assigned a single city, a small group of counties, or both a city and its surrounding county.  If you have multiple locations, you'll want to do some initial reporting, web research and phone calls to officials in each place, trying to determine if a) they keep the data we're requesting, b) if it's already been made public and c) how hard it might be to get.  We will jointly decide then to pursue one city.  
+
+If you have only one city, don't think you're getting off easy.  Most of them are very large jurisdictions that might put up additional roadblocks for repoters.
+
+* MX | Anchorage, Alaska
+* BW | Washington, D.C.
+* ACC | Daytona Beach, Florida and/or Volusia County, Florida
+* SC | Charles County, Maryland or St. Mary's County, Maryland
+* VD | Port St. Lucie, Florida and/or St. Lucie County, Florida
+* CD |	Fort Walton Beach, Florida and/or Destin, Florida or Okaloosa County, Florida
+* RF	| Monroe County, Florida and/or Key West, Florida
+* MH | New Port Richey, Florida and/or Pasco County, Florida
+* DK	| Punta Gorda, Florida and/or Charlotte County, Florida
+* SM	| St. Petersburg, Florida and/or Pinellas County, Florida
+* LM | Atlanta, Georgia
+* JR | Savannah, Georgia and/or Chatham County, Georgia
+* MS |	Maui County, Hawaii
+* CTS | Lexington, Kentucky and/or Fayette County, Kentucky
+* GT	| New York City
+* PVS | Portland, Oregon
 
 ## This is a reporting project
 
