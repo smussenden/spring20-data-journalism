@@ -179,11 +179,11 @@ TK
 
 *Optional study session*
 
-Held at regular time this week, Friday @ 11:30am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
+Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
 
 *Readings | Complete by Sunday at 11:59 p.m.*
 
-TK
+https://www.nytimes.com/2019/11/13/technology/personaltech/data-journalism-economics.html
 
 *Forum Posts | Due by Sunday at 11:59 p.m.*
 
@@ -204,7 +204,7 @@ TK
 
 *Optional study session*
 
-Held at regular time this week, Friday @ 11:30am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
+Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
 
 *Readings | Complete by Sunday at 11:59 p.m.*
 
@@ -229,7 +229,7 @@ TK
 
 *Optional study session*
 
-Held at regular time this week, Friday @ 11:30am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
+Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
 
 *Readings | Complete by Sunday at 11:59 p.m.*
 
@@ -254,7 +254,7 @@ TK
 
 *Optional study session*
 
-Held at regular time this week, Friday @ 11:30am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
+Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
 
 *Readings | Complete by Sunday at 11:59 p.m.*
 
@@ -304,7 +304,7 @@ TK
 
 *Optional study session*
 
-Held at regular time this week, Friday @ 11:30am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
+Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
 
 *Readings | Complete by Sunday at 11:59 p.m.*
 
@@ -333,7 +333,7 @@ TK
 
 *Optional study session*
 
-Held at regular time this week, Friday @ 11:30am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
+Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
 
 *Readings | Complete by Sunday at 11:59 p.m.*
 
@@ -360,7 +360,7 @@ TK
 
 *Optional study session*
 
-Held at regular time this week, Friday @ 11:30am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
+Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
 
 *Readings | Complete by Sunday at 11:59 p.m.*
 
@@ -385,7 +385,7 @@ TK
 
 *Optional study session*
 
-Held at regular time this week, Friday @ 11:30am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
+Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
 
 *Readings | Complete by Sunday at 11:59 p.m.*
 
@@ -413,7 +413,7 @@ TK
 
 *Optional study session*
 
-Held at regular time this week, Friday @ 11:30am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
+Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
 
 *Readings | Complete by Sunday at 11:59 p.m.*
 
@@ -438,7 +438,7 @@ TK
 
 *Optional study session*
 
-Held at regular time this week, Friday @ 11:30am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
+Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
 
 *Readings | Complete by Sunday at 11:59 p.m.*
 
@@ -462,7 +462,7 @@ TK
 
 *Optional study session*
 
-Held at regular time this week, Friday @ 11:30am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
+Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
 
 *Readings | Complete by Sunday at 11:59 p.m.*
 
@@ -488,7 +488,7 @@ TK
 
 *Optional study session*
 
-Held at regular time this week, Friday @ 11:30am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
+Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
 
 *Readings | Complete by Sunday at 11:59 p.m.*
 
@@ -513,7 +513,7 @@ TK
 
 *Optional study session*
 
-Held at regular time this week, Friday @ 11:30am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
+Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
 
 *Readings | Complete by Sunday at 11:59 p.m.*
 

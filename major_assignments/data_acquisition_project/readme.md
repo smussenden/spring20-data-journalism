@@ -1,91 +1,111 @@
 # Data Acquisition Project
 
-This project will give you some real-world experience in trying to get a useful dataset from a government agency – or trying to pry it out of the hands of its keepers, which may turn out to be a more appropriate description of the effort in some cases.   
+This project will give you some real-world experience in trying to get a useful dataset from a government agency – or trying to pry it out of the hands of its keepers, which may turn out to be a more appropriate description of the effort in some cases.
 
-## Grading
+It is worth 20 percent of your grade, broken up into assignments throughout the semester.    
 
-This project is worth 20 percent of your grade, broken up into assignments throughout the semester.  Your grade does not depend on whether you successfully get the database. Your grade does depend on whether you display a solid, steady, intelligent effort that takes advantage of your journalistic skills, your familiarity with the issues in data acquisition, your knowledge of the law and the approaches we discuss in class.
+## Why we're seeking data
 
-## Seeking data
+You’re helping us obtain data that will power an investigative reporting project being done by students at the University of Maryland Philip Merrill College of Journalism (working for the Howard Center for Investigative Journalism at the college) in partnership with other universities (Boston University, Stanford University, University of Arkansas, University of Florida and the University of Oregon) and professional news organizations (NPR, Honolulu Civil Beat).
 
-There are two equally valid approaches to the project.  You can seek your own dataset.  Or you can help get data for a Howard Center for Investigative Journalism project on homelessness and housing.
+Your participation is critical to this project’s success!  The project is examining how some cities across the country may be responding to an uptick in homelessness by criminalizing things homeless people do out of necessity.  This includes: sleeping in cars, laying down on benches in city parks and begging for food and money.
 
-#### Your own idea
+By participating in this effort, we hope you will learn a great deal about how to figure out whether a government agency has data, and how to successfully negotiate for access.  This skill is one of the most valuable things a journalist can learn to do.
 
-If you have an idea for a database you would like to acquire for this project please talk with me. The dataset must be stored in electronic form, but not be available online in its complete form.  It must be a data set from a U.S. state or local government agency. It cannot be a federal dataset (they take too long to get, for the purpose of this class). If you're unsure about whether a dataset exists, talk to me and we'll brainstorm some approaches.
+As part of the process, you'll also do some reporting that will help us understand any potential pitfalls with using this data, including flaws that could lead to inaccurate findings through analysis.
 
-* Jillian
-* Christine
-* Leah
-* Arya  
+## The data we're seeking
 
-#### Homeless bussing data
+You will be assigned a municipality (a city or county, typically) to get data from.
 
-Everyone else will be seeking a database from a county or city with information about "homeless relocation" programs in U.S. cities. The programs were detailed in this excellent 2017 Guardian story [Bussed out:
-How America moves its homeless](https://www.theguardian.com/us-news/ng-interactive/2017/dec/20/bussed-out-america-moves-homeless-people-country-study).  
+We’re looking for two different data sets from each municipality that may help us shed light on police interaction with people who are homeless.
 
-We will be seeking updated data from the following cities that the Guardian identified as having homeless bussing programs.
+### 311 data
 
-If you're not in the in the CNS/Howard investigative bureau with Deb Nelson, we'll assign you today to bucket one.
+Many cities and counties in the U.S. have 311 systems that citizens can use to report problems to the government or request non-emergency services.  Citizens call a phone number (311) or use an app to report problems. Some common reasons people call 311 include:
 
-If you are in the CNS/Howard investigative bureau with Deb Nelson working on the homeless project, we'll assign you today to two cities from bucket two.
+* Request to fix a pothole
+* Snow removal
+* Pick up a dead animal.     
 
-**Bucket 1: Places we know have programs**
+The [Wikipedia page on 311 systems](https://en.wikipedia.org/wiki/3-1-1) offers a good primer on 311 systems. Please note that the list of cities it says has a system is not necessarily accurate or complete.  
 
-* Portland, Oregon - Josh
-* Humboldt County, California - Meghan
-* San Francisco, California - Dimas
-* Santa Cruz County, California - Bryan
-* Santa Cruz City, California - Bryan
-* Santa Monica, California - Luciana
-* Long Beach, California - Miller
-* Phoenix, Arizona - Ryan
-* Salt Lake City, Utah - Lauren
-* Denver, Colorado - Mia
-* Reno, Nevada - Emily
-* New York City, NY - Matt
-* Sarasota, Florida - Sara
-* West Palm Beach, Florida - Maya
-* Key West, Florida - Jazmin
+Here are some examples of 311 systems and the data they collect:
 
-**Bucket 2: Places that have high homelessness rates that may have programs**
+* Los Angeles | [311 Description Page](https://www.lacity.org/myla311)  | [311 data captured by system](https://data.lacity.org/A-Well-Run-City/MyLA311-Service-Request-Data-2019/pvft-t768)
+* Baltimore | [311 Description Page](https://311services.baltimorecity.gov/) | [311 data captured by system](https://data.baltimorecity.gov/City-Services/311-Customer-Service-Requests/9agw-sxsr/data)
 
-* Monroe County, Florida and cities (Florida Keys)
-* Mendocino County, California and cities
-* Los Angeles, California - Ryan
-* Seattle, Washington
-* San Diego, California - Dana
-* San Jose, California
-* Monterey, California
-* Washington, D.C. - Bryan
-* Boston, Mass.
-* Las Vegas, Nevada
-* Atlanta, Georgia - Julia
-* Imperial County, California
-* Humboldt County, California
-* Pasco County, Florida
-* Tampa, Florida
-* St. Petersburg, Florida
-* Honolulu, Hawaii - Julia
-* Watsonville, California
-* Sonoma County, California and cities
-* Butte County, California and cities
+In some cases, 311 data will be available through “Open Data” repositories maintained by a municipality.  Here are two examples of Open Data repositories.
 
-## Essential Elements and Deadlines
+* [Baltimore](https://data.baltimorecity.gov/)
+* [Los Angeles](https://data.lacity.org/browse)
 
-This is a reporting project. You will need to do web research to identify the correct agencies to contact, and the people in those agencies to contact.  But it will take a lot more than web research.  You will need to call people and email them to identify who keeps the data, what it's called, what's in it, and attempt to coax it out of them -- either with a public records request or without one.
+Note: in some cases, a municipality may not call their system a 311 system.  If officials in a municipality tell you they don’t have a 311 system, ask if they have something similar: a way for citizens to report non-emergency problems, concerns or questions to the government.  
 
-Here are the milestones you'll need to follow:
+In most cases, this data will include the following information about each call:
+* Date and time of call
+* A column categorizing the call (i.e. pothole, street light out)
+* Location (maybe address, maybe latitude and longitude, maybe both).
 
-* Week 3 - Project introduced.  Forum post with update on reporting due by Sunday.
-* Week 4 - Forum post with update on reporting due by Sunday and link to Google spreadsheet contact log.
-* Week 6 - Forum post with update on reporting due by Sunday and link to Google spreadsheet contact log.
-* Week 7 - Draft of public records request due by Sunday and link to Google spreadsheet contact log.  
-* Week 8 - Send public records request by Sunday.
-* Week 11 - Forum post with update on post-request reporting due by Sunday and link to Google spreadsheet contact log.
-* Week 13 - Slide deck for project presentation due by Sunday and link to Google spreadsheet contact log.
-* Week 14 - Project presentations.
+It might also include:
+* The agency the call was assigned to.
+* A text write up describing the call in more detail.
+* The disposition of the call (i.e. pothole fixed, assigned to an agency, unfounded)
 
+### Police call for service data
+
+Every municipality that has a police department or sheriff’s office will keep data on how police operate on a minute-to-minute basis, often prompted by a call from the public, including calls to 911.  
+
+Often this is called “calls for service” data and it’s maintained by either a police agency or a centralized communications agency that handles calls for police, fire and emergency medical response.
+
+Here are some examples of “calls for service” data:
+* [Baltimore](https://data.baltimorecity.gov/Public-Safety/911-Police-Calls-for-Service/xviu-ezkt/data)
+* [Los Angeles](https://data.lacity.org/A-Safe-City/LAPD-Calls-for-Service-2018/nayp-w2tw/data)
+* [San Diego](https://data.sandiego.gov/datasets/police-calls-for-service/)
+* [New Orleans](https://data.nola.gov/Public-Safety-and-Preparedness/Calls-for-Service-2016/wgrp-d3ma/data)
+* [Chandler, Arizona](https://data.chandlerpd.com/catalog/calls-for-service-2019/data/)
+
+In some cases, this data might bundle police with fire and emergency medical calls.  It’s fine to obtain a dataset that includes all three of those.  Officials may be reluctant to give out data sets that contain medical calls because of exemptions in many states’ public record laws for that information.  If we need to, we may ask them to fill the request but redact information that is exempted from public records laws.  
+
+In most cases, the data will include the following information:
+* Date and time of call
+* Location of call (address, latitude and longitude, and/or police district)
+* Reason for call (usually a code of some sort, indicating possible crime being committed or other reason)
+
+## Grading and Deadlines
+
+This project is worth 20 percent of your grade, broken up into assignments throughout the semester.  Your grade does not depend on whether you successfully get the database.
+
+Your grade does depend on whether you display a solid, steady, and intelligent effort that takes advantage of your journalistic skills, your knowledge of the law and the application of the approaches we discuss in class.
+
+The following are the description and due dates of the required elements.
+
+* **In class on Tuesday, Feb. 4** | Data acquisition project introduced
+* **Before Sunday, Feb. 9 at 11:59 p.m.** | Forum Post 1 | Detail your reporting and research efforts in a 250-word forum post and detail each contact or attempted contact in your Google spreadsheet contact log.  In your forum post, clearly indicate whether or not some or all of the data is available online.  
+* **Before Sunday, Feb. 16 at 11:59 p.m.** | Forum Post 2 | Detail your reporting efforts in a 250-word forum post and detail each contact or attempted contact in your Google spreadsheet contact log.
+* **Before Sunday, Feb. 23 at 11:59 p.m.** | Forum Post 3 | Post, as a forum post, a draft public records letters and detail each attempted contact in your Google spreadsheet contact log.
+* **Before Sunday, Mar. 1 at 11:59 p.m.** | Forum Post 4 | As soon as approved, send your public records request letters and follow up to make sure they were received. Post, as a forum post, an indication that you sent the letters and provide a link to your Google contact log.
+* **Before Sunday, Mar. 8 at 11:59 p.m.** | Forum Post 5 | Detail any interactions you've had with officials since filing the request in a 250-word forum posts. At a minimum, you should email them at the end of the week just checking in on status of request.  Provide a link to your contact log. If you've received some or all of the data, post a link to it.
+* **Before Sunday, Mar. 15 at 11:59 p.m.** | Forum Post 6 | Detail any interactions you've had with officials since filing the request in a 250-word forum posts. At a minimum, you should email them at the end of the week just checking in on status of request.  Provide a link to your contact log.  If you've received some or all of the data, post a link to it.
+* **Before Sunday, Mar. 29 at 11:59 p.m.** | Forum Post 7 | Detail any interactions you've had with officials since filing the request in a 250-word forum posts. At a minimum, you should email them at the end of the week just checking in on status of request.  Provide a link to your contact log.   If you've received some or all of the data, post a link to it.
+* **Before Sunday, Apr. 5 at 11:59 p.m.** | Provide a link to your slide deck for your project presentation, an updated contact log, and the data if you've received it.
+* **In class on Tuesday, Feb. 7** | Data acquisition project presentations.
+
+The gradings break down this way:
+
+* Forum posts 1, 2, 3 (including contact log): 20% each (60% total)
+* Forum post 4 (including contact log): 5%  
+* Forum posts 5,6,7 (including contact log): 7% (21 % total)
+* Final slide deck: 10%
+* Final presentation: 4%
+
+## City assignments
+
+## This is a reporting project
+
+This is a reporting project, not just a research paper. You will need to figure out whether the data you're seeking has already been published online.  You will need to do web research to identify the correct agencies to contact, and the people in those agencies to contact. But it will take a lot more than web research.  You will need to call people and email them to identify who keeps the data, what it's called, what's in it, and attempt to coax it out of them -- either with a public records request or without one.
+
+We’re looking for “un-aggregated” data, not data that summarizes calls in some way.  For example, you may find a 311 data set online that has one row per type of call for a given year, summarizing the total number of calls for that type. We do not want that. When requesting data for this project, you shouldn’t immediately volunteer why you’re requesting data or share details of the project.  But during negotiations for access to data, you may find it necessary to share some details, and that’s okay.  
 
 ## Contact log
 
@@ -103,9 +123,7 @@ Some of the people you deal with – say, the receptionists or assistants who fi
 
 ## How to Identify Yourself
 
-If you're seeking homeless data, you should identify yourself as a data reporter for the Howard Center for Investigative Journalism, a non-profit investigative reporting unit in Maryland.  If someone asks if you're a student, tell the truth, but don't volunteer it.  The people with whom you are dealing with need to understand that this database could be used as the foundation for a news story.
-
-If you are seeking your own data, talk to me, and we'll discuss how to identify yourself.  It's best to have a news organization you're seeking the data for (i.e. The Diamondback or an internship organization).
+You should identify yourself as a data reporter for the Howard Center for Investigative Journalism, a non-profit investigative reporting unit in Maryland.  If someone asks if you're a student, tell the truth, but don't volunteer it.  The people with whom you are dealing with need to understand that this database could be used as the foundation for a news story.
 
 ## Request Letter
 
