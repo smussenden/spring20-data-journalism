@@ -190,8 +190,9 @@ https://www.nytimes.com/2019/11/13/technology/personaltech/data-journalism-econo
 TK
 
 *Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
-
 * Data acquisition project introduced
+* Data acquisition project | Forum post with update on reporting and link to Google spreadsheet contact log.
+
 
 #### Week 3 - Feb. 11
 *Tuesday Class*
