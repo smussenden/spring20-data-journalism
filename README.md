@@ -181,7 +181,7 @@ Sean Mussenden in the data editor for the Howard Center for Investigative Journa
 * [Advanced data journalism with spreadsheets (pivot tables)](https://www.youtube.com/watch?v=pH1o89-ARmI&feature=youtu.be).
   * Follow along with the exercise step-by-step.
   * Either download the data directly from the Washington Post opioid files website, as I did.  Or, if you have trouble with that, [download it from here](labs/lab_02/arcos-wv-logan-54045-itemized.tsv). Note: if you download it from the Post website, the numbers may different because the Post last week updated the data to include two additional years.  
-  * Warning: this is a VERY large file.  If you have an older laptop, it might run slowly. I'd encourage you to try it on a school computer if that's an issue for you. 
+  * Warning: this is a VERY large file.  If you have an older laptop, it might run slowly. I'd encourage you to try it on a school computer if that's an issue for you.
   * Modify the spreadsheet as I instruct in the video.  Note that you will have to create three pivot tables on your own.
   * Upload a link to your completed Google Sheet workbook to the [ELMS assignment]().
   * A link to the completed sheet will be posted Monday.
@@ -200,13 +200,11 @@ https://www.nytimes.com/2019/11/13/technology/personaltech/data-journalism-econo
 
 *Forum Posts | Due by Sunday at 11:59 p.m.*
 
-TK
+None, other than major assignment posts.
 
 *Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
-* Data acquisition project | Forum post with update on reporting and link to Google spreadsheet contact log.
-
-
-
+* Data acquisition project | Forum post with update on reporting and link to Google spreadsheet contact log. DO NOT WAIT UNTIL FRIDAY TO START REPORTING.
+* Story discussion project | Forum post. With your partner, skim stories, pick four that look interesting.  Collectively rank the four in order of preference. Both of you post this ranking on the forum (should be identical, but both of you need to post for grading purposes).
 
 *Online tutorial lab | Due by Sunday at 11:59 p.m.*
 * [Advanced data journalism with spreadsheets (pivot tables)](https://www.youtube.com/watch?v=pH1o89-ARmI&feature=youtu.be).
