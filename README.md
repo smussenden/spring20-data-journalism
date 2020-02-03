@@ -174,7 +174,7 @@ Sean Mussenden in the data editor for the Howard Center for Investigative Journa
 *Tuesday Class*
 * Data acquisition project assignment discussion. [Project overview](major_assignments/data_acquisition_project/readme.md)
 * Story discussion project assignment discussion. [Project overview](major_assignments/story_discussion/readme.md)
-* In-class lab: [finding stories in opioid data, with basic spreadsheet techniques](in_class_assignments/class_01/readme.md). [ELMS Link to turn in]().
+* In-class lab: [finding stories in opioid data, with basic spreadsheet techniques](in_class_assignments/class_01/readme.md). [ELMS Link to turn in](https://umd.instructure.com/courses/1278056/assignments/5097060?module_item_id=9855924).
 
 *Online tutorial lab | Due by Sunday at 11:59 p.m.*
 
@@ -183,7 +183,7 @@ Sean Mussenden in the data editor for the Howard Center for Investigative Journa
   * Either download the data directly from the Washington Post opioid files website, as I did.  Or, if you have trouble with that, [download it from here](labs/lab_02/arcos-wv-logan-54045-itemized.tsv). Note: if you download it from the Post website, the numbers may different because the Post last week updated the data to include two additional years.  
   * Warning: this is a VERY large file.  If you have an older laptop, it might run slowly. I'd encourage you to try it on a school computer if that's an issue for you.
   * Modify the spreadsheet as I instruct in the video.  Note that you will have to create three pivot tables on your own.
-  * Upload a link to your completed Google Sheet workbook to the [ELMS assignment]().
+  * Upload a link to your completed Google Sheet workbook to the [ELMS assignment](https://umd.instructure.com/courses/1278056/assignments/5097061?module_item_id=9855926).
   * A link to the completed sheet will be posted Monday.
   * Here are links mentioned in the video:
     * [Google Drive](https://drive.google.com/drive/u/0/my-drive)
@@ -196,44 +196,15 @@ Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make th
 
 *Readings | Complete by Sunday at 11:59 p.m.*
 
-https://www.nytimes.com/2019/11/13/technology/personaltech/data-journalism-economics.html
+None. Other than major project assignments.
 
 *Forum Posts | Due by Sunday at 11:59 p.m.*
 
 None, other than major assignment posts.
 
 *Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
-* Data acquisition project | Forum post with update on reporting and link to Google spreadsheet contact log. DO NOT WAIT UNTIL FRIDAY TO START REPORTING.
-* Story discussion project | Forum post. With your partner, skim stories, pick four that look interesting.  Collectively rank the four in order of preference. Both of you post this ranking on the forum (should be identical, but both of you need to post for grading purposes).
-
-*Online tutorial lab | Due by Sunday at 11:59 p.m.*
-* [Advanced data journalism with spreadsheets (pivot tables)](https://www.youtube.com/watch?v=pH1o89-ARmI&feature=youtu.be).
-  * Follow along with the exercise step-by-step.
-  * Either download the data directly from the Washington Post opioid files website, as I did.  Or, if you have trouble with that, [download it from here](labs/lab_02/arcos-wv-logan-54045-itemized.tsv).
-  * Modify the spreadsheet as I instruct in the video.  Note that you will have to create three pivot tables on your own.
-  * Upload a link to your completed Google Sheet workbook to the [ELMS assignment](https://umd.instructure.com/courses/1268776/assignments/4987180?module_item_id=9703169).
-  * A link to the completed sheet will be posted Monday. [Link](https://docs.google.com/spreadsheets/d/1cna4usUCe3OKhOwiZ-aGpBZYt4h57fhY-bjUy2ai7Xo/edit#gid=0)
-  * Here are links mentioned in the video:
-    * [Google Drive](https://drive.google.com/drive/u/0/my-drive)
-    * [Drilling into the DEA's pain pill database | Washington Post](https://www.washingtonpost.com/graphics/2019/investigations/dea-pain-pill-database/?noredirect=on)
-* Optional, if you feel like you need additional help: [DataCamp Pivot Tables with Spreadsheets](https://www.datacamp.com/courses/pivot-tables-with-spreadsheets)
-
-*Readings for Homework*
-* [Bussed out: How America moves its homeless | Guardian](https://www.theguardian.com/us-news/ng-interactive/2017/dec/20/bussed-out-america-moves-homeless-people-country-study)
-* [38 Excuses](https://www.poynter.org/archive/2002/the-top-38-excuses-government-agencies-give-for-not-being-able-to-fulfill-your-data-request/)
-* [How an epic legal battle brought a secret drug database to light](https://www.washingtonpost.com/health/how-an-epic-legal-battle-brought-a-secret-drug-database-to-light/2019/08/02/3bc594ce-b3d4-11e9-951e-de024209545d_story.html)
-
-*Forum Posts | Due by Sunday at 11:59 p.m.*
-* [Forum Post 1: Update on reporting done for data acquisition project](https://umd.instructure.com/courses/1268776/discussion_topics/3717116).
-* [Forum Post 2: Post on Bussed Out](https://umd.instructure.com/courses/1268776/discussion_topics/3717138). In 200 words, summarize the major findings of the Guardian's Bussed out story. Explain how the data they acquired served as the foundation for the story.  
-* [Forum Post 3: Getting hidden data](https://umd.instructure.com/courses/1268776/discussion_topics/3717151). There's lots of data available on the web.  But the truly good stuff, the data that will help you tell stories no one else has told, is only available with a fight. In 150 words, summarize how the Washington Post helped bring the ARCOS data to light. Then read the "38 excuses" post from Poynter, common responses from government officials for people seeking public records. I guarantee someone will tell you one of these things as you seek data for the data acquisition project. Pick an excuse and a sample response you like, and explain why you think that sample response is likely to be effective in less than 100 words.
-
-
-
-
-
-
-
+* Data acquisition project | Forum post with update on reporting and link to Google spreadsheet contact log. DO NOT WAIT UNTIL FRIDAY TO START REPORTING. [ELMS link](https://umd.instructure.com/courses/1278056/discussion_topics/3818893?module_item_id=9855931)
+* Story discussion project | Forum post. With your partner, skim stories, pick four that look interesting.  Collectively rank the four in order of preference. Both of you post this ranking on the forum (should be identical, but both of you need to post for grading purposes). [ELMS link](https://umd.instructure.com/courses/1278056/discussion_topics/3826329?module_item_id=9865825)
 
 #### Week 3 - Feb. 11
 *Tuesday Class*
