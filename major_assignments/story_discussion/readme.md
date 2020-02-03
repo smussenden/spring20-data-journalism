@@ -1,6 +1,6 @@
 # Story discussion project
 
-This project will help you and your classmates understand how journalists use data to find and tell compelling, meaningful stories. It is worth 5 percent of your grade.
+This project will help you and your classmates understand how journalists use data to find and tell compelling, meaningful stories. It is worth 10 percent of your grade.
 
 ## How this works  
 
@@ -28,60 +28,107 @@ Each week, a rotating team of two students will be assigned to do a deep dive on
 
 Grades will be assigned as follows.
 
-* Memo - 50 percent
-* Slide deck - 5 percent
-* Presentation - 15 percent
+* Memo - 35 percent
+* Slide deck - 10 percent
+* Presentation - 25 percent
 * Discussion lead - 15 percent  
 * Active discussion participant in weeks you aren't presenting - 15 percent
-* Extra Credit - 5 percent.  Talk with the reporter/data journalists and find out how they got the idea to do the story, and how reporting contributed to the analysis.
+* Extra Credit - 5 percent.  Talk with a reporter or data journalist to find out how they got the idea to do the story, and how reporting contributed to the analysis.
 
-## Stories and assignments
+## Partners and Story Assignments
 
-* [Water’s Edge](https://www.reuters.com/investigates/special-report/waters-edge-the-crisis-of-rising-sea-levels/)
-* [The Echo Chamber](https://www.reuters.com/investigates/special-report/scotus/)
-* [Failure factories](https://projects.tampabay.com/projects/2015/investigations/pinellas-failure-factories/)
-* [License to betray](http://doctors.ajc.com/part_1_license_to_betray/)
-* [The Tax Divide](http://apps.chicagotribune.com/news/watchdog/cook-county-property-tax-divide/assessments.html)
-* [How the Bankruptcy System Is Failing Black Americans](https://features.propublica.org/bankruptcy-inequality/bankruptcy-failing-black-americans-debt-chapter-13/)
-* [In the Dark](https://www.apmreports.org/story/2018/06/12/in-the-dark-s2e8)
+You will work in teams of two.  If you have someone you want to work with, you are welcome to pair up.  If not, I will assigned partners based on random draw.  
+
+You and your partner will skim through the stories and and post your top four choices, in order of preference, on a forum post. I'll then assign you a story, attempting to give everyone one of their top choices.
+
+Everyone's materials will be due at the same time.  Presentations dates will be assigned at random.      
+
+## Deadlines and Key Due Dates
+
+* **In class on Tuesday, Feb. 4** | Story discussion project introduced. Partners selected or assigned.
+* **Before Sunday, Feb. 9 at 11:59 p.m.** | Forum Post 1 | With your partner, skim stories, pick four that look interesting.  Collectively rank the four in order of preference. Both of you post this ranking on the forum (should be identical, but both of you need to post for grading purposes).
+* **In class on Tuesday, Feb. 11** | Story assignments will be given out.  
+* **Before Sunday, Mar. 1 at 11:59 p.m.** | Forum Post 2 | Post links to your completed memo (as a Google Docs link), Slide deck (as a Google Slides link), Discussion questions (as a Google Docs link).  
+* **In class Presentations:**
+  * Tuesday, Mar. 3 (2 presentations)
+  * Tuesday, Mar. 10
+  * Tuesday, Mar. 24
+  * Tuesday, Mar. 31
+  * Tuesday, Apr. 7
+  * Tuesday, Apr. 21
+  * Tuesday, Apr. 28
+  * Tuesday, May. 5
+
+## Potential Stories
+
+There are several options to choose from, across multiple topics.   
+
+### Business
+
+* [Open-Government Laws Fuel Hedge-Fund Profits | Wall Street Journal](https://www.wsj.com/articles/opengovernment-laws-fuel-hedgefund-profits-1379905298?tesla=y)
 * [Hundreds of People Made Gifts of Stock With Great Timing ](https://www.wsj.com/articles/hundreds-of-people-made-gifts-of-stock-with-great-timing-1513881239)
-* [Toxic City: Sick Schools](https://www.inquirer.com/news/inq/lead-paint-poison-children-asbestos-mold-schools-philadelphia-toxic-city-20180503.html)
-* [Code Red: Baltimore's Climate Divide](https://cnsmaryland.org/interactives/summer-2019/code-red/index.html)
-* [Ahead of the Fire](https://www.azcentral.com/in-depth/news/local/arizona-wildfires/2019/07/22/wildfire-risks-more-than-500-spots-have-greater-hazard-than-paradise/1434502001/)
-* [Hidden Injustice](https://www.reuters.com/investigates/section/usa-courts-secrecy/)
-* [Hurricane Maria's Dead](https://hurricanemariasdead.com/)
-* [Cops among Florida's worst speeders, Sun Sentinel investigation finds](https://www.sun-sentinel.com/local/fl-speeding-cops-20120211-story.html)
-* [Buyouts Won’t Be the Answer for Many Frequent Flooding Victims | ProPublica | November 2017](https://features.propublica.org/houston-buyouts/hurricane-harvey-home-buyouts-harris-county/)
-* [Bussed Out: How America moves its homeless | Guardian US | December 2017](https://www.theguardian.com/us-news/ng-interactive/2017/dec/20/bussed-out-america-moves-homeless-people-country-study)
+
+### Climate, Environment, Disasters
+
+* [2°C: Beyond the limit](https://www.washingtonpost.com/graphics/2019/national/climate-environment/climate-change-world/)
 * [The thousands of U.S. locales where lead poisoning is worse than in Flint | Reuters | December 2016](https://www.reuters.com/investigates/special-report/usa-lead-testing/)
-* [Florida’s broken sentencing system | (Sarasota) Herald Tribune | December 2016 ](http://projects.heraldtribune.com/bias/sentencing/)
-* [Fines Slashed In Grain Bin Entrapment Deaths | NPR and CPI | March 2013](https://www.npr.org/2013/03/26/174828849/fines-slashed-in-grain-bin-entrapment-deaths). ([The data](http://apps.npr.org/buried-in-grain/))
-* [Explorer Has Higher Rate of Tire Accidents | Washington Post | October 2000](https://www.washingtonpost.com/archive/politics/2000/10/09/explorer-has-higher-rate-of-tire-accidents/0de9382a-2159-424b-8c5a-704a7b7fd982/?utm_term=.d48466608e9b)
-* [The Color of Debt: How Collection Suits Squeeze Black Neighborhoods | ProPublica | October 2015](https://www.propublica.org/article/debt-collection-lawsuits-squeeze-black-neighborhoods)
+* [Hurricane Maria's Dead](https://hurricanemariasdead.com/)
+* [Ahead of the Fire](https://www.azcentral.com/in-depth/news/local/arizona-wildfires/2019/07/22/wildfire-risks-more-than-500-spots-have-greater-hazard-than-paradise/1434502001/)
+* [Buyouts Won’t Be the Answer for Many Frequent Flooding Victims | ProPublica | November 2017](https://features.propublica.org/houston-buyouts/hurricane-harvey-home-buyouts-harris-county/)
+* [Water’s Edge](https://www.reuters.com/investigates/special-report/waters-edge-the-crisis-of-rising-sea-levels/)
+
+
+### Courts
+
+* [The Echo Chamber](https://www.reuters.com/investigates/special-report/scotus/)
+* [How the Bankruptcy System Is Failing Black Americans](https://features.propublica.org/bankruptcy-inequality/bankruptcy-failing-black-americans-debt-chapter-13/)
+* [Hidden Injustice](https://www.reuters.com/investigates/section/usa-courts-secrecy/)
+* [In the Dark](https://www.apmreports.org/story/2018/06/12/in-the-dark-s2e8)
+
+### Criminal Justice
+
+* [Machine Bias | ProPublica](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing) | No tipsheet
+* [Till Death Do Us Part | Post and Courier](http://postandcourier.com/app/till-death/partone.html) | No tipsheet
+* [The NYPD Is Kicking People Out of Their Homes, Even If They Haven’t Committed a Crime. And it’s happening almost exclusively in minority neighborhoods](https://www.propublica.org/article/nypd-nuisance-abatement-evictions)
+* [Where killings go unsolved](https://www.washingtonpost.com/graphics/2018/investigations/where-murders-go-unsolved/?noredirect=on)
+* [Presidential Pardons Heavily Favor Whites](https://www.propublica.org/article/shades-of-mercy-presidential-forgiveness-heavily-favors-whites)
 * [The Disproportionate Risks of Driving While Black | New York Times | October 2015](https://www.nytimes.com/2015/10/25/us/racial-disparity-traffic-stops-driving-black.html)
-* [Docs on Pharma Payroll Have Blemished Records, Limited Credentials | ProPublica | October 2010](https://www.propublica.org/article/dollars-to-doctors-physician-disciplinary-records)
-* [A $72-million apartment project. Top politicians. Unlikely donors. | LA Times | October 2016](http://www.latimes.com/projects/la-me-seabreeze/)
 * [Shoot to Kill: Why Baltimore is one of the most lethal cities in the U.S. | Baltimore Sun | September 2016](http://data.baltimoresun.com/news/shoot-to-kill/)
-* [Wilmington, Delaware, leads U.S. in teen shootings | News Journal/USA Today | September 2017 ](https://www.usatoday.com/story/news/2017/09/08/wilmington-delaware-leads-u-s-teen-shootings/619458001/)
-* [High-speed police chases have killed thousands of innocent bystanders | USA Today | July 2015](https://www.usatoday.com/story/news/2015/07/30/police-pursuits-fatal-injuries/30187827/)
-* [Unarmed and Shot in the Back | Atlanta Journal-Constitution | 2016 ](http://investigations.myajc.com/overtheline/ga-police-shootings/)
+* [The Serial Killer Detector | New Yorker](https://www.newyorker.com/magazine/2017/11/27/the-serial-killer-detector) and [MurderData.org](http://www.murderdata.org/)
+
+### Education
+
+* [Broken discipline tracking systems let teachers flee troubled pasts | USA Today](https://www.usatoday.com/story/news/2016/02/14/broken-discipline-tracking-system-lets-teachers-with-misconduct-records-back-in-classroom/79999634/)
+* [Failure factories](https://projects.tampabay.com/projects/2015/investigations/pinellas-failure-factories/)
+* [Toxic City: Sick Schools](https://www.inquirer.com/news/inq/lead-paint-poison-children-asbestos-mold-schools-philadelphia-toxic-city-20180503.html)
+
+### Health and Mental Health
+
+* [License to betray](http://doctors.ajc.com/part_1_license_to_betray/)
+* [Insane. Invisible. In danger. | Tampa Bay Times](https://projects.tampabay.com/projects/2015/investigations/florida-mental-health-hospitals/cuts/)
+* [Advanced Black Lung Cases Surge In Appalachia](https://www.npr.org/2016/12/15/505577680/advanced-black-lung-cases-surge-in-appalachia)
+* [Pharmacies miss half of dangerous drug combinations](https://www.chicagotribune.com/investigations/ct-drug-interactions-pharmacy-met-20161214-story.html and https://www.chicagotribune.com/investigations/ct-drug-interactions-skin-reaction-met-20160209-story.html)
+* [Heartbroken](https://projects.tampabay.com/projects/2018/investigations/heartbroken/all-childrens-heart-institute/)
+* [Lost Mothers | ProPublica and NPR](https://www.propublica.org/article/die-in-childbirth-maternal-death-rate-health-care-system)
+* [Docs on Pharma Payroll Have Blemished Records, Limited Credentials | ProPublica | October 2010](https://www.propublica.org/article/dollars-to-doctors-physician-disciplinary-records)
+* [High volume, big dollars, rising tension | Seattle Times](https://projects.seattletimes.com/2017/quantity-of-care/hospital/)
+
+### Housing
+
+* [Keep Out](https://www.revealnews.org/article/for-people-of-color-banks-are-shutting-the-door-to-homeownership/ https://www.revealnews.org/article/gentrification-became-low-income-lending-laws-unintended-consequence/)
+* [The Tax Divide](http://apps.chicagotribune.com/news/watchdog/cook-county-property-tax-divide/assessments.html)
+* [Bussed Out: How America moves its homeless | Guardian US | December 2017](https://www.theguardian.com/us-news/ng-interactive/2017/dec/20/bussed-out-america-moves-homeless-people-country-study)
+* [The Color of Debt: How Collection Suits Squeeze Black Neighborhoods | ProPublica | October 2015](https://www.propublica.org/article/debt-collection-lawsuits-squeeze-black-neighborhoods)
+
+### Law Enforcement
+
+* [Cops among Florida's worst speeders, Sun Sentinel investigation finds](https://www.sun-sentinel.com/local/fl-speeding-cops-20120211-story.html)
+* [The Force Report](https://force.nj.com/)
+* [We Trained A Computer To Search For Hidden Spy Planes. This Is What It Found. | BuzzFeed ](https://www.buzzfeednews.com/article/peteraldhous/hidden-spy-planes)
+
+### Sports
+* [Houston Astros Sign Stealing Scandal](http://signstealingscandal.com/) and [The Athletic story](https://theathletic.com/1573075/2020/01/31/does-electronic-sign-stealing-work-the-astros-numbers-are-eye-popping/)
 * [The Tennis Racket | BuzzFeed.News | January 2016](https://www.buzzfeednews.com/article/heidiblake/the-tennis-racket)
 
-
-
-This project will give you a chance to go through the process of analyzing a complex database on your own in order to discover newsworthy information.
-
-## The data
-
-You will work with the DEA's ARCOS database, using the slice released by the Washington Post that contains detailed information on hydrocodone and oxycodone shipments between 2006 and 2012.  
-
-To obtain the data, you will work with the ARCOS R package produced by the Washington Post.  You will also be required to bring additional data to bear on this question.
-
-## Your motivation
-
-You should approach this assignment through one of three lenses.  The data has just been released by the Washington Post, and you should approach this project as:
-
-* A reporter for a local news organization, primarily interested in using the data to find trends and examples that affect one specific area (a county or group of counties), and then putting what you find in state and national context.   
-* A reporter for a national news organization, interested in using the data to describe broad nationwide trend, and then finding specific locations and examples that are emblematic of that trend.
-
-In both cases, you are interested in using your analysis as the foundation for a specific, newsworthy story angle (or angles) that has not been reported by another news organization.  Your story should shed some light on how free-flowing sales of prescription opioids helped drive the opioid crisis in the United States.    
+### Technology
+* [The Follower Factory](https://www.nytimes.com/interactive/2018/01/27/technology/social-media-bots.html)

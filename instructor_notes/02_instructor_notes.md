@@ -21,7 +21,8 @@
 
 
 #### Questions ABOUT Lab
-* Questions about the lab you did two weeks ago? Anything people didn't understand? I'll be walking around and you can ask.  
+* Questions about the lab you did two weeks ago? Anything people didn't understand? I'll be walking around and you can ask.
+* Link to final sheet  
 * This week's lab will be posted later today.
 
 #### Post Opioid Story.

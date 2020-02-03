@@ -70,10 +70,10 @@ The tutorials were written using these specific software programs, so if you use
 ### Grading
 
 * Participation - 5%
-* Story discussion lead - 5% - teams of two will present and lead discussion on a data journalism story.
+* Story discussion lead - 10% - teams of two will present and lead discussion on a data journalism story.
 * Data Acquisition Project - 20% - a project where you will learn to get data out of (often) reluctant government.
 * Data Analysis Project - 30% - a project where you will learn to do complex, journalistic data analysis.
-* Homework and In-Class Lab Assignments - 40% (Not Turned In (0)/Unsatisfactory (1)/Satisfactory(2))
+* Homework and In-Class Lab Assignments - 35% (Not Turned In (0)/Unsatisfactory (1)/Satisfactory(2))
 * Note: there is no final exam in this course.
 
 Minus and plus grading will be assessed as follows:
@@ -154,6 +154,7 @@ Sean Mussenden in the data editor for the Howard Center for Investigative Journa
   * [76 billion opioid pills: Newly released federal data unmasks the epidemic | Washington Post](https://www.washingtonpost.com/investigations/76-billion-opioid-pills-newly-released-federal-data-unmasks-the-epidemic/2019/07/16/5f29fd62-a73e-11e9-86dd-d7f0e60391e9_story.html)
   * [The Post released the DEA’s data on pain pills. Here’s what local journalists are using it for](https://www.washingtonpost.com/national/2019/08/12/post-released-deas-data-pain-pills-heres-what-local-journalists-are-using-it/)
 * Optional lessons if you are struggling with the tutorial and feel like you need additional help with basics: [DataCamp Spreadsheet Basics](https://www.datacamp.com/courses/spreadsheet-basics), [Data Analysis with Spreadsheets](https://www.datacamp.com/courses/data-analysis-with-spreadsheets).
+* Link to completed spreadsheet to double check your answers and forumlas.  [Link](https://docs.google.com/spreadsheets/d/1LeyQYLf8ybXPFabYRNTYYFex1zlsMBIHz1QPlcgqwGo/edit?usp=sharing).  
 
 *Readings (and a Podcast) for Homework | Complete by Sunday at 11:59 p.m.*
 * Opioid Data Material: [76 billion opioid pills: Newly released federal data unmasks the epidemic | Washington Post](https://www.washingtonpost.com/investigations/76-billion-opioid-pills-newly-released-federal-data-unmasks-the-epidemic/2019/07/16/5f29fd62-a73e-11e9-86dd-d7f0e60391e9_story.html) and [Scott Higham Interview | Fresh Air](https://www.npr.org/sections/health-shots/2019/08/22/753114950/tales-of-corporate-painkiller-pushing-the-death-rates-just-soared)
@@ -169,15 +170,25 @@ Sean Mussenden in the data editor for the Howard Center for Investigative Journa
 * [Forum Post 3](https://umd.instructure.com/courses/1278056/discussion_topics/3818892): The boundaries of what qualifies as "data journalism" are not easily defined. Read "Why Journalists Should Use Data" and "Why Data Journalism is Important".  In 200 words or less, write your own preferred definition, why you are interested in learning to do it, and how you hope to incorporate it in the journalism work you do going forward.
 
 #### Week 2 - Feb. 4
-*Tuesday Class*
 
+*Tuesday Class*
 * Data acquisition project assignment discussion. [Project overview](major_assignments/data_acquisition_project/readme.md)
-* In-class lab.
-TK
+* Story discussion project assignment discussion. [Project overview](major_assignments/story_discussion/readme.md)
+* In-class lab: [finding stories in opioid data, with basic spreadsheet techniques](in_class_assignments/class_01/readme.md). [ELMS Link to turn in]().
 
 *Online tutorial lab | Due by Sunday at 11:59 p.m.*
 
-TK
+* [Advanced data journalism with spreadsheets (pivot tables)](https://www.youtube.com/watch?v=pH1o89-ARmI&feature=youtu.be).
+  * Follow along with the exercise step-by-step.
+  * Either download the data directly from the Washington Post opioid files website, as I did.  Or, if you have trouble with that, [download it from here](labs/lab_02/arcos-wv-logan-54045-itemized.tsv). Note: if you download it from the Post website, the numbers may different because the Post last week updated the data to include two additional years.  
+  * Warning: this is a VERY large file.  If you have an older laptop, it might run slowly. I'd encourage you to try it on a school computer if that's an issue for you. 
+  * Modify the spreadsheet as I instruct in the video.  Note that you will have to create three pivot tables on your own.
+  * Upload a link to your completed Google Sheet workbook to the [ELMS assignment]().
+  * A link to the completed sheet will be posted Monday.
+  * Here are links mentioned in the video:
+    * [Google Drive](https://drive.google.com/drive/u/0/my-drive)
+    * [Drilling into the DEA's pain pill database | Washington Post](https://www.washingtonpost.com/graphics/2019/investigations/dea-pain-pill-database/?noredirect=on)
+* Optional, if you feel like you need additional help: [DataCamp Pivot Tables with Spreadsheets](https://www.datacamp.com/courses/pivot-tables-with-spreadsheets)
 
 *Optional study session*
 
@@ -192,8 +203,38 @@ https://www.nytimes.com/2019/11/13/technology/personaltech/data-journalism-econo
 TK
 
 *Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
-* Data acquisition project introduced
 * Data acquisition project | Forum post with update on reporting and link to Google spreadsheet contact log.
+
+
+
+
+*Online tutorial lab | Due by Sunday at 11:59 p.m.*
+* [Advanced data journalism with spreadsheets (pivot tables)](https://www.youtube.com/watch?v=pH1o89-ARmI&feature=youtu.be).
+  * Follow along with the exercise step-by-step.
+  * Either download the data directly from the Washington Post opioid files website, as I did.  Or, if you have trouble with that, [download it from here](labs/lab_02/arcos-wv-logan-54045-itemized.tsv).
+  * Modify the spreadsheet as I instruct in the video.  Note that you will have to create three pivot tables on your own.
+  * Upload a link to your completed Google Sheet workbook to the [ELMS assignment](https://umd.instructure.com/courses/1268776/assignments/4987180?module_item_id=9703169).
+  * A link to the completed sheet will be posted Monday. [Link](https://docs.google.com/spreadsheets/d/1cna4usUCe3OKhOwiZ-aGpBZYt4h57fhY-bjUy2ai7Xo/edit#gid=0)
+  * Here are links mentioned in the video:
+    * [Google Drive](https://drive.google.com/drive/u/0/my-drive)
+    * [Drilling into the DEA's pain pill database | Washington Post](https://www.washingtonpost.com/graphics/2019/investigations/dea-pain-pill-database/?noredirect=on)
+* Optional, if you feel like you need additional help: [DataCamp Pivot Tables with Spreadsheets](https://www.datacamp.com/courses/pivot-tables-with-spreadsheets)
+
+*Readings for Homework*
+* [Bussed out: How America moves its homeless | Guardian](https://www.theguardian.com/us-news/ng-interactive/2017/dec/20/bussed-out-america-moves-homeless-people-country-study)
+* [38 Excuses](https://www.poynter.org/archive/2002/the-top-38-excuses-government-agencies-give-for-not-being-able-to-fulfill-your-data-request/)
+* [How an epic legal battle brought a secret drug database to light](https://www.washingtonpost.com/health/how-an-epic-legal-battle-brought-a-secret-drug-database-to-light/2019/08/02/3bc594ce-b3d4-11e9-951e-de024209545d_story.html)
+
+*Forum Posts | Due by Sunday at 11:59 p.m.*
+* [Forum Post 1: Update on reporting done for data acquisition project](https://umd.instructure.com/courses/1268776/discussion_topics/3717116).
+* [Forum Post 2: Post on Bussed Out](https://umd.instructure.com/courses/1268776/discussion_topics/3717138). In 200 words, summarize the major findings of the Guardian's Bussed out story. Explain how the data they acquired served as the foundation for the story.  
+* [Forum Post 3: Getting hidden data](https://umd.instructure.com/courses/1268776/discussion_topics/3717151). There's lots of data available on the web.  But the truly good stuff, the data that will help you tell stories no one else has told, is only available with a fight. In 150 words, summarize how the Washington Post helped bring the ARCOS data to light. Then read the "38 excuses" post from Poynter, common responses from government officials for people seeking public records. I guarantee someone will tell you one of these things as you seek data for the data acquisition project. Pick an excuse and a sample response you like, and explain why you think that sample response is likely to be effective in less than 100 words.
+
+
+
+
+
+
 
 
 #### Week 3 - Feb. 11
@@ -328,7 +369,8 @@ Spring break, no class or study session
 #### Week 9 - Mar. 24
 *Tuesday Class*
 
-TK
+* Data analysis project introduced.
+
 
 *Online tutorial lab | Due by Sunday at 11:59 p.m.*
 
@@ -349,7 +391,6 @@ TK
 *Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
 
 * Data acquisition project | Send follow up email to check on status of request and/or quickly respond to questions from agency.
-* Data analysis project introduced.
 
 
 #### Week 10 - Mar. 31
@@ -377,7 +418,7 @@ TK
 
 * Data acquisition project | Send follow up email to check on status of request and/or quickly respond to questions from agency.
 
-#### Week 11 - Mar. 31
+#### Week 11 - Apr. 7
 *Tuesday Class*
 
 TK
@@ -402,10 +443,9 @@ TK
 
 * Data acquisition project | Slide deck for project presentation and link to Google spreadsheet contact log.
 * Data analysis project | status memo outlining your idea for analysis.  
- questions.  
 
 
-#### Week 12 - Apr. 7
+#### Week 12 - Apr. 14
 *Tuesday Class*
 
 TK
@@ -430,7 +470,7 @@ TK
 
 * Data acquisition project | Final presentations in class.
 
-#### Week 13 - Apr. 14
+#### Week 13 - Apr. 21
 *Tuesday Class*
 
 TK
@@ -454,7 +494,7 @@ TK
 *Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
 * Data analysis project | status memo outlining your idea for analysis and draft markdown file.  
 
-#### Week 14 - Apr. 21
+#### Week 14 - Apr. 28
 *Tuesday Class*
 
 TK
@@ -480,7 +520,7 @@ TK
 * Data analysis project | status memo outlining updating for analysis and updated draft markdown file.  
 
 
-#### Week 15 - Apr. 28
+#### Week 15 - May 5
 *Tuesday Class*
 
 TK
@@ -502,57 +542,31 @@ TK
 TK
 
 *Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
-
-
-
-#### Week 16 - May. 5
-*Tuesday Class*
-
-TK
-
-*Online tutorial lab | Due by Sunday at 11:59 p.m.*
-
-TK
-
-*Optional study session*
-
-Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
-
-*Readings | Complete by Sunday at 11:59 p.m.*
-
-TK
-
-*Forum Posts | Due by Sunday at 11:59 p.m.*
-
-TK
-
-*Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
-
 * Data analysis project | final story pitch memo and clean GitHub repo with final R Markdown file.   
 
-**Week 16 (During Exam Block):** "pitch your editor" presentations.  
 
-#### Week 17 - May. 12
+
+#### Week 16 - May. 12
+
 *Tuesday Class*
-
-TK
+* Data acquisition project | "pitch your editor" presentations.  
 
 *Online tutorial lab | Due by Sunday at 11:59 p.m.*
 
-TK
+None.
 
 *Optional study session*
 
-No study session this week.
+None.
 
 *Readings | Complete by Sunday at 11:59 p.m.*
 
-TK
+None.
 
 *Forum Posts | Due by Sunday at 11:59 p.m.*
 
-TK
+None.
 
 *Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
 
-* Data analysis project | "pitch your editor" presentations.
+None.

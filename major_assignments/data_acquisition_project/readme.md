@@ -89,7 +89,7 @@ The following are the description and due dates of the required elements.
 * **Before Sunday, Mar. 15 at 11:59 p.m.** | Forum Post 6 | Detail any interactions you've had with officials since filing the request in a 250-word forum posts. At a minimum, you should email them at the end of the week just checking in on status of request.  Provide a link to your contact log.  If you've received some or all of the data, post a link to it.
 * **Before Sunday, Mar. 29 at 11:59 p.m.** | Forum Post 7 | Detail any interactions you've had with officials since filing the request in a 250-word forum posts. At a minimum, you should email them at the end of the week just checking in on status of request.  Provide a link to your contact log.   If you've received some or all of the data, post a link to it.
 * **Before Sunday, Apr. 5 at 11:59 p.m.** | Provide a link to your slide deck for your project presentation, an updated contact log, and the data if you've received it.
-* **In class on Tuesday, Feb. 7** | Data acquisition project presentations.
+* **In class on Tuesday, Apr. 7** | Data acquisition project presentations.
 
 The gradings break down this way:
 
