@@ -1,11 +1,12 @@
-# Session 03 Instructor Notes
+# Session 02 Instructor Notes
 
 ### Paper to bring to class
 
 1. Session 03 Instructor Notes
 2. Pictures of students
 3. Print out of data acquisition project
-4. Printout of lab
+4. Print out of story discussion project
+5. Printout of lab
 
 ### Electronic files and links to have up
 1. Course Canvas Page
@@ -15,41 +16,60 @@
 5. Download GitHub Folder to Desktop.
 
 ### Openers
-
+* Sit down, and...
 * Pull up elms and github repo.
 * Pull up lab from last week
 
+### Questions ABOUT Lab - 5 mins
+* If you didn't give me access, I couldn't grade it.  Will go back in.
+* Overall they looked really good.  
+* If you want to see completed sheet, it's on the syllabus page.
+* Did anyone have issues, things they didn't understand.
 
-#### Questions ABOUT Lab
-* Questions about the lab you did two weeks ago? Anything people didn't understand? I'll be walking around and you can ask.
-* Link to final sheet  
-* This week's lab will be posted later today.
-
-#### Post Opioid Story.
+#### Post Opioid Story. -5 mins
 
 Pull up post story on screen.
 
+Will be working with this all semester.
+
+What is the data:
+* ARCOS DEA database, which in its raw form, has one row per shipment from a manufacturuer to a distributor to a pharmacy, with lots of details. We've been working with aggregate data so far.
+* Got from intervening in a LAWSUIT.  The good shit is not always easy to get.
+* Released to the public. Is it all opioids? No, just hydrocodone and oxycodone, most common drugs.  It affects our analysis.  
+
+
 Lots of you identified this fact:
 * "Just six companies distributed 75 percent of the pills during this period: McKesson Corp., Walgreens, Cardinal Health, AmerisourceBergen, CVS and Walmart, according to an analysis of the database by The Washington Post. Three companies manufactured 88 percent of the opioids: SpecGx, a subsidiary of Mallinckrodt; Actavis Pharma; and Par Pharmaceutical, a subsidiary of Endo Pharmaceuticals."
+* Used data analysis to say WHO is responsible for flooding the market.
 
 Lots of you identified this fact:
 * “the states that received the highest concentrations of pills per person per year were: West Virginia with 66.5, Kentucky with 63.3, South Carolina with 58, Tennessee with 57.7 and Nevada with 54.7."
+* Used data analysis to say WHO is most harmed.  Joined two data sets together to get this info.  Called an "enterprise join", will talk more.
 
 Who did it?
+* Some of you picked out Andrew Ba Tran, Steven Rich and Aaron Williams.  But the truth is
+everyone plays a role.  Understanding the data is critical, and reporting plays into it. All that context and sourcing helps understand how to use the data, what questions to ask, and how to make sense of it.  Analysis is not separate from reporting. It's part of it.
 
---Ask MAYA to read hers
-Of the people who contributed to this story, I think Steven Rich, database editor for investigations; Aaron Williams, investigative data reporter; Andrew Ba Tran, data reporter; and Christopher Rowland, business reporter played a big part in analyzing the data for this story. But I do think that all of the reporters involved had a hand in it.
+#### Review Data Acquisition project - 20 mins
 
--- LAUREN ANIKIS to read hers
-While I'm sure all three contributors worked on the analysis, I believe Steven Rich and Scott Higham did the most work with the raw numbers.  Steven Rich is a database editor, so he would work directly with the databases and analyzing the numbers.  This would probably include organizing the databases so that the journalists can understand what the numbers mean and where the main stories would be.  Higham is an investigative reporter, so he probably works to understand what the numbers mean and dive deeper into the story that the numbers make up.  Sari Horwitz is the third contributor, she is a reporter who cover the Justice Department and criminal justice.  She probably worked with the numbers after they had been analyzed, with her understanding of the Justice Department and criminal justice issues she would be able to put the numbers into proper context.
+* Pull up page with project on it.
+* Review it.
+* Go over assignments and show examples.
+* What's expected this week.  DO NOT WAIT until Friday.
 
-#### Review Data Acquisition project
---Assign
+#### Review Story Discussion project - 20 mins.
 
-#### Review lab for today
+* Overview of project.
+* Let's take 5 minutes, define partners.
+* What's expected this week.  
 
+#### Review lab for today - 
 
-#### Lab guidelines
+* You're going to build on work we learned over the weekend.
+* Working with aggregate data, not raw data, but a bit more.
+* One sheet for distrubtors to one county, for manufacturers and for pharmacies.
+
+#### Lab guidelines - last 10 minutes of class.
 
 Have open spreadsheet for Logan County WV we did for in class exercise.  
 
