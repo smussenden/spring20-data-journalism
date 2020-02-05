@@ -172,8 +172,8 @@ Sean Mussenden in the data editor for the Howard Center for Investigative Journa
 #### Week 2 - Feb. 4
 
 *Tuesday Class*
-* Data acquisition project assignment discussion. [Project overview](major_assignments/data_acquisition_project/readme.md)
-* Story discussion project assignment discussion. [Project overview](major_assignments/story_discussion/readme.md)
+* Data acquisition project discussion. [Project overview](major_assignments/data_acquisition_project/readme.md)
+* Story discussion project discussion. [Project overview](major_assignments/story_discussion/readme.md)
 * In-class lab: [finding stories in opioid data, with basic spreadsheet techniques](in_class_assignments/class_01/readme.md). [ELMS Link to turn in](https://umd.instructure.com/courses/1278056/assignments/5097060?module_item_id=9855924).
 
 *Online tutorial lab | Due by Sunday at 11:59 p.m.*
@@ -205,6 +205,7 @@ None, other than major assignment posts.
 *Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
 * Data acquisition project | Forum post with update on reporting and link to Google spreadsheet contact log. DO NOT WAIT UNTIL FRIDAY TO START REPORTING. [ELMS link](https://umd.instructure.com/courses/1278056/discussion_topics/3818893?module_item_id=9855931)
 * Story discussion project | Forum post. With your partner, skim stories, pick four that look interesting.  Collectively rank the four in order of preference. Both of you post this ranking on the forum (should be identical, but both of you need to post for grading purposes). [ELMS link](https://umd.instructure.com/courses/1278056/discussion_topics/3826329?module_item_id=9865825)
+
 
 #### Week 3 - Feb. 11
 *Tuesday Class*

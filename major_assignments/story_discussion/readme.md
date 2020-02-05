@@ -43,6 +43,17 @@ You and your partner will skim through the stories and and post your top four ch
 
 Everyone's materials will be due at the same time.  Presentations dates will be assigned at random.      
 
+The groups are as follows:
+
+* MH + SC + VD
+* PVS + LM
+* ACC + CTS
+* GT + MS
+* SM + JR
+* MX + CD
+* BW + RF
+* RM + DM
+
 ## Deadlines and Key Due Dates
 
 * **In class on Tuesday, Feb. 4** | Story discussion project introduced. Partners selected or assigned.
@@ -50,14 +61,14 @@ Everyone's materials will be due at the same time.  Presentations dates will be 
 * **In class on Tuesday, Feb. 11** | Story assignments will be given out.  
 * **Before Sunday, Mar. 1 at 11:59 p.m.** | Forum Post 2 | Post links to your completed memo (as a Google Docs link), Slide deck (as a Google Slides link), Discussion questions (as a Google Docs link).  
 * **In class Presentations:**
-  * Tuesday, Mar. 3 (2 presentations)
-  * Tuesday, Mar. 10
-  * Tuesday, Mar. 24
-  * Tuesday, Mar. 31
-  * Tuesday, Apr. 7
-  * Tuesday, Apr. 21
-  * Tuesday, Apr. 28
-  * Tuesday, May. 5
+  * Tuesday, Mar. 3 - MH + SC + VD
+  * Tuesday, Mar. 10 - PVS + LM
+  * Tuesday, Mar. 24 - ACC + CTS
+  * Tuesday, Mar. 31 - GT + MS
+  * Tuesday, Apr. 7 - SM + JR
+  * Tuesday, Apr. 21 - MX + CD
+  * Tuesday, Apr. 28 - BW + RF
+  * Tuesday, May. 5 - RM + DM
 
 ## Potential Stories
 

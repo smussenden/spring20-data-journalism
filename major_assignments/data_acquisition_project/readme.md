@@ -103,7 +103,7 @@ The gradings break down this way:
 
 You have each been assigned a single city, a small group of counties, or both a city and its surrounding county.  If you have multiple locations, you'll want to do some initial reporting, web research and phone calls to officials in each place, trying to determine if a) they keep the data we're requesting, b) if it's already been made public and c) how hard it might be to get.  We will jointly decide then to pursue one city.  
 
-If you have only one city, don't think you're getting off easy.  Most of them are very large jurisdictions that might put up additional roadblocks for repoters.
+If you have only one city, don't think you're getting off easy.  Most of them are very large jurisdictions that might put up additional roadblocks for reporters.
 
 * MX | Anchorage, Alaska
 * BW | Washington, D.C.
@@ -111,22 +111,27 @@ If you have only one city, don't think you're getting off easy.  Most of them ar
 * SC | Charles County, Maryland or St. Mary's County, Maryland
 * VD | Port St. Lucie, Florida and/or St. Lucie County, Florida
 * CD |	Fort Walton Beach, Florida and/or Destin, Florida or Okaloosa County, Florida
-* RF	| Monroe County, Florida and/or Key West, Florida
+* RF | Monroe County, Florida and/or Key West, Florida
+* RM | St. Johns County, Florida and/or St. Augustine, Florida
 * MH | New Port Richey, Florida and/or Pasco County, Florida
-* DK	| Punta Gorda, Florida and/or Charlotte County, Florida
-* SM	| St. Petersburg, Florida and/or Pinellas County, Florida
+* DK | Punta Gorda, Florida and/or Charlotte County, Florida
+* SM | St. Petersburg, Florida and/or Pinellas County, Florida
 * LM | Atlanta, Georgia
-* JR | Savannah, Georgia and/or Chatham County, Georgia
+* JR | Lexington, Kentucky and/or Fayette County, Kentucky
 * MS |	Maui County, Hawaii
-* CTS | Lexington, Kentucky and/or Fayette County, Kentucky
+* CTS | Savannah, Georgia and/or Chatham County, Georgia
 * GT	| New York City
 * PVS | Portland, Oregon
+
+
 
 ## This is a reporting project
 
 This is a reporting project, not just a research paper. You will need to figure out whether the data you're seeking has already been published online.  You will need to do web research to identify the correct agencies to contact, and the people in those agencies to contact. But it will take a lot more than web research.  You will need to call people and email them to identify who keeps the data, what it's called, what's in it, and attempt to coax it out of them -- either with a public records request or without one.
 
 We’re looking for “un-aggregated” data, not data that summarizes calls in some way.  For example, you may find a 311 data set online that has one row per type of call for a given year, summarizing the total number of calls for that type. We do not want that. When requesting data for this project, you shouldn’t immediately volunteer why you’re requesting data or share details of the project.  But during negotiations for access to data, you may find it necessary to share some details, and that’s okay.  
+
+Ideally, we'll get 5 or more years worth of data.
 
 ## Contact log
 
