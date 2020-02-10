@@ -154,7 +154,7 @@ Sean Mussenden in the data editor for the Howard Center for Investigative Journa
   * [76 billion opioid pills: Newly released federal data unmasks the epidemic | Washington Post](https://www.washingtonpost.com/investigations/76-billion-opioid-pills-newly-released-federal-data-unmasks-the-epidemic/2019/07/16/5f29fd62-a73e-11e9-86dd-d7f0e60391e9_story.html)
   * [The Post released the DEA’s data on pain pills. Here’s what local journalists are using it for](https://www.washingtonpost.com/national/2019/08/12/post-released-deas-data-pain-pills-heres-what-local-journalists-are-using-it/)
 * Optional lessons if you are struggling with the tutorial and feel like you need additional help with basics: [DataCamp Spreadsheet Basics](https://www.datacamp.com/courses/spreadsheet-basics), [Data Analysis with Spreadsheets](https://www.datacamp.com/courses/data-analysis-with-spreadsheets).
-* Link to completed spreadsheet to double check your answers and forumlas.  [Link](https://docs.google.com/spreadsheets/d/1LeyQYLf8ybXPFabYRNTYYFex1zlsMBIHz1QPlcgqwGo/edit?usp=sharing).  
+* Link to completed spreadsheet to double check your answers and formulas.  [Link](https://docs.google.com/spreadsheets/d/1LeyQYLf8ybXPFabYRNTYYFex1zlsMBIHz1QPlcgqwGo/edit?usp=sharing).  
 
 *Readings (and a Podcast) for Homework | Complete by Sunday at 11:59 p.m.*
 * Opioid Data Material: [76 billion opioid pills: Newly released federal data unmasks the epidemic | Washington Post](https://www.washingtonpost.com/investigations/76-billion-opioid-pills-newly-released-federal-data-unmasks-the-epidemic/2019/07/16/5f29fd62-a73e-11e9-86dd-d7f0e60391e9_story.html) and [Scott Higham Interview | Fresh Air](https://www.npr.org/sections/health-shots/2019/08/22/753114950/tales-of-corporate-painkiller-pushing-the-death-rates-just-soared)
@@ -174,7 +174,7 @@ Sean Mussenden in the data editor for the Howard Center for Investigative Journa
 *Tuesday Class*
 * Data acquisition project discussion. [Project overview](major_assignments/data_acquisition_project/readme.md)
 * Story discussion project discussion. [Project overview](major_assignments/story_discussion/readme.md)
-* In-class lab: [finding stories in opioid data, with basic spreadsheet techniques](in_class_assignments/class_01/readme.md). [ELMS Link to turn in](https://umd.instructure.com/courses/1278056/assignments/5097060?module_item_id=9855924).
+* In-class lab: [finding stories in opioid data, with basic spreadsheet techniques](in_class_assignments/class_01/readme.md). [ELMS Link to turn in](https://umd.instructure.com/courses/1278056/assignments/5097060?module_item_id=9855924).[Answer key for In-Class-Lab-1](https://docs.google.com/spreadsheets/d/1cna4usUCe3OKhOwiZ-aGpBZYt4h57fhY-bjUy2ai7Xo/edit?usp=sharing).
 
 *Online tutorial lab | Due by Sunday at 11:59 p.m.*
 

@@ -61,14 +61,15 @@ The groups are as follows:
 * **In class on Tuesday, Feb. 11** | Story assignments will be given out.  
 * **Before Sunday, Mar. 1 at 11:59 p.m.** | Forum Post 2 | Post links to your completed memo (as a Google Docs link), Slide deck (as a Google Slides link), Discussion questions (as a Google Docs link).  
 * **In class Presentations:**
-  * Tuesday, Mar. 3 - MH + SC + VD
-  * Tuesday, Mar. 10 - PVS + LM
-  * Tuesday, Mar. 24 - ACC + CTS
-  * Tuesday, Mar. 31 - GT + MS
-  * Tuesday, Apr. 7 - SM + JR
-  * Tuesday, Apr. 21 - MX + CD
-  * Tuesday, Apr. 28 - BW + RF
-  * Tuesday, May. 5 - RM + DM
+  * Tuesday, Mar. 3 - MH + SC + VD | [Shoot to Kill: Why Baltimore is one of the most lethal cities in the U.S. | Baltimore Sun | September 2016](http://data.baltimoresun.com/news/shoot-to-kill/)
+  * Tuesday, Mar. 10 - PVS + LM | [Pharmacies miss half of dangerous drug combinations 1](https://www.chicagotribune.com/investigations/ct-drug-interactions-pharmacy-met-20161214-story.html) and [Big data offers new way to find hidden drug interactions](https://www.chicagotribune.com/investigations/ct-drug-interactions-signal-detection-met-20160209-story.html)
+  * Tuesday, Mar. 24 - ACC + CTS | [The thousands of U.S. locales where lead poisoning is worse than in Flint | Reuters | December 2016](https://www.reuters.com/investigates/special-report/usa-lead-testing/)
+  * Tuesday, Mar. 31 - GT + MS | [Bussed Out: How America moves its homeless | Guardian US | December 2017](https://www.theguardian.com/us-news/ng-interactive/2017/dec/20/bussed-out-america-moves-homeless-people-country-study)
+  * Tuesday, Apr. 7 - SM + JR | [The Tennis Racket | BuzzFeed.News | January 2016](https://www.buzzfeednews.com/article/heidiblake/the-tennis-racket)
+  * Tuesday, Apr. 21 - MX + CD | [Failure factories](https://projects.tampabay.com/projects/2015/investigations/pinellas-failure-factories/)
+  * Tuesday, Apr. 28 - BW + RF | [The Follower Factory](https://www.nytimes.com/interactive/2018/01/27/technology/social-media-bots.html)
+  * Tuesday, May. 5 - RM + DM | [Houston Astros Sign Stealing Scandal](http://signstealingscandal.com/) and [Does Electronic Sign Stealing Work? | The Athletic](https://theathletic.com/1573075/2020/01/31/does-electronic-sign-stealing-work-the-astros-numbers-are-eye-popping/)
+
 
 ## Potential Stories
 
@@ -118,7 +119,7 @@ There are several options to choose from, across multiple topics.
 * [License to betray](http://doctors.ajc.com/part_1_license_to_betray/)
 * [Insane. Invisible. In danger. | Tampa Bay Times](https://projects.tampabay.com/projects/2015/investigations/florida-mental-health-hospitals/cuts/)
 * [Advanced Black Lung Cases Surge In Appalachia](https://www.npr.org/2016/12/15/505577680/advanced-black-lung-cases-surge-in-appalachia)
-* [Pharmacies miss half of dangerous drug combinations](https://www.chicagotribune.com/investigations/ct-drug-interactions-pharmacy-met-20161214-story.html and https://www.chicagotribune.com/investigations/ct-drug-interactions-skin-reaction-met-20160209-story.html)
+* [Pharmacies miss half of dangerous drug combinations 1](https://www.chicagotribune.com/investigations/ct-drug-interactions-pharmacy-met-20161214-story.html) and [Big data offers new way to find hidden drug interactions](https://www.chicagotribune.com/investigations/ct-drug-interactions-signal-detection-met-20160209-story.html)
 * [Heartbroken](https://projects.tampabay.com/projects/2018/investigations/heartbroken/all-childrens-heart-institute/)
 * [Lost Mothers | ProPublica and NPR](https://www.propublica.org/article/die-in-childbirth-maternal-death-rate-health-care-system)
 * [Docs on Pharma Payroll Have Blemished Records, Limited Credentials | ProPublica | October 2010](https://www.propublica.org/article/dollars-to-doctors-physician-disciplinary-records)
