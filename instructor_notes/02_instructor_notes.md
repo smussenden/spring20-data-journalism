@@ -63,7 +63,7 @@ everyone plays a role.  Understanding the data is critical, and reporting plays 
 * Let's take 5 minutes, define partners.
 * What's expected this week.  
 
-#### Review lab for today - 
+#### Review lab for today -
 
 * You're going to build on work we learned over the weekend.
 * Working with aggregate data, not raw data, but a bit more.
