@@ -220,7 +220,7 @@ None, other than major assignment posts.
   * [ARCOS](https://www.deadiversion.usdoj.gov/arcos/index.html) and [What is ARCOS?](https://www.deadiversion.usdoj.gov/arcos/faq.htm)
     * Questions: what is ARCOS' purpose? What was it designed to do? Does that differ from how journalists are using it?    
     * Question: which two entities are required to report data to ARCOS?
-  * [ARCOS Documentation](https://www.deadiversion.usdoj.gov/arcos/faq.htm)
+  * [ARCOS Documentation](https://www.deadiversion.usdoj.gov/arcos/handbook/full.pdf)
     * Question: which entities are NOT required to report data to ARCOS? Does their information still appear in the data?  
 * In-class lab: [finding stories in opioid data, with advanced spreadsheet techniques](in_class_assignments/class_02/readme.md). [ELMS Link to turn in](https://umd.instructure.com/courses/1278056/assignments/5097062). [Key coming today]()
 
