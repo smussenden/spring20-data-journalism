@@ -68,7 +68,7 @@ The groups are as follows:
   * Tuesday, Apr. 7 - SM + JR | [The Tennis Racket | BuzzFeed.News | January 2016](https://www.buzzfeednews.com/article/heidiblake/the-tennis-racket)
   * Tuesday, Apr. 21 - MX + CD | [Failure factories](https://projects.tampabay.com/projects/2015/investigations/pinellas-failure-factories/)
   * Tuesday, Apr. 28 - BW + RF | [The Follower Factory](https://www.nytimes.com/interactive/2018/01/27/technology/social-media-bots.html)
-  * Tuesday, May. 5 - RM + DM | [Houston Astros Sign Stealing Scandal](http://signstealingscandal.com/) and [Does Electronic Sign Stealing Work? | The Athletic](https://theathletic.com/1573075/2020/01/31/does-electronic-sign-stealing-work-the-astros-numbers-are-eye-popping/)
+  * Tuesday, May. 5 - RM + DK | [Houston Astros Sign Stealing Scandal](http://signstealingscandal.com/) and [Does Electronic Sign Stealing Work? | The Athletic](https://theathletic.com/1573075/2020/01/31/does-electronic-sign-stealing-work-the-astros-numbers-are-eye-popping/)
 
 
 ## Potential Stories
