@@ -217,7 +217,7 @@ None, other than major assignment posts.
   * If you got anything other than a 2/2, you have until midnight WEDNESDAY to update a forum post and your contact log showing you did what was asked: looked for evidence of 311 data and call for service/911/ems data in the municipalities to which you were assigned and I'll regrade up to a max of 1.9. As I said in class last week, if you have two municipalities (i.e. a city or a county), I wanted you to make initial checks and calls last week in BOTH places. Ultimately, we'll settle on one to request data from.
   * An update is due Friday, as well.  If you're redoing your assignment from last week, you STILL must post Friday. If you haven't talked to an actual human yet, you will need to talk to an actual human.  Telling me you left one phone message and no one called you back is not enough!  You are journalists! Move heaven and earth to get someone on the phone.  Don't let them ignore you, because they will, if you let them.
 * Discussion: understanding a database through documentation.  A key step in understanding how to use it responsibly.
-  * [ARCOS](https://www.deadiversion.usdoj.gov/arcos/index.html) and [What is ARCOS?](https://www.deadiversion.usdoj.gov/arcos/faq.htm) and
+  * [ARCOS](https://www.deadiversion.usdoj.gov/arcos/index.html) and [What is ARCOS?](https://www.deadiversion.usdoj.gov/arcos/faq.htm)
     * Questions: what is ARCOS' purpose? What was it designed to do? Does that differ from how journalists are using it?    
     * Question: which two entities are required to report data to ARCOS?
   * [ARCOS Documentation](https://www.deadiversion.usdoj.gov/arcos/faq.htm)
