@@ -210,19 +210,44 @@ None, other than major assignment posts.
 #### Week 3 - Feb. 11
 *Tuesday Class*
 
-TK
+* Notes: study session will be offered both Wednesday and Thursday during same class hours this week, in the Howard Center.  I have an unavoidable conflict on Friday. If you can't make either of those times, let's set something else up.    
+* Discussion: story discussion assignments and due dates.
+  * [Assignments and presentation dates](major_assignments/story_discussion/readme.md)
+* Discussion: data acquisition project clarification.
+  * If you got anything other than a 2/2, you have until midnight WEDNESDAY to update a forum post and your contact log showing you did what was asked: looked for evidence of 311 data and call for service/911/ems data in the municipalities to which you were assigned and I'll regrade up to a max of 1.85. As I said in class last week, if you have two municipalities (i.e. a city or a county), I wanted you to make initial checks and calls last week in BOTH places. Ultimately, we'll settle on one to request data from.
+  * An update is due Friday, as well.  If you're redoing your assignment from last week, you STILL must post Friday. If you haven't talked to an actual human yet, you will need to talk to an actual human.  Telling me you left one phone message and no one called you back is not enough!  You are journalists! Move heaven and earth to get someone on the phone.  Don't let them ignore you, because they will, if you let them.
+* Discussion: understanding a database through documentation.  A key step in understanding how to use it responsibly.
+  * [ARCOS](https://www.deadiversion.usdoj.gov/arcos/index.html) and [What is ARCOS?](https://www.deadiversion.usdoj.gov/arcos/faq.htm) and
+    * Questions: what is ARCOS' purpose? What was it designed to do? Does that differ from how journalists are using it?    
+    * Question: which two entities are required to report data to ARCOS?
+  * [ARCOS Documentation](https://www.deadiversion.usdoj.gov/arcos/faq.htm)
+    * Question: which entities are NOT required to report data to ARCOS? Does their information still appear in the data?  
+* In-class lab: [finding stories in opioid data, with advanced spreadsheet techniques](in_class_assignments/class_02/readme.md). [ELMS Link to turn in](https://umd.instructure.com/courses/1278056/assignments/5097062). [Key coming today]()
 
 *Online tutorial lab | Due by Sunday at 11:59 p.m.*
 
-TK
+* Data Analysis in R (Setting up the environment; R markdown files; Loading packages; Loading data; Tidyverse; basic functions)
+  * Install R and RStudio. [Install R](https://cloud.r-project.org/). [Install RStudio](https://www.rstudio.com/products/rstudio/download/). [Watch Installation Video if you need help](https://www.youtube.com/watch?v=5Y0lMkLO6Ck&feature=youtu.be).  If you're doing this on a college computer, you don't have to install R and R studio.  This is only for your local machine.
+  * [Download package of files you'll need to your local machine and unzip](labs/lab_03/intro_to_r.zip).
+  * [Watch lab video and follow along with step-by-step instructions](https://www.youtube.com/watch?v=eGZnX4yZ-Tw).
+  * The first thing it will have you do is open intro_to_r.Rmd file in R Studio.
+  * Listen and watch video, and follow along intro_to_r.Rmd file.  Modify code or write new code where needed.
+  * Submit edited intro_to_r.Rmd file and intro_to_r.html file to ELMS assignment when done. [Link](https://umd.instructure.com/courses/1268776/assignments/4990506?module_item_id=9707865)  
+* Optional, if you feel like you need additional help: [DataCamp, Introduction to the Tidyverse](https://www.datacamp.com/courses/introduction-to-the-tidyverse)
+
 
 *Optional study session*
 
-Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
+Change just for this week: study sessions offered Wednesday and Thursday during regular class time, but up in Howard Center.
 
 *Readings | Complete by Sunday at 11:59 p.m.*
+* [The Top 38 Excuses Government Agencies Give for Not Being Able to Fulfill Your Data Request | Poynter](https://www.poynter.org/archive/2002/the-top-38-excuses-government-agencies-give-for-not-being-able-to-fulfill-your-data-request/)
+* [How an epic legal battle brought a secret drug database to light | Washington Post](https://www.washingtonpost.com/health/how-an-epic-legal-battle-brought-a-secret-drug-database-to-light/2019/08/02/3bc594ce-b3d4-11e9-951e-de024209545d_story.html)
 
-TK
+*Forum Posts | Due by Sunday at 11:59 p.m.*
+* [Forum Post 1: Getting hidden data](https://umd.instructure.com/courses/1268776/discussion_topics/3717151). There's lots of data available on the web.  But the truly good stuff, the data that will help you tell stories no one else has told, is only available with a fight. In 150 words, summarize how the Washington Post helped bring the ARCOS data to light. This is obviously an extreme example, but it's a good object lesson in the importance of using reporting and knowledge of the legal system to get important data.
+
+* [Forum Post 2: 38 Excuses](https://umd.instructure.com/courses/1278056/discussion_topics/3818894?module_item_id=9871275) Read the "38 excuses" post from Poynter, common responses from government officials for people seeking public records. I guarantee someone will tell you one of these things as you seek data for the data acquisition project. Pick an excuse and a sample response you like, and explain why you think that sample response is likely to be effective in less than 100 words.  If you've already heard an excuse in the course of your reporting for the acquisition project, please tell us that and select that excuse.  
 
 *Forum Posts | Due by Sunday at 11:59 p.m.*
 
@@ -230,7 +255,7 @@ TK
 
 *Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
 
-* Data acquisition project | Forum post with update on reporting and link to Google spreadsheet contact log.
+* Data acquisition project | Forum post with update on reporting and link to Google spreadsheet contact log. [ELMS link](https://umd.instructure.com/courses/1278056/discussion_topics/3818896)
 
 #### Week 4 - Feb. 18
 *Tuesday Class*
@@ -281,11 +306,12 @@ TK
 *Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
 
 * Data acquisition project | Draft of public records request due by Sunday and link to Google spreadsheet contact log.  
+* Story Discussion Project | Forum Post 2 | Post links to your completed memo (as a Google Docs link), Slide deck (as a Google Slides link), Discussion questions (as a Google Docs link).  
 
 #### Week 6 - Mar. 3
 *Tuesday Class*
 
-TK
+* Story Discussion | MH + SC + VD | [Shoot to Kill: Why Baltimore is one of the most lethal cities in the U.S. | Baltimore Sun | September 2016](http://data.baltimoresun.com/news/shoot-to-kill/)
 
 *Online tutorial lab | Due by Sunday at 11:59 p.m.*
 
@@ -310,7 +336,7 @@ TK
 #### Week 7 - Mar. 10
 *Tuesday Class*
 
-TK
+* Story Discussion - PVS + LM | [Pharmacies miss half of dangerous drug combinations 1](https://www.chicagotribune.com/investigations/ct-drug-interactions-pharmacy-met-20161214-story.html) and [Big data offers new way to find hidden drug interactions](https://www.chicagotribune.com/investigations/ct-drug-interactions-signal-detection-met-20160209-story.html)
 
 *Online tutorial lab | Due by Sunday at 11:59 p.m.*
 
@@ -340,6 +366,7 @@ Spring break, no class or study session
 *Tuesday Class*
 
 * Data analysis project introduced.
+* Story Discussion | [The thousands of U.S. locales where lead poisoning is worse than in Flint | Reuters | December 2016](https://www.reuters.com/investigates/special-report/usa-lead-testing/)
 
 
 *Online tutorial lab | Due by Sunday at 11:59 p.m.*
@@ -366,7 +393,7 @@ TK
 #### Week 10 - Mar. 31
 *Tuesday Class*
 
-TK
+* Story Discussion | GT + MS | [Bussed Out: How America moves its homeless | Guardian US | December 2017](https://www.theguardian.com/us-news/ng-interactive/2017/dec/20/bussed-out-america-moves-homeless-people-country-study)
 
 *Online tutorial lab | Due by Sunday at 11:59 p.m.*
 
@@ -388,10 +415,11 @@ TK
 
 * Data acquisition project | Send follow up email to check on status of request and/or quickly respond to questions from agency.
 
+
 #### Week 11 - Apr. 7
 *Tuesday Class*
 
-TK
+* Story Discussion | SM + JR | [The Tennis Racket | BuzzFeed.News | January 2016](https://www.buzzfeednews.com/article/heidiblake/the-tennis-racket)
 
 *Online tutorial lab | Due by Sunday at 11:59 p.m.*
 
@@ -418,7 +446,8 @@ TK
 #### Week 12 - Apr. 14
 *Tuesday Class*
 
-TK
+* Data acquisition project | Final presentations in class.
+
 
 *Online tutorial lab | Due by Sunday at 11:59 p.m.*
 
@@ -438,12 +467,11 @@ TK
 
 *Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
 
-* Data acquisition project | Final presentations in class.
 
 #### Week 13 - Apr. 21
 *Tuesday Class*
 
-TK
+* Story Discussion | MX + CD | [Failure factories](https://projects.tampabay.com/projects/2015/investigations/pinellas-failure-factories/)
 
 *Online tutorial lab | Due by Sunday at 11:59 p.m.*
 
@@ -467,7 +495,7 @@ TK
 #### Week 14 - Apr. 28
 *Tuesday Class*
 
-TK
+* Story Discussion | BW + RF | [The Follower Factory](https://www.nytimes.com/interactive/2018/01/27/technology/social-media-bots.html)
 
 *Online tutorial lab | Due by Sunday at 11:59 p.m.*
 
@@ -493,7 +521,8 @@ TK
 #### Week 15 - May 5
 *Tuesday Class*
 
-TK
+* Story Discussion | RM + DM | [Houston Astros Sign Stealing Scandal](http://signstealingscandal.com/) and [Does Electronic Sign Stealing Work? | The Athletic](https://theathletic.com/1573075/2020/01/31/does-electronic-sign-stealing-work-the-astros-numbers-are-eye-popping/)
+
 
 *Online tutorial lab | Due by Sunday at 11:59 p.m.*
 

@@ -10,7 +10,7 @@ We'll also learn a bit about using a data dictionary (sometimes also called a re
 
 1.  Download the "ARCOS Registrant Handbook", which provides detailed information on how to interpret the data in the DEA's ARCOS database.  Most large, complex government data sets you'll ever work with will have a similar document, though they aren't all as complex as this.  You may hear less complicated versions called a "data dictionary" or "record layout." These documents are key to understanding how to analyze a given data set responsibly. [ARCOS Registrant Handbook](https://www.deadiversion.usdoj.gov/arcos/handbook/full.pdf)
 
-1.  Download raw data for Mingo County, West Virginia from the [Washington Post "Digging into the DEA's pain pill database" page](https://www.washingtonpost.com/graphics/2019/investigations/dea-pain-pill-database/).  If you're having trouble, the data is available [in this folder](data/).
+1.  Download raw data for Mingo County, West Virginia from the [this folder](data/). Don't get from the Post site.
 
 2.  Create a new Google Sheets workbook and name it "In_Class_Assignment_02 YOUR NAME Sheet".  Set the permissions to "anyone with link can edit".  
 
@@ -24,11 +24,14 @@ We'll also learn a bit about using a data dictionary (sometimes also called a re
 
 Answer the following questions.
 
-**Unless the question notes otherwise, you must create a single pivot table to answer each group of questions.   For example, # 3 has three separate questions.  Build one pivot table to answer all three. At least one question requires you to use filters.  Label each new pivot table with the number of the question grouping.**
+**Unless the question notes otherwise, you must create a single pivot table to answer each group of questions.   For example, # 3 has three separate questions.  Build one single pivot table to answer all three. At least one question requires you to use filters.  Label each new pivot table with the number of the question grouping.**
 
 1.  What was the name of the pharmacy that received the most total pills in Mingo County, West Virginia between 2006 and 2012? Build a pivot table to answer this question.
 
-2. Pills are sent from a manufacturer ("labeler") to a distributor ("reporter") and then to a pharmacy, retailer or related business ("buyer").  In Mingo County, West Virginia between 2006 and 2012, which combo of those three (total pills from one manufacturer > to one distributor > to one pharmacy) was responsible for the largest number of pills? Name the three entities? How many total pills?
+2. Pills are sent from a manufacturer ("labeler") to a distributor ("reporter") and then to a pharmacy, retailer or related business ("buyer").  
+  * In Mingo County, West Virginia between 2006 and 2012, which combo of those three (total pills from one manufacturer > to one distributor > to one pharmacy) was responsible for the largest number of pills?
+  * Name the three entities.
+  * How many total pills sent?
 
 3. What is the "DRUG_CODE" for hydrocodone? What is the "DRUG_CODE" for oxycodone? What percentage of all pills sent to Mingo County, West Virginia were hydrocodone and what percentage were Oxycodone?
 
