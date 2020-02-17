@@ -12,7 +12,22 @@
 2. Course GitHub Page on Syllabus
 3. Slides
 
-
+* Using public records laws to get data
+  * Sometimes called Sunshine Laws or Freedom of Information Act Laws or Public Information Act laws
+  * Every state has one, but the details are different.  
+  * Different from federal FOIA, but same concept.
+  * Knowing the state law in which you're requesting is helpful.  
+  * Draft Public Records Letter via https://splc.org/lettergenerator/ OR https://www.nfoic.org/organizations/state-sample-foia-request-letters
+  * Guide to each state's public record laws https://www.muckrock.com/place/united-states-of-america/florida/ and AG Opinion http://myfloridalegal.com/webfiles.nsf/WF/MNOS-B9QQ79/$file/SunshineManual.pdf
+* What's due:
+  * Forum post: sample request letter(s).  Don't worry about Howard center address and all that stuff, but I do need info on where to send request letter.
+  * Requesting from multiple agencies? Multiple letters.
+  * Detailed information about what we're seeking.  
+    * that's why we've done all this reporting.
+    * Names of agencies.
+    * Names of database and time period.
+    * Reference phone calls with people you've talked with!
+    * Spell check and grammar. Be careful.  PROFESSIONAL.
 ### Openers
 
 #### Questions ABOUT Lab

@@ -222,7 +222,7 @@ None, other than major assignment posts.
     * Question: which two entities are required to report data to ARCOS?
   * [ARCOS Documentation](https://www.deadiversion.usdoj.gov/arcos/handbook/full.pdf)
     * Question: which entities are NOT required to report data to ARCOS? Does their information still appear in the data?  
-* In-class lab: [finding stories in opioid data, with advanced spreadsheet techniques](in_class_assignments/class_02/readme.md). [ELMS Link to turn in](https://umd.instructure.com/courses/1278056/assignments/5097062). [Key coming today]()
+* In-class lab: [finding stories in opioid data, with advanced spreadsheet techniques](in_class_assignments/class_02/readme.md). [ELMS Link to turn in](https://umd.instructure.com/courses/1278056/assignments/5097062). [Key coming today](https://docs.google.com/spreadsheets/d/12Pb_nQCmb1JHoEKpK67BvmzAiKH7vE9nofxznbMm6_k/edit#gid=0)
 
 *Online tutorial lab | Due by Sunday at 11:59 p.m.*
 
@@ -233,8 +233,8 @@ None, other than major assignment posts.
   * The first thing it will have you do is open intro_to_r.Rmd file in R Studio.
   * Listen and watch video, and follow along intro_to_r.Rmd file.  Modify code or write new code where needed.
   * Submit edited intro_to_r.Rmd file and intro_to_r.html file to ELMS assignment when done. [Link](https://umd.instructure.com/courses/1268776/assignments/4990506?module_item_id=9707865)  
-* Optional, if you feel like you need additional help: [DataCamp, Introduction to the Tidyverse](https://www.datacamp.com/courses/introduction-to-the-tidyverse)
-
+* Optional, if you feel like you need additional help: [DataCamp, Introduction to the Tidyverse](https://www.datacamp.com/courses/introduction-to-the-tidyverse).
+* Update: [link to answer key for lab](labs/lab_03/intro_to_rkey03.Rmd).
 
 *Optional study session*
 
@@ -260,23 +260,38 @@ TK
 #### Week 4 - Feb. 18
 *Tuesday Class*
 
-TK
+* Announcements
+* Last week's lab feedback
+* Discussion: how the Post got opioid data
+* Discussion: Excuses and roadblocks in data acquisition.
+* In-class lab: finding stories in opioid data, with R and the Tidyverse.
+  * [Download this ZIP file](https://github.com/smussenden/spring20-data-journalism/blob/master/in_class_assignments/class_03/class_03.zip), which contains an R Markdown document and opioid data. Open it up, put the folder on your desktop, and open the class_03.Rmd file in R Studio.
+  * Follow the instructions step-by-step.
+  * When you're finished, [upload your edited Rmd file and html file to ELMS](https://umd.instructure.com/courses/1268776/assignments/4993885)
+  * [Answer key](in_class_assignments/class_03/key_class_03.Rmd)
 
 *Online tutorial lab | Due by Sunday at 11:59 p.m.*
 
-TK
+* Data Analysis in R (Some cleaning, summarizing, creating new columns, if else, case when)
+  * [Download package of files you'll need to your local machine and unzip](labs/lab_04/lab_04.zip).
+  * [Watch lab video and follow along with step-by-step instructions](https://www.youtube.com/watch?v=qloTnltzwNQ).
+  * [Watch GitHub desktop tutorial for info on how to submit](https://www.youtube.com/watch?v=ZT91ek-JWQE)
+  * Open Lab_04.Rmd file, listen and watch video, and follow along.  Modify code or write new code where needed.
+  * Watch GitHub desktop tutorial video. Create new repo, put your lab files in it, upload GitHub LINKS, not files, to [ELMS when done](https://umd.instructure.com/courses/1268776/assignments/4993889).
+  * [Answer key](labs/lab_04/lab_04_key.Rmd)  
+* Optional, if you feel like you need additional help: [DataCamp, Introduction to the Tidyverse](https://www.datacamp.com/courses/introduction-to-the-tidyverse) and [Getting Started with GitHub Desktop](https://help.github.com/en/desktop/getting-started-with-github-desktop)
 
 *Optional study session*
 
-Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
+Held at regular time this week, Friday @ 12:00am - 1:50pm. in Howard Center.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
 
 *Readings | Complete by Sunday at 11:59 p.m.*
 
-TK
+* [In Data Journalism, Tech Matters Less Than the People](https://www.nytimes.com/2019/11/13/technology/personaltech/data-journalism-economics.html)
 
 *Forum Posts | Due by Sunday at 11:59 p.m.*
 
-TK
+* Read "In Data Journalism, Tech Matters Less Than the People". Data analysis is a huge part of New York Times' reporter Ben Casselman's job.  In 150 words, tell me what piece of technology on his desk he considers most important, why he thinks that, and how data factors into his work.
 
 *Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
 
