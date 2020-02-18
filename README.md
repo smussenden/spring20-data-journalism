@@ -267,8 +267,7 @@ TK
 * In-class lab: finding stories in opioid data, with R and the Tidyverse.
   * [Download this ZIP file](https://github.com/smussenden/spring20-data-journalism/blob/master/in_class_assignments/class_03/class_03.zip), which contains an R Markdown document and opioid data. Open it up, put the folder on your desktop, and open the class_03.Rmd file in R Studio.
   * Follow the instructions step-by-step.
-  * When you're finished, [upload your edited Rmd file and html file to ELMS](https://umd.instructure.com/courses/1268776/assignments/4993885)
-  * [Answer key](in_class_assignments/class_03/key_class_03.Rmd)
+  * When you're finished, [upload your edited Rmd file and html file to ELMS](https://umd.instructure.com/courses/1278056/assignments/5097064?module_item_id=9855940)
 
 *Online tutorial lab | Due by Sunday at 11:59 p.m.*
 
@@ -277,13 +276,12 @@ TK
   * [Watch lab video and follow along with step-by-step instructions](https://www.youtube.com/watch?v=qloTnltzwNQ).
   * [Watch GitHub desktop tutorial for info on how to submit](https://www.youtube.com/watch?v=ZT91ek-JWQE)
   * Open Lab_04.Rmd file, listen and watch video, and follow along.  Modify code or write new code where needed.
-  * Watch GitHub desktop tutorial video. Create new repo, put your lab files in it, upload GitHub LINKS, not files, to [ELMS when done](https://umd.instructure.com/courses/1268776/assignments/4993889).
-  * [Answer key](labs/lab_04/lab_04_key.Rmd)  
+  * Watch GitHub desktop tutorial video. Create new repo, put your lab files in it, upload GitHub LINKS, not files, to [ELMS when done](https://umd.instructure.com/courses/1278056/assignments/5097074?module_item_id=9855942).
 * Optional, if you feel like you need additional help: [DataCamp, Introduction to the Tidyverse](https://www.datacamp.com/courses/introduction-to-the-tidyverse) and [Getting Started with GitHub Desktop](https://help.github.com/en/desktop/getting-started-with-github-desktop)
 
 *Optional study session*
 
-Held at regular time this week, Friday @ 12:00am - 1:50pm. in Howard Center.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
+Held at regular time this week, Friday @ 12:00am - 1:50pm. in Howard Center.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.   
 
 *Readings | Complete by Sunday at 11:59 p.m.*
 
@@ -291,11 +289,11 @@ Held at regular time this week, Friday @ 12:00am - 1:50pm. in Howard Center.  If
 
 *Forum Posts | Due by Sunday at 11:59 p.m.*
 
-* Read "In Data Journalism, Tech Matters Less Than the People". Data analysis is a huge part of New York Times' reporter Ben Casselman's job.  In 150 words, tell me what piece of technology on his desk he considers most important, why he thinks that, and how data factors into his work.
+* Read "In Data Journalism, Tech Matters Less Than the People". Data analysis is a huge part of New York Times' reporter Ben Casselman's job.  In 150 words, tell me what piece of technology on his desk he considers most important, why he thinks that, and how data analysis factors into his work, relative to other elements in the reporting process. [ELMS Link](https://umd.instructure.com/courses/1278056/discussion_topics/3818897)
 
 *Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
 
-* Data acquisition project | Forum post with update on reporting and link to Google spreadsheet contact log.
+* Data acquisition project | Forum post with update on reporting and link to Google spreadsheet contact log. [ELMS Link](https://umd.instructure.com/courses/1278056/discussion_topics/3836859)
 
 #### Week 5 - Feb. 25
 *Tuesday Class*
@@ -312,11 +310,11 @@ Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make th
 
 *Readings | Complete by Sunday at 11:59 p.m.*
 
-TK
+None.
 
 *Forum Posts | Due by Sunday at 11:59 p.m.*
 
-TK
+None.
 
 *Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
 

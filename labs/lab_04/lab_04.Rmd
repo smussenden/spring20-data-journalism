@@ -15,21 +15,21 @@ knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE, paged.print=TRU
 
 ## Objective
 
-The purpose of this lab is to continue learning a journalistic approach to data analysis in R. 
+The purpose of this lab is to continue learning a journalistic approach to data analysis in R.
 
 We will continue to do things learned in previous labs:
 
 * Writing R code for data analysis and exploration in the R Studio environment, using R projects (.Rproj) and R markdown files (.Rmd).  
-* Loading, making sense of analyzing data using the Tidyverse framework of packages by selecting certain columns, sorting and filtering. 
+* Loading, making sense of analyzing data using the Tidyverse framework of packages by selecting certain columns, sorting and filtering.
 * Working with data on opioid shipments in the U.S.
-* Using documentation and additional reporting to guide and check our analysis. 
+* Using documentation and additional reporting to guide and check our analysis.
 
 Today we'll also:
 
 * Learn to do some light data cleaning by renaming column names.
 * Learn to create new columns in our data set based on information in other columns.   
 * Summarise raw data, calculating min, max, median and mean values, essentially using R to create a pivot table, like we learned in Google Sheets.
-* Learn how to integrate our project with GitHub. 
+* Learn how to integrate our project with GitHub.
 
 ## How this works, tasks, turning it in, getting help
 
@@ -37,13 +37,13 @@ This document is mostly set up for you to follow along and run code that I have 
 
 At several points throughout this document, you will see the word **Task**.  
 
-That indicates I'm expecting you to modify the file I've given you, usually by creating a codeblock and writing some custom code. 
+That indicates I'm expecting you to modify the file I've given you, usually by creating a codeblock and writing some custom code.
 
-When you are finished, you should save your R markdown file and Knit it as an HTML file. 
+When you are finished, you should save your R markdown file and Knit it as an HTML file.
 
-You should upload it to GitHub, using GitHub desktop, a process that will be explained. 
+You should upload it to GitHub, using GitHub desktop, a process that will be explained.
 
-And the links to your project is what you'll post on ELMS. 
+And the links to your project is what you'll post on ELMS.
 
 Need help?  You are welcome to do the following things:
 
@@ -54,7 +54,7 @@ Need help?  You are welcome to do the following things:
   * [Readr and Tidyr cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-import.pdf) and [Readr documentation](https://readr.tidyverse.org/) and [Tidyr documentation](https://tidyr.tidyverse.org/reference/index.html).
   * [Dplyr cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf) and [Dplyr documentation](https://dplyr.tidyverse.org/)
   * [GitHub desktop help](https://help.github.com/en/desktop/getting-started-with-github-desktop)
-* If you're really stuck, message me on ELMS. 
+* If you're really stuck, message me on ELMS.
 
 ## Setup
 
@@ -67,7 +67,7 @@ Take the following steps to set up your document:
 
 ## Load Packages
 
-We're loading two packages today: the Tidyverse, and [Janitor](https://github.com/sfirke/janitor), an excellent package for data cleaning. 
+We're loading two packages today: the Tidyverse, and [Janitor](https://github.com/sfirke/janitor), an excellent package for data cleaning.
 
 **Task**: In the code block below, load the Tidyverse family of packages and the Janitor package.  Since you've never loaded Janitor before, you'll have to install it.     
 
@@ -89,7 +89,7 @@ The data was obtained after a lengthy legal battle by the Washington Post and th
 
 There is one record (row or observation) per transaction (a shipment from a manufacturer to a distributor to a pharmacy. A data dictionary is available here: [ARCOS Registrant Handbook](https://www.deadiversion.usdoj.gov/arcos/handbook/full.pdf).
 
-**Task**: Create a code block below, and write and execute the function to load in the data of shipments to Mingo County, West Virginia and store it as an object called mingo. Write a comment describing what you are doing.  The TSV file is in the data folder. 
+**Task**: Create a code block below, and write and execute the function to load in the data of shipments to Mingo County, West Virginia and store it as an object called mingo. Write a comment describing what you are doing.  The TSV file is in the data folder.
 
 ```{r}
 
@@ -111,17 +111,17 @@ There is one record (row or observation) per transaction (a shipment from a manu
 
 ## Light Cleaning
 
-We're going to get more in-depth on data cleaning as the semester goes on.  It's a critical step, and failure to do it on messy data sets can make it hard to do analysis -- or, even worse, lead to inaccurate results. 
+We're going to get more in-depth on data cleaning as the semester goes on.  It's a critical step, and failure to do it on messy data sets can make it hard to do analysis -- or, even worse, lead to inaccurate results.
 
 You'll find the [Janitor package](https://github.com/sfirke/janitor) especially useful for cleaning.  One of my favorite things, is it takes messy column names -- inconsistent capitalization, spaces, weird characters -- and cleans them up.
 
 ```{r}
 
-# use the clean_names function in janitor to 
+# use the clean_names function in janitor to
 mingo <- clean_names(mingo)
 ```
 
-**Task**: after you execute the clean_names function, use the glimpse function to look at the results of the cleaning, and compare it to the glimpse you did before the cleaning. Notice that they're all lowercase now! 
+**Task**: after you execute the clean_names function, use the glimpse function to look at the results of the cleaning, and compare it to the glimpse you did before the cleaning. Notice that they're all lowercase now!
 
 ```{r}
 # write out glimpse to look at the results
@@ -134,9 +134,9 @@ As we saw in Google Sheets, it's helpful to create new columns based on data in 
 
 In the Tidyverse, the mutate() function [link](https://dplyr.tidyverse.org/reference/mutate.html) -- and other related functions -- allow us to do this easily.  
 
-Probably the simplest example: use mutate to simply make a copy of an existing column with a different name. 
+Probably the simplest example: use mutate to simply make a copy of an existing column with a different name.
 
-This isn't something we do that often, but it will help us understand how mutate works. 
+This isn't something we do that often, but it will help us understand how mutate works.
 
 An important note here.  In all of my examples below, I'm taking the original data set and doing something to it, and storing the results as mingo_working. In each subsequent example, I reuse the name mingo_working, meaning I'm overwriting the results each time. At this stage of my analysis, there's not really any downside to doing this.  
 
@@ -144,7 +144,7 @@ As a reminder, I generally only store a query as a new object if it's a) too big
 
 Remember that our data set has a record of a shipment from a manufacturer to a distributor to a pharmacy, with information about each entity. Unfortunately, the columns in our data set don't refer to manufacturers, distributors or pharmacies.  Instead, information about distributors is in columns tagged "reporter." Information about pharmacies (and other similar entities) is labeled "buyer." Information about the manufacturer is in the labeler or company columns.  
 
-The code below is an example of how we might fix that, using mutuate.  It says: create a new column called distributor_dea_no and populate it with the information in reporter_dea_no. 
+The code below is an example of how we might fix that, using mutuate.  It says: create a new column called distributor_dea_no and populate it with the information in reporter_dea_no.
 
 ``` {r}
 
@@ -152,7 +152,7 @@ mingo_working <- mingo %>%
   mutate(distributor_dea_no = reporter_dea_no)
 ```
 
-By default, it puts our newly created column at the end, so if we wanted to put it at the beginning, we'd combine it with a select statement. 
+By default, it puts our newly created column at the end, so if we wanted to put it at the beginning, we'd combine it with a select statement.
 
 ``` {r}
 mingo_working <- mingo %>%
@@ -182,17 +182,17 @@ Look at the fields describing the location of the pharmacies, under columns that
 
 There's a handy one in the Tidyverse called unite() [link](https://tidyr.tidyverse.org/reference/unite.html).
 
-The code below takes a first crack at creating a complete address field. 
+The code below takes a first crack at creating a complete address field.
 
-First, it selects only the columns with buyer in the name. 
+First, it selects only the columns with buyer in the name.
 
-Then it says to create a new column called buyer_address_complete, and populate it with the information in buyer_address1 and buyer_city. 
+Then it says to create a new column called buyer_address_complete, and populate it with the information in buyer_address1 and buyer_city.
 
 ``` {r}
 
 mingo_working <- mingo %>%
   select(contains("buyer")) %>%
-  unite(buyer_address_complete, buyer_address1, buyer_city, buyer_state, buyer_zip) 
+  unite(buyer_address_complete, buyer_address1, buyer_city, buyer_state, buyer_zip)
 
 ```
 
@@ -202,23 +202,23 @@ Notice that it removed the original rows.  We can add another "argument" to four
 
 mingo_working <- mingo %>%
   select(contains("buyer")) %>%
-  unite(buyer_address_complete, buyer_address1, buyer_city, buyer_state, buyer_zip, remove = 'F') 
+  unite(buyer_address_complete, buyer_address1, buyer_city, buyer_state, buyer_zip, remove = 'F')
 
 ```
 
-By default, it's putting underscores between each column.  We can change it by adding another argument, sep.  In this case, we're saying: add a space between each column. 
+By default, it's putting underscores between each column.  We can change it by adding another argument, sep.  In this case, we're saying: add a space between each column.
 
 ``` {r}
 
 mingo_working <- mingo %>%
   select(contains("buyer")) %>%
-  unite(buyer_address_complete, buyer_address1, buyer_city, buyer_state, buyer_zip, remove = 'F', sep=" ") 
+  unite(buyer_address_complete, buyer_address1, buyer_city, buyer_state, buyer_zip, remove = 'F', sep=" ")
 
 ```
 
-This still isn't ideal though.  It doesn't really look like you'd expect an address to look. 
+This still isn't ideal though.  It doesn't really look like you'd expect an address to look.
 
-Ideally, we'd have spaces between some columns and commas between others. 
+Ideally, we'd have spaces between some columns and commas between others.
 
 We can use mutate() and paste0(), which gives us more control.
 
@@ -229,7 +229,7 @@ mingo_working <- mingo %>%
 
 ```
 
-Now let's make it pretty.  I'm putting a space between some columns and a comma between others. 
+Now let's make it pretty.  I'm putting a space between some columns and a comma between others.
 
 ```{r}
 mingo_working <- mingo %>%
@@ -237,12 +237,12 @@ mingo_working <- mingo %>%
 
 ```
 
-**Task**: create a codeblock below, and create a new column that builds as complete an address as possible out of the information on the distributors in the data. 
+**Task**: create a codeblock below, and create a new column that builds as complete an address as possible out of the information on the distributors in the data.
 
 
 ## If Else and Case When
 
-We can also put different values in a newly created column, based on a value in another column. In google sheets, we did this with IF() functions.  Here, we use if_else(), in this case to classify each shipment as large or not large, depending on the number of pills. 
+We can also put different values in a newly created column, based on a value in another column. In google sheets, we did this with IF() functions.  Here, we use if_else(), in this case to classify each shipment as large or not large, depending on the number of pills.
 
 ``` {r}
 
@@ -251,7 +251,7 @@ mingo_working <- mingo %>%
 
 ```
 
-What if we want to create three categories: small, medium and large.  Well, just like in sheets, we can nest these "if" functions.  This one says classify greater than 10K pills as a large shipment, greater than 5K as a medium shipment, everything else as small. 
+What if we want to create three categories: small, medium and large.  Well, just like in sheets, we can nest these "if" functions.  This one says classify greater than 10K pills as a large shipment, greater than 5K as a medium shipment, everything else as small.
 
 ``` {r}
 
@@ -283,7 +283,7 @@ This is the R equivalent of creating pivot tables. That is to say, we group by l
 
 Here is perhaps the most simple example.  We're grouping by the name of each pharmacy in our database and counting the total number of shipments to each one.
 
-One note: I'm no longer storing these queries as a new object that needs to be viewed in a separate. By aggregating, they return tables that are typically small enough explore in the table that appears below the codeblock. 
+One note: I'm no longer storing these queries as a new object that needs to be viewed in a separate. By aggregating, they return tables that are typically small enough explore in the table that appears below the codeblock.
 
 ``` {r}
 
@@ -315,7 +315,7 @@ mingo %>%
   filter(shipments > 1000)
 ```
 
-Where you put them in the statement matters. I can also filter the raw data BEFORE I group and summarize.  In this case, I'm filtering to only look at shipments of HYDROCODONE before I group and summarize.  And I'm filtering after to look at only larger shipments.  Notice the results are a bit different than the table above. 
+Where you put them in the statement matters. I can also filter the raw data BEFORE I group and summarize.  In this case, I'm filtering to only look at shipments of HYDROCODONE before I group and summarize.  And I'm filtering after to look at only larger shipments.  Notice the results are a bit different than the table above.
 
 ```{r}
 
@@ -327,24 +327,24 @@ mingo %>%
   filter(shipments > 1000)
 ```
 
-We can do more than count - a lot more!  Here, I'm taking the count of shipments, but I'm also adding up the total number of pills in all shipments, using sum(), and sorting. 
+We can do more than count - a lot more!  Here, I'm taking the count of shipments, but I'm also adding up the total number of pills in all shipments, using sum(), and sorting.
 
 ```{r}
 mingo %>%
   group_by(buyer_name) %>%
   summarise(shipments = n(),
-            total_pills = sum(dosage_unit) 
+            total_pills = sum(dosage_unit)
             ) %>%
   arrange(desc(total_pills))
 ```
 
-Here, I'm adding a new summary stat, the average number of pills per shipment. 
+Here, I'm adding a new summary stat, the average number of pills per shipment.
 
 ```{r}
 mingo %>%
   group_by(buyer_name) %>%
   summarise(shipments = n(),
-            total_pills = sum(dosage_unit), 
+            total_pills = sum(dosage_unit),
             avg_pills_per_shipment = mean(dosage_unit)
             ) %>%
   arrange(desc(avg_pills_per_shipment))
@@ -356,7 +356,7 @@ Now I'm adding two new lines, the minimum and maximum number of pills in a singl
 mingo %>%
   group_by(buyer_name) %>%
   summarise(shipments = n(),
-            total_pills = sum(dosage_unit), 
+            total_pills = sum(dosage_unit),
             avg_pills_per_shipment = mean(dosage_unit),
             min_pills_in_shipment = min(dosage_unit),
             max_pills_in_shipment = max(dosage_unit)
@@ -366,7 +366,7 @@ mingo %>%
 
 There are many other summary stats to calculate, including some more advanced ones. The Dplyr [summarize documentation](https://dplyr.tidyverse.org/reference/summarise.html) and [cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf) help.  
 
-**Task**: copy the last codeblock above and add one line inside of your summarise function, to create a new column with the median pills per shipment. 
+**Task**: copy the last codeblock above and add one line inside of your summarise function, to create a new column with the median pills per shipment.
 
 Just as in pivot tables, you can also group by more than one row.  We may draw eroneous conclusions just grouping by pharmacy name.  Why? It's possible that two locations have the same name.  Let's group by both name and dea identification number.     
 
@@ -374,7 +374,7 @@ Just as in pivot tables, you can also group by more than one row.  We may draw e
 mingo %>%
   group_by(buyer_name, buyer_dea_no) %>%
   summarise(shipments = n(),
-            total_pills = sum(dosage_unit), 
+            total_pills = sum(dosage_unit),
             avg_pills_per_shipment = mean(dosage_unit),
             min_pills_in_shipment = min(dosage_unit),
             max_pills_in_shipment = max(dosage_unit)
@@ -383,7 +383,7 @@ mingo %>%
 
 ```
 
-Hmm.  Now we see that there are two "APPALACHIAN, REG HEALTHCARE INC, DBA MATEWAN CLINIC PHARMACY" and two "MEDICINE CABINET PHARMACY" each with a different dea number. Are there two dea numbers for each name because of an error, or because they represent different entities?  Let's add some more columns. 
+Hmm.  Now we see that there are two "APPALACHIAN, REG HEALTHCARE INC, DBA MATEWAN CLINIC PHARMACY" and two "MEDICINE CABINET PHARMACY" each with a different dea number. Are there two dea numbers for each name because of an error, or because they represent different entities?  Let's add some more columns.
 
 
 ```{r}
@@ -391,7 +391,7 @@ Hmm.  Now we see that there are two "APPALACHIAN, REG HEALTHCARE INC, DBA MATEWA
 mingo %>%
   group_by(buyer_name, buyer_dea_no, buyer_city) %>%
   summarise(shipments = n(),
-            total_pills = sum(dosage_unit), 
+            total_pills = sum(dosage_unit),
             avg_pills_per_shipment = mean(dosage_unit),
             min_pills_in_shipment = min(dosage_unit),
             max_pills_in_shipment = max(dosage_unit)
@@ -406,7 +406,7 @@ They both have the same city.  Let's add address info.
 mingo %>%
   group_by(buyer_name, buyer_dea_no, buyer_city, buyer_address1) %>%
   summarise(shipments = n(),
-            total_pills = sum(dosage_unit), 
+            total_pills = sum(dosage_unit),
             avg_pills_per_shipment = mean(dosage_unit),
             min_pills_in_shipment = min(dosage_unit),
             max_pills_in_shipment = max(dosage_unit)
@@ -416,7 +416,7 @@ mingo %>%
 
 Okay.  Appalachian has the same city and address and name, but a different dea number, off by one letter (a vs b).  The Medicine Cabinet has two different addresses, indicating, possibly, two different locations.  We'd need to do some follow up reporting to figure it out.  
 
-Generally speaking, it's better to start by grouping by more things, and then removing some step-by-step, to identify these errors. 
+Generally speaking, it's better to start by grouping by more things, and then removing some step-by-step, to identify these errors.
 
 Just as in Google Sheets, we can also rank with one of several rank functions.  dense_rank() gives us a standard ranking.  The default ordering might seem backwards.  The code below calculates the total number of shipments by buyer, and ranks them, then sorts by that rank.  It lists Hurley Drug Company, which had the most shipments, as the 14th -- or lowest -- ranked.  
 
@@ -430,8 +430,8 @@ mingo %>%
 
 ```
 
-Let's rank them the other way. 
-  
+Let's rank them the other way.
+
 ```{r}
  mingo %>%
   group_by(buyer_name) %>%
@@ -439,10 +439,10 @@ Let's rank them the other way.
             ) %>%
   mutate(shipments_rank = dense_rank(desc(shipments))) %>%
   arrange(shipments_rank)
-  
+
 
 ```
-  
+
 The tidyverse also has a handy function for caluclating percentage rank.  There are 14 pharmacies listed here, but percent_rank puts the ranking on a scale as a percentage from 0 to 100.  So, we can say Strosnider had more shipments than 90 percent of pharmacies in the county.
 
 ```{r}
@@ -452,7 +452,7 @@ mingo %>%
             ) %>%
   mutate(shipments_rank = percent_rank(shipments)) %>%
   arrange(desc(shipments_rank))
- 
+
 ```
 
 We can also calculate percentage of total.  In this case, we want to calculate the total number of pills sent to each pharmacy, and figure out what percentage of all pills sent to the county that represents. Let's start by calculating a) pills sent to each pharmacy, then b) adding a new column with the total number of pills sent to the county as a whole. The last column in the table will have the same value.  
@@ -493,7 +493,7 @@ mingo %>%
   arrange(desc(pharmacy_percent_total_pills))
 ```
 
-That number's still unwieldly. Let's round() to two places. 
+That number's still unwieldly. Let's round() to two places.
 
 ```{r}
 mingo %>%
@@ -504,11 +504,11 @@ mingo %>%
   arrange(desc(pharmacy_percent_total_pills))
 ```
 
-## Exercise 
+## Exercise
 
-Let's end this exercise with three tasks, designed to replicate some journalistic data analyisis. 
+Let's end this exercise with three tasks, designed to replicate some journalistic data analyisis.
 
-**Task**: Your editor asks you to figure out which manufacturer to distributor to pharmacy pipeline was responsible for the largest number of pills being shipped to Mingo County, West Virginia, as a way to help focus your reporting on the opioid crisis. 
+**Task**: Your editor asks you to figure out which manufacturer to distributor to pharmacy pipeline was responsible for the largest number of pills being shipped to Mingo County, West Virginia, as a way to help focus your reporting on the opioid crisis.
 
 Write a codeblock below that groups by the manufacturer name, distributor name and pharmacy name and calculates the number of pills for each grouping. Sort it highest to lowest by number of pills.  Leave a comment with the answer: what is the most significant combo?
 
