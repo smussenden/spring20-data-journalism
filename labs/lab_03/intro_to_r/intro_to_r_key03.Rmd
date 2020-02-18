@@ -412,7 +412,9 @@ Get used to writing code this way, it's mainly how we'll be writing code in this
 #Selecting pharmacy data from mingo dataset, sorting into descending order by dosage unit
 mingo_pharmacy <- mingo %>%
   select(BUYER_DEA_NO, BUYER_BUS_ACT, BUYER_NAME, BUYER_ADDL_CO_INFO, BUYER_ADDRESS1, BUYER_ADDRESS2, BUYER_CITY, BUYER_STATE, BUYER_ZIP, BUYER_COUNTY,DOSAGE_UNIT) %>%
-  arrange(desc(DOSAGE_UNIT))
+  arrange(DOSAGE_UNIT)
+
+
 
 #To see in viewer
 #View(mingo_pharmacy)
