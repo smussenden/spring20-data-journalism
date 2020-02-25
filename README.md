@@ -309,7 +309,7 @@ Held at regular time this week, Friday @ 12:00am - 1:50pm. in Howard Center.  If
 * Writing public records request letters
   * Use a template: [Sample request letters state by state](https://www.nfoic.org/organizations/state-sample-foia-request-letters) or [PIA letter generator](https://splc.org/lettergenerator/).
   * Provide as much detail as possible about records you are seeking, based on your reporting. Time period, name of data, sample fields.
-  * If you have determined the data contains information exempt from public records laws, ask them to redact that information and provide everything.
+  * If you have determined the data contains information exempt from public records laws, ask them to redact that information and provide everything else.
   * Request a fee waiver (if the law allows for that), and an up-front estimate of costs before they begin work.
   * Tone: Polite, professional and firm.
   * Quality: Accurate, grammatical, spell-checked.
@@ -346,7 +346,7 @@ Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make th
 
 *Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
 
-* Data acquisition project | Draft of public records request (or requests) and link to Google spreadsheet contact log.  
+* Data acquisition project | Draft of public records request (or requests) and link to Google spreadsheet contact log. [ELMS link](https://umd.instructure.com/courses/1278056/discussion_topics/3818901?module_item_id=9855955)  
 * Story Discussion Project | Forum Post 2 | Post links to your completed memo (as a Google Docs link), Slide deck (as a Google Slides link), Discussion questions (as a Google Docs link). [ELMS link](https://umd.instructure.com/courses/1278056/discussion_topics/3841901)  
 
 #### Week 6 - Mar. 3
