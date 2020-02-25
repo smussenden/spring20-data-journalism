@@ -264,6 +264,7 @@ Change just for this week: study sessions offered Wednesday and Thursday during 
   * [Download this ZIP file](https://github.com/smussenden/spring20-data-journalism/blob/master/in_class_assignments/class_03/class_03.zip), which contains an R Markdown document and opioid data. Open it up, put the folder on your desktop, and open the class_03.Rmd file in R Studio.
   * Follow the instructions step-by-step.
   * When you're finished, [upload your edited Rmd file and html file to ELMS](https://umd.instructure.com/courses/1278056/assignments/5097064?module_item_id=9855940)
+  * [Answer key](in_class_assignments/class_03/key_class_03.Rmd)
 
 *Online tutorial lab | Due by Sunday at 11:59 p.m.*
 
@@ -273,6 +274,7 @@ Change just for this week: study sessions offered Wednesday and Thursday during 
   * [Watch GitHub desktop tutorial for info on how to submit](https://www.youtube.com/watch?v=ZT91ek-JWQE)
   * Open Lab_04.Rmd file, listen and watch video, and follow along.  Modify code or write new code where needed.
   * Watch GitHub desktop tutorial video. Create new repo, put your lab files in it, upload GitHub LINKS, not files, to [ELMS when done](https://umd.instructure.com/courses/1278056/assignments/5097074?module_item_id=9855942).
+  * [Answer key](labs/lab_04/lab_04_key.Rmd)  
 * Optional, if you feel like you need additional help: [DataCamp, Introduction to the Tidyverse](https://www.datacamp.com/courses/introduction-to-the-tidyverse) and [Getting Started with GitHub Desktop](https://help.github.com/en/desktop/getting-started-with-github-desktop)
 
 *Optional study session*
@@ -295,19 +297,26 @@ Held at regular time this week, Friday @ 12:00am - 1:50pm. in Howard Center.  If
 *Tuesday Class*
 
 * Announcements
-* Review of last class lab tasks and GitHub
 * Overview of state public records laws and exercise
   * [Muckrock state guides | Example: Maryland](https://www.muckrock.com/place/united-states-of-america/maryland/)
   * [Official state manuals | Example: Maryland](http://www.marylandattorneygeneral.gov/OpenGov%20Documents/PIA_manual_printable.pdf)
-  * Answer 5 questions  
+  * Answer 5 questions about Maryland at speed. - 10 minutes.
+      * There are lots of exemptions to the law in Maryland. Are public employees home address exempt from disclosure?
+      * How long do Maryland agencies have to respond to request for records?
+      * How much can Maryland agencies charge you? Is there a fee waiver for journalists?
+      * If a database exists, do government agencies have to give it to you as a database you can search and analyze? Or can they send you a box of printouts?
+      * If a database or record contains both exempt and non-exempt material, can an agency deny you access to the whole thing?  
 * Writing public records request letters
   * Use a template: [Sample request letters state by state](https://www.nfoic.org/organizations/state-sample-foia-request-letters) or [PIA letter generator](https://splc.org/lettergenerator/).
   * Provide as much detail as possible about records you are seeking, based on your reporting. Time period, name of data, sample fields.
   * If you have determined the data contains information exempt from public records laws, ask them to redact that information and provide everything.
   * Request a fee waiver (if the law allows for that), and an up-front estimate of costs before they begin work.
   * Tone: Polite, professional and firm.
+  * Quality: Accurate, grammatical, spell-checked.
   * Requesting from more than one agency? Multiple letters. Requesting multiple data sets from one agency? One letter.
   * Do not send until I approve.
+*
+
 * In-class lab: finding stories in opioid data in Baltimore, with R and the Tidyverse.
   * Clone your class GitHub repo to your desktop.
   * [Download this ZIP file](in_class_assignments/class_04/class_04.zip), which contains an R Markdown document and opioid data. Open it up, put it inside your class assignments folder.  Unzip the data.
@@ -339,7 +348,7 @@ Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make th
 
 *Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
 
-* Data acquisition project | Draft of public records request(s) due by Sunday and link to Google spreadsheet contact log.  
+* Data acquisition project | Draft of public records request (or requests) and link to Google spreadsheet contact log.  
 * Story Discussion Project | Forum Post 2 | Post links to your completed memo (as a Google Docs link), Slide deck (as a Google Slides link), Discussion questions (as a Google Docs link).  
 
 #### Week 6 - Mar. 3
