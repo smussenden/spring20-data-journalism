@@ -49,5 +49,11 @@
 * Slide template
 * Also, you need to read shoot to kill and do a brief forum post, because that's what's coming next week.
 
+### Review of last lab?
+* Do we want to do this, depending on time. Pull up key. 
+
 ### In-class lab
 * Start together by downloading class folder to desktop.  If you have on your machine, don't have to do this.
+* Clone your class repository.
+* Download zip folder
+* Note: need to unzip the data.
