@@ -18,7 +18,7 @@ Each week, a rotating team of two students will be assigned to do a deep dive on
   * The Storytelling | describe the quality of the writing and presentation.  Did the story feel "data heavy" or filled with numbers? Were the analysis findings described in a straightforward way? Did they use effective visuals to communicate complex topics?
   * Without the Data | imagine this story without the data analysis component. Is it still a story?  Is the story as strong?
 
-* A Google Slides deck with six slides, one for each subhead in the memo.  You will be given a template to follow.
+* A Google Slides deck with six slides, one for each subhead in the memo.  You will be given a template to follow. [Template link](https://docs.google.com/presentation/d/1pZ0reAlhACCWg7kaTuqR2Ce3UnQgPdomTz4iNscXZKM/edit#slide=id.g6fec4dec23_0_12)
 
 * A six-minute "lightning talk" presentation that uses the slide deck you've turned in, hitting the main points described in your memo.  Each person in a group should present for part of the time.      
 

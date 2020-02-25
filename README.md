@@ -294,12 +294,21 @@ Held at regular time this week, Friday @ 12:00am - 1:50pm. in Howard Center.  If
 #### Week 5 - Feb. 25
 *Tuesday Class*
 
-* Review of last class lab tasks
-* Overview of state public records laws
-  * [Muckrock state guides | Example: Florida](https://www.muckrock.com/place/united-states-of-america/florida/)
+* Announcements
+* Review of last class lab tasks and GitHub
+* Overview of state public records laws and exercise
+  * [Muckrock state guides | Example: Maryland](https://www.muckrock.com/place/united-states-of-america/maryland/)
   * [Official state manuals | Example: Maryland](http://www.marylandattorneygeneral.gov/OpenGov%20Documents/PIA_manual_printable.pdf)
-  * [Sample request letters state by state](https://www.nfoic.org/organizations/state-sample-foia-request-letters)
-  * [PIA letter generator](https://splc.org/lettergenerator/)
+  * Answer 5 questions  
+* Writing public records request letters
+  * Use a template: [Sample request letters state by state](https://www.nfoic.org/organizations/state-sample-foia-request-letters) or [PIA letter generator](https://splc.org/lettergenerator/).
+  * Provide as much detail as possible about records you are seeking, based on your reporting. Time period, name of data, sample fields.
+  * If you have determined the data contains information exempt from public records laws, ask them to redact that information and provide everything.
+  * Request a fee waiver (if the law allows for that), and an up-front estimate of costs before they begin work.
+  * Tone: Polite, professional and firm.
+  * Requesting from more than one agency? Multiple letters. Requesting multiple data sets from one agency? One letter.
+  * Do not send until I approve.
+* Story discussion materials
 
 *Online tutorial lab | Due by Sunday at 11:59 p.m.*
 
@@ -311,21 +320,15 @@ Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make th
 
 *Readings | Complete by Sunday at 11:59 p.m.*
 
-*
+* [Shoot to Kill: Why Baltimore is one of the most lethal cities in the U.S. | Baltimore Sun | September 2016](http://data.baltimoresun.com/news/shoot-to-kill/)
 
 *Forum Posts | Due by Sunday at 11:59 p.m.*
 
-Write a forum post
-* What does your state say about fees that can be charged? Is there a waiver for journalists or others seeking information in the public interest?
-* Are police call for service records or 311 data listed as being exempt from your state's public records laws?
-* What does your states' public records law say about how state agencies should handle records that contain information that should be made public mixed in with information that is exempt from disclosure?
-* What does your state's public records law say about the release of data that is available in a searchable and analyzable format (like a spreadsheet or a database)? Does the government agency have to release it in that format, or could they choose to send you a printout?
-* What does your state's public records law say about how much time a government agency has to respond to your request and deliver your records to you?
-
+* In 150 words, summarize the main finding of the story "Shoot to Kill", to prepare for class discussion next week.
 
 *Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
 
-* Data acquisition project | Draft of public records request due by Sunday and link to Google spreadsheet contact log.  
+* Data acquisition project | Draft of public records request(s) due by Sunday and link to Google spreadsheet contact log.  
 * Story Discussion Project | Forum Post 2 | Post links to your completed memo (as a Google Docs link), Slide deck (as a Google Slides link), Discussion questions (as a Google Docs link).  
 
 #### Week 6 - Mar. 3

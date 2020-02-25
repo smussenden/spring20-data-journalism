@@ -13,12 +13,18 @@
 3. Slides
 
 * Using public records laws to get data
-  * Sometimes called Sunshine Laws or Freedom of Information Act Laws or Public Information Act laws
-  * Every state has one, but the details are different.  
   * Different from federal FOIA, but same concept.
-  * Knowing the state law in which you're requesting is helpful.  
-  * Draft Public Records Letter via https://splc.org/lettergenerator/ OR https://www.nfoic.org/organizations/state-sample-foia-request-letters
-  * Guide to each state's public record laws https://www.muckrock.com/place/united-states-of-america/florida/ and AG Opinion http://myfloridalegal.com/webfiles.nsf/WF/MNOS-B9QQ79/$file/SunshineManual.pdf
+  * Every state has one, but the details are different. They are designed to  
+  * Sometimes called Sunshine Laws or Freedom of Information Act Laws or Public Information Act laws.
+  * Knowing the specifics of state law in which you're requesting is helpful.  
+  * The law is your friend! Knowing it can mean the difference between getting info you need in a timely fashion and getting denied.
+  * Muckrock guides and ag opinion
+* Things that differ sometimes from state to state
+  * What information is exempt and not exempt. Exempt in maryland: home addresses of public employees.
+  * How long agencies have to respond. Maryland, agencies have 10 days to approve or deny, 30 days to turn over records, but if ready before then, must release asap.
+  * How much they can charge you, and if there's a waiver for fees for journalists.  Maryland has this.
+  * Whether requesters have to give you, by law, a database in a format that is searchable and analyzable. Or whether they could be jerks and give you print outs of PDFs. Maryland has this.
+  * Whether an agency can deny you access to a database that contains both public and non-public information or whether they have to, by law, release the parts to you that are public and hold back the rest. Maryland has this.
 * What's due:
   * Forum post: sample request letter(s).  Don't worry about Howard center address and all that stuff, but I do need info on where to send request letter.
   * Requesting from multiple agencies? Multiple letters.
