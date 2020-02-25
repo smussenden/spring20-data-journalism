@@ -308,11 +308,22 @@ Held at regular time this week, Friday @ 12:00am - 1:50pm. in Howard Center.  If
   * Tone: Polite, professional and firm.
   * Requesting from more than one agency? Multiple letters. Requesting multiple data sets from one agency? One letter.
   * Do not send until I approve.
-* Story discussion materials
+* In-class lab: finding stories in opioid data in Baltimore, with R and the Tidyverse.
+  * Clone your class GitHub repo to your desktop.
+  * [Download this ZIP file](in_class_assignments/class_04/class_04.zip), which contains an R Markdown document and opioid data. Open it up, put it inside your class assignments folder.  Unzip the data.
+  * Open the class_04.Rmd file in R Studio.
+  * Follow the instructions step-by-step.
+  * When you're finished, push changes to GitHub. You'll need to zip up the TSV file.  It's too big to leave in there unzipped.
+  * [Upload your links to edited Rmd file and html file to ELMS]()
 
 *Online tutorial lab | Due by Sunday at 11:59 p.m.*
 
-TK
+* Data Analysis in R (Joins, working with dates)
+  * [Download package of files you'll need to your local machine and unzip](labs/lab_05/lab_05.zip).
+  * [Watch lab video and follow along with step-by-step instructions](https://www.youtube.com/watch?v=qrFsquFndzw).
+  * Open Lab_05.Rmd file, listen and watch video, and follow along.  Modify code or write new code where needed.
+  * Watch GitHub desktop tutorial video. Create new repo, put your lab files in it, upload GitHub LINKS, not files, to [ELMS when done]().
+* Optional, if you feel like you need additional help: [DataCamp, Introduction to the Tidyverse](https://www.datacamp.com/courses/introduction-to-the-tidyverse) and [Getting Started with GitHub Desktop](https://help.github.com/en/desktop/getting-started-with-github-desktop) and [DataCamp Working Dates in R](https://www.datacamp.com/courses/working-with-dates-and-times-in-r) and [DataCamp Joining Data with dplyr in R](https://www.datacamp.com/courses/joining-data-with-dplyr-in-r) and [DataCamp Data Manipulation in dplyr in R](https://www.datacamp.com/courses/data-manipulation-with-dplyr-in-r)
 
 *Optional study session*
 
