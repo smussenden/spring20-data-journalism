@@ -321,6 +321,7 @@ Held at regular time this week, Friday @ 12:00am - 1:50pm. in Howard Center.  If
   * Open the class_04.Rmd file in R Studio.
   * Follow the instructions step-by-step.
   * When you're finished, push changes to GitHub. You'll need to zip up the TSV file.  It's too big to leave in there unzipped.
+  * [Answer Key](in_class_assignments/class_04/key_class_04.Rmd)
   * [Upload your links to edited Rmd file and html file to ELMS](https://umd.instructure.com/courses/1278056/assignments/5097065)
 
 *Online tutorial lab | Due by Sunday at 11:59 p.m.*
@@ -330,6 +331,7 @@ Held at regular time this week, Friday @ 12:00am - 1:50pm. in Howard Center.  If
   * [Watch lab video and follow along with step-by-step instructions](https://www.youtube.com/watch?v=qrFsquFndzw).
   * Open Lab_05.Rmd file, listen and watch video, and follow along.  Modify code or write new code where needed.
   * Watch GitHub desktop tutorial video. Create new repo, put your lab files in it, upload GitHub LINKS, not files, to [ELMS when done](https://umd.instructure.com/courses/1278056/assignments/5097075?module_item_id=9855950).
+  * [Answer key](labs/lab_05/lab_05_key.Rmd)  
 * Optional, if you feel like you need additional help: [DataCamp, Introduction to the Tidyverse](https://www.datacamp.com/courses/introduction-to-the-tidyverse) and [Getting Started with GitHub Desktop](https://help.github.com/en/desktop/getting-started-with-github-desktop) and [DataCamp Working Dates in R](https://www.datacamp.com/courses/working-with-dates-and-times-in-r) and [DataCamp Joining Data with dplyr in R](https://www.datacamp.com/courses/joining-data-with-dplyr-in-r) and [DataCamp Data Manipulation in dplyr in R](https://www.datacamp.com/courses/data-manipulation-with-dplyr-in-r)
 
 *Optional study session*
@@ -352,27 +354,41 @@ Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make th
 #### Week 6 - Mar. 3
 *Tuesday Class*
 
+* Announcements
+* Review of last lab common errors - sum() vs n()
 * Story Discussion | MH + SC + VD | [Shoot to Kill: Why Baltimore is one of the most lethal cities in the U.S. | Baltimore Sun | September 2016](http://data.baltimoresun.com/news/shoot-to-kill/)
+* In-class lab: finding stories in opioid data, with R and the Tidyverse.
+  * Clone your class GitHub repo to your desktop.
+  * [Download this ZIP file](in_class_assignments/class_05/class_05.zip), which contains an R Markdown document and opioid data. Open it up, put it inside your class assignments folder.  Unzip the data.
+  * Open the class_05.Rmd file in R Studio.
+  * Follow the instructions step-by-step.
+  * When you're finished, push changes to GitHub.
+  * [Upload your links to edited Rmd file and html file to ELMS]()
 
 *Online tutorial lab | Due by Sunday at 11:59 p.m.*
 
-TK
+* Data Analysis in R (Exploratory visualization)
+  * [Download package of files you'll need to your local machine and unzip](labs/lab_06/lab_06.zip).
+  * [Watch lab video and follow along with step-by-step instructions](https://www.youtube.com/watch?v=Idb4R8dVlY0).
+  * Open Lab_06.Rmd file, listen and watch video, and follow along.  Modify code or write new code where needed. Upload to GitHub and then the links to [ELMS when done]().
+* Optional, if you feel like you need additional help: [DataCamp, Introduction to the Tidyverse](https://www.datacamp.com/courses/introduction-to-the-tidyverse) and [Data Visualization with ggplot2 (Part 1)](https://www.datacamp.com/courses/data-visualization-with-ggplot2-1) and [Data Visualization with ggplot2 (Part 2)](https://www.datacamp.com/courses/data-visualization-with-ggplot2-2)
 
 *Optional study session*
 
-No study session this week, Sean at NICAR
+No study session this week, Sean at NICAR. Message me if you need help, but do not wait till last minute because it may take me some time to get back to you.  
 
 *Readings | Complete by Sunday at 11:59 p.m.*
 
-TK
+* [Pharmacies miss half of dangerous drug combinations](https://www.chicagotribune.com/investigations/ct-drug-interactions-pharmacy-met-20161214-story.html)
+* [Big data offers new way to find hidden drug interactions](https://www.chicagotribune.com/investigations/ct-drug-interactions-signal-detection-met-20160209-story.html)
 
 *Forum Posts | Due by Sunday at 11:59 p.m.*
 
-TK
+* In 150 words, summarize the main findings of the stories "Pharmacies miss half of dangerous drug combinations" and "Big data offers new way to find hidden drug interactions", to prepare for class discussion next week. [ELMS Link]()
 
 *Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
 
-* Data acquisition project | Send public records request letter.
+* Data acquisition project | Put edited letter on letterhead. Send public records request letter or send in request via form, if form is required. If you don't get an immediate response saying something like "we got your request and are working on it", follow up by email a day later.  If you don't get a response to your email, follow up by email a day later with a phone call. If you're doing the math, that means you need to send in your letter or form by WEDNESDAY at the latest, if you want to have time to fully execute this strategy. On ELMS, do a short forum post of no more than 200 words saying that a) you sent your letter, b) that you followed up in the manner proscribed here and c) what response you got, if any.    
 
 #### Week 7 - Mar. 10
 *Tuesday Class*
