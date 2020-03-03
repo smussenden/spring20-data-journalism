@@ -183,7 +183,7 @@ Better.  It would be nice to have every year identified on our x axis.  So let's
   ggplot(baltimore_city_pills_per_year) +
   geom_bar(stat="identity", aes(year, dosage_unit), fill="royal blue") +
   labs(x="Year", y="Total pills", title="In Baltimore City, opioids fall in 2007, then climb steadily through 2012", subtitle = "Total pills shipped to Baltimore City by year", caption = "Source: DEA ARCOS database, via Washington Post") +
-  scale_x_continuous(breaks = c(2006, 2007, 2008, 2009, 2010, 2011, 2012))
+  scale_x_continuous(breaks = c(2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014))
 
 
 ```
@@ -197,7 +197,7 @@ Better.  Those y axis numbers are kind of a mess.  Let's add some commas to make
   ggplot(baltimore_city_pills_per_year) +
   geom_bar(stat="identity", aes(year, dosage_unit), fill="royal blue") +
   labs(x="Year", y="Total pills", title="In Baltimore City, opioids fall in 2007, then climb steadily through 2012", subtitle = "Total pills shipped to Baltimore City by year", caption = "Source: DEA ARCOS database, via Washington Post") +
-  scale_x_continuous(breaks = c(2006, 2007, 2008, 2009, 2010, 2011, 2012)) +
+  scale_x_continuous(breaks = c(2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014)) +
   scale_y_continuous(labels = comma)
 ```
 
@@ -210,7 +210,7 @@ Pretty good!  This will be the final version of this graphic.  It's helped us id
   ggplot(baltimore_city_pills_per_year) +
   geom_bar(stat="identity", aes(year, dosage_unit), fill="royal blue") +
   labs(x="Year", y="Total pills", title="In Baltimore City, opioids fall in 2007, then climb steadily through 2012", subtitle = "Total pills shipped to Baltimore City by year", caption = "Source: DEA ARCOS database, via Washington Post") +
-  scale_x_continuous(breaks = c(2006, 2007, 2008, 2009, 2010, 2011, 2012)) +
+  scale_x_continuous(breaks = c(2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014)) +
   scale_y_continuous(labels = comma)
 
   # Also saves a web version
@@ -234,7 +234,7 @@ Now let's build a graphic to compare them.
   ggplot(maryland_pills_per_year) +
   geom_bar(stat="identity", aes(year, dosage_unit), fill="royal blue") +
   labs(x="Year", y="Total pills", title="Steady rise in opioids in six large Maryland counties", subtitle = "Total pills per year shipped to Anne Arundel, Baltimore, Howard,\nMontgomery, Prince George's counties and Baltimore City", caption = "Source: DEA ARCOS database, via Washington Post") +
-  scale_x_continuous(breaks = c(2006, 2007, 2008, 2009, 2010, 2011, 2012)) +
+  scale_x_continuous(breaks = c(2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014)) +
   scale_y_continuous(labels = comma)
 
 ```
@@ -245,7 +245,7 @@ The bars are all the same color.  What we see here are the totals for these six 
   ggplot(maryland_pills_per_year) +
   geom_bar(stat="identity", aes(year, dosage_unit, fill=buyer_county)) +
   labs(x="Year", y="Total pills", title="Steady rise in opioids in six large Maryland counties", subtitle = "Total pills per year shipped to Anne Arundel, Baltimore, Howard,\nMontgomery, Prince George's counties and Baltimore City", caption = "Source: DEA ARCOS database, via Washington Post") +
-  scale_x_continuous(breaks = c(2006, 2007, 2008, 2009, 2010, 2011, 2012)) +
+  scale_x_continuous(breaks = c(2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014)) +
   scale_y_continuous(labels = comma)
 
 ```
@@ -256,7 +256,7 @@ Let's clean it up a little by fixing the legend name, changing it from "buyer_co
   ggplot(maryland_pills_per_year) +
   geom_bar(stat="identity", aes(year, dosage_unit, fill=buyer_county)) +
   labs(x="Year", y="Total pills", title="Steady rise in opioids in six large Maryland counties", subtitle = "Total pills per year shipped to Anne Arundel, Baltimore, Howard,\nMontgomery, Prince George's counties and Baltimore City", caption = "Source: DEA ARCOS database, via Washington Post", fill="County") +
-  scale_x_continuous(breaks = c(2006, 2007, 2008, 2009, 2010, 2011, 2012)) +
+  scale_x_continuous(breaks = c(2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014)) +
   scale_y_continuous(labels = comma)
 
 ```
@@ -267,7 +267,7 @@ This isn't too bad.  But it's kind of hard to break out the trendline in each co
   ggplot(maryland_pills_per_year) +
   geom_bar(stat="identity", aes(year, dosage_unit, fill=buyer_county)) +
   labs(x="Year", y="Total pills", title="Steady rise in opioids in six large Maryland counties", subtitle = "Total pills per year shipped to Anne Arundel, Baltimore, Howard,\nMontgomery, Prince George's counties and Baltimore City", caption = "Source: DEA ARCOS database, via Washington Post", fill="County") +
-  scale_x_continuous(breaks = c(2006, 2007, 2008, 2009, 2010, 2011, 2012)) +
+  scale_x_continuous(breaks = c(2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014)) +
   scale_y_continuous(labels = comma) +
   facet_wrap(nrow=2, . ~ buyer_county)
 
@@ -281,7 +281,7 @@ One thing. The year labels are kind of a mess here.  Let's rotate them with the 
   ggplot(maryland_pills_per_year) +
   geom_bar(stat="identity", aes(year, dosage_unit, fill=buyer_county)) +
   labs(x="Year", y="Total pills", title="Steady rise in opioids in six large Maryland counties", subtitle = "Total pills per year shipped to Anne Arundel, Baltimore, Howard,\nMontgomery, Prince George's counties and Baltimore City", caption = "Source: DEA ARCOS database, via Washington Post", fill="County") +
-  scale_x_continuous(breaks = c(2006, 2007, 2008, 2009, 2010, 2011, 2012)) +
+  scale_x_continuous(breaks = c(2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014)) +
   scale_y_continuous(labels = comma) +
   facet_wrap(nrow=2, . ~ buyer_county) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
@@ -294,7 +294,7 @@ Okay, this looks pretty good.  The legend isn't really needed, so we'll remove t
   ggplot(maryland_pills_per_year) +
   geom_bar(stat="identity", aes(year, dosage_unit, fill=buyer_county)) +
   labs(x="Year", y="Total pills", title="Steady rise in opioids in six large Maryland counties", subtitle = "Total pills per year shipped to Anne Arundel, Baltimore, Howard,\nMontgomery, Prince George's counties and Baltimore City", caption = "Source: DEA ARCOS database, via Washington Post", fill="County") +
-  scale_x_continuous(breaks = c(2006, 2007, 2008, 2009, 2010, 2011, 2012)) +
+  scale_x_continuous(breaks = c(2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014)) +
   scale_y_continuous(labels = comma) +
   facet_wrap(nrow=2, . ~ buyer_county) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
@@ -451,7 +451,7 @@ mingo_pills_per_year <- arcos_county_pills_per_year %>%
 ggplot(mingo_pills_per_year) +
   geom_bar(stat="identity", aes(year, dosage_unit), fill="royal blue") +
   labs(x="Year", y="Total pills", title="In Mingo County, West Virginia, opioids spiked in 2008, before falling off sharply", subtitle = "Total pills shipped to Mingo, WV by year", caption = "Source: DEA ARCOS database, via Washington Post") +
-  scale_x_continuous(breaks = c(2006, 2007, 2008, 2009, 2010, 2011, 2012)) +
+  scale_x_continuous(breaks = c(2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014)) +
   scale_y_continuous(labels = comma)
 
 ```
