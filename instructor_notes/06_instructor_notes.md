@@ -1,4 +1,4 @@
-# Session 07 Instructor Notes
+# Session 06 Instructor Notes
 
 ### Announcements
 * Keys posted for lab and last class.
