@@ -2,9 +2,12 @@
 
 ### Announcements
 * Keys posted for lab and last class.
+* No study session this week
+* Data Acquisition forum post.
 
 ### Class reading baltimore sun
-MY NOTES: 
+* Notes: Presenation takes 6 minutes.  10 minutes of discussion. 4-5 minutes of me.
+MY NOTES:
 * MAIN FINDING: When people are shot in baltimore, they are more likely to die.  For every 3 people shot, 1 dies.  
 * MAIN ANALYSIS: Pretty simple analysis: they divided the number of shootings by the number of shooting deaths -- 937/300.
 * FRAMING IT/IS THIS NEWS: Is it getting worse? Yes, it used to be worse.  HAVE THINGS CHANGED frame for NEWS.   
@@ -36,3 +39,11 @@ MY NOTES:
 * Show inner join, left join, right join, full outer join.
 * Then, modify table 1 and table 2 student id column to have different names.  Explain that join still works, just need to specify in r that this column with this name should be matched with this column with a different names.  What MATTERS is that the values in it mean the same thing.  You could see how this could cause you trouble if they don't mean the same thing.  Cause the match would execute.
 * Then, modify table 2 to have grades from multiple classes.  And show how you get the one-to-many match.  Ask: can anyone see how this could cause problems if we tried to COUNT the number of students by doing a count here?
+
+### Data Acquisition Project
+* Review what's due.
+
+### Assignments for this week review
+* Read stories for next week and short forum post.  
+* Do lab.
+* Data aquisition project. 

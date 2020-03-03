@@ -355,27 +355,30 @@ Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make th
 *Tuesday Class*
 
 * Announcements
-* Review of last lab common errors - sum() vs n()
+  * Keys posted
+  * No study session this week.
 * Story Discussion | MH + SC + VD | [Shoot to Kill: Why Baltimore is one of the most lethal cities in the U.S. | Baltimore Sun | September 2016](http://data.baltimoresun.com/news/shoot-to-kill/)
+* Review of last lab common errors - sum() vs n()
+* Review of joins
 * In-class lab: finding stories in opioid data, with R and the Tidyverse.
   * Clone your class GitHub repo to your desktop.
   * [Download this ZIP file](in_class_assignments/class_05/class_05.zip), which contains an R Markdown document and opioid data. Open it up, put it inside your class assignments folder.  Unzip the data.
   * Open the class_05.Rmd file in R Studio.
   * Follow the instructions step-by-step.
   * When you're finished, push changes to GitHub.
-  * [Upload your links to edited Rmd file and html file to ELMS]()
+  * [Upload your links to edited Rmd file and html file to ELMS](https://umd.instructure.com/courses/1278056/assignments/5097066?module_item_id=9855957)
 
 *Online tutorial lab | Due by Sunday at 11:59 p.m.*
 
 * Data Analysis in R (Exploratory visualization)
   * [Download package of files you'll need to your local machine and unzip](labs/lab_06/lab_06.zip).
   * [Watch lab video and follow along with step-by-step instructions](https://www.youtube.com/watch?v=Idb4R8dVlY0).
-  * Open Lab_06.Rmd file, listen and watch video, and follow along.  Modify code or write new code where needed. Upload to GitHub and then the links to [ELMS when done]().
+  * Open Lab_06.Rmd file, listen and watch video, and follow along.  Modify code or write new code where needed. Upload to GitHub and then the links to ELMS when done. [ELMS Link](https://umd.instructure.com/courses/1278056/assignments/5097076).
 * Optional, if you feel like you need additional help: [DataCamp, Introduction to the Tidyverse](https://www.datacamp.com/courses/introduction-to-the-tidyverse) and [Data Visualization with ggplot2 (Part 1)](https://www.datacamp.com/courses/data-visualization-with-ggplot2-1) and [Data Visualization with ggplot2 (Part 2)](https://www.datacamp.com/courses/data-visualization-with-ggplot2-2)
 
 *Optional study session*
 
-No study session this week, Sean at NICAR. Message me if you need help, but do not wait till last minute because it may take me some time to get back to you.  
+No study session this week, Sean teaching at [NICAR](https://www.ire.org/events-and-training/conferences/nicar-2020). Message me if you need help, but do not wait till last minute because it may take me some time to get back to you.  
 
 *Readings | Complete by Sunday at 11:59 p.m.*
 
@@ -384,11 +387,19 @@ No study session this week, Sean at NICAR. Message me if you need help, but do n
 
 *Forum Posts | Due by Sunday at 11:59 p.m.*
 
-* In 150 words, summarize the main findings of the stories "Pharmacies miss half of dangerous drug combinations" and "Big data offers new way to find hidden drug interactions", to prepare for class discussion next week. [ELMS Link]()
+* In 200 words, summarize the main findings of the stories "Pharmacies miss half of dangerous drug combinations" and "Big data offers new way to find hidden drug interactions", to prepare for class discussion next week. [ELMS Link](https://umd.instructure.com/courses/1278056/discussion_topics/3818902)
 
 *Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
 
-* Data acquisition project | Put edited letter on letterhead. Send public records request letter or send in request via form, if form is required. If you don't get an immediate response saying something like "we got your request and are working on it", follow up by email a day later.  If you don't get a response to your email, follow up by email a day later with a phone call. If you're doing the math, that means you need to send in your letter or form by WEDNESDAY at the latest, if you want to have time to fully execute this strategy. On ELMS, do a short forum post of no more than 200 words saying that a) you sent your letter, b) that you followed up in the manner proscribed here and c) what response you got, if any.    
+* Data acquisition project forum post | Follow these directions carefully.    
+  * Put edited letter on letterhead. Replace only parts inside of [] with your text.  [Link to letterhead](major_assignments/data_acquisition_project/Data-PIA-Template-Howard-Merrill-CNS-LetterHead.docx).
+  * By WEDNESDAY at 5 p.m. Send public records request letter as an email attachment to the appropriate person OR send in request via form, if you're been told a form is required.
+  * If you don't get an immediate response saying something like "we got your request and are working on it", follow up by email a day later.  
+  * If you don't get a response to your email, follow up by email a day later with a phone call. Leave a message.
+  * On ELMS, do a forum post of no more than 200 words saying that a) you sent your letter or filled out form, b) that you followed up in the manner proscribed here and c) detail what response you got, if any.
+  * Within the forum post, post a link to your contact log.
+  * Also within the forum post, upload and attach either a) the letter you submitted and a screenshot of the email you sent with your letter OR b) a screenshot of the form you submitted.
+  * [ELMS Link](https://umd.instructure.com/courses/1278056/discussion_topics/3818905)    
 
 #### Week 7 - Mar. 10
 *Tuesday Class*
