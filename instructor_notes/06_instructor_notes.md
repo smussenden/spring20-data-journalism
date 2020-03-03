@@ -7,6 +7,7 @@
 
 ### Class reading baltimore sun
 * Notes: Presenation takes 6 minutes.  10 minutes of discussion. 4-5 minutes of me.
+* Notes: print out memo, discussion questions
 MY NOTES:
 * MAIN FINDING: When people are shot in baltimore, they are more likely to die.  For every 3 people shot, 1 dies.  
 * MAIN ANALYSIS: Pretty simple analysis: they divided the number of shootings by the number of shooting deaths -- 937/300.
@@ -46,4 +47,4 @@ MY NOTES:
 ### Assignments for this week review
 * Read stories for next week and short forum post.  
 * Do lab.
-* Data aquisition project. 
+* Data aquisition project.
