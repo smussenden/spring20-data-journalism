@@ -61,10 +61,11 @@ Run this:
 ```{r}
 # If you don't have one or both of these these, use install.packages()
 
-# install.packages('arcos')
+install.packages('arcos')
 library(tidyverse)
 library(janitor)
 library(lubridate)
+
 library(arcos)
 ```
 
@@ -78,36 +79,11 @@ A data dictionary is available here: [ARCOS Registrant Handbook](https://www.dea
 
 We will be loading in three different data sets today.  The data was obtained by me from the Washington Post's [ARCOS R package](https://cran.r-project.org/web/packages/arcos/readme/README.html), which allows you to easily download larger and more interesting slices of the data than what's available using the web interface.  
 
-Here's the data we'll be using, all in the data folder
-
-1. buyer_addresses.csv - one record per "buyer" in the United States -- pharmacies and practitioners, typically -- with information about name, address and location, along with a unique id "buyer_dea_no".
-2. buyer_totals.csv - one record per buyer, listing the total number of pills sent to that buyer overall between 2006 and 2012.  The only specific identifying information is a unique id, "buyer_dea_no", but the buyer county and buyer state is there.
-3. buyer_annual_by_year - one record per buyer per year, listing the total number of pills sent to that buyer in one year, between 2006 and 2012.  Some buyers have seven records, one for each year between 2006 and 2012, while others have fewer.  The only specific identifying information is a unique id, "buyer_dea_no", but the buyer county and buyer state is there.
-4. state_population_per_year - average annual population for each state between 2006 and 2012.
-
-Run this:
-
-```{r}
-
-# Load buyer_addresses
-buyer_addresses <- read_csv("data/buyer_addresses.csv")
-
-# Load buyer_totals
-buyer_totals <- read_csv("data/buyer_totals.csv")
-
-# Load buyer_annual_by_year
-buyer_annual_by_year <- read_csv("data/buyer_annual_by_year.csv")
-
-# Load state_population_per_year
-state_population_per_year <- read_csv("data/state_population_per_year.csv")
-
-```
-
 ## Loading Data from ARCOS R package
 
 The data above was obtained by me via the Washington Post's [ARCOS API](https://wpinvestigative.github.io/arcos/).  I then saved it as a CSV and made it available.   
 
-But you can also download data directly from the ARCOS API and work with it.  I'll show you how to do that now. 
+But you can also download data directly from the ARCOS API and work with it.  I'll show you how to do that now.
 
 First, we need to store a password of sorts -- called an API key -- that will give us permission to access their data.  Here's a list of [API keys that will work](https://github.com/wpinvestigative/arcos-api/blob/master/keys/keys.txt).  
 
@@ -116,21 +92,41 @@ First, we need to store a password of sorts -- called an API key -- that will gi
 key <- "uO4EK6I"
 ```
 
-Now we can pull down data, using the different functions in the ARCOS R package. 
+Now we can pull down data, using the different functions in the ARCOS R package.
 
 Let's start by just getting the total pills and shipments for each county in the U.S. for each year.  
 
 We're going to store it as an object called "arcos_county_pills_per_year".  We're going to use a function called "summarized_county_annual" and we're going to set the key as equal to the key we just stored.  
 
+Q: Build a bar chart that shows 
+
+Q: Which state had the highest rate of 
+
 ```{r}
-arcos_county_pills_per_year <- summarized_county_annual(key = key)
+drugs <- drug_list(key=key)
+state_population_2014 <- state_population(key=key) %>%
+  clean_names() %>%
+  filter(year==2014)
+
+
+
+
+arcos_county_pills_per_year <- summarized_county_annual(key = key) %>%
+  clean_names()
+
+pills_pharmacy_maryland <- total_pharmacies_state(state="MD", key=key)
+
+pharmacies_prince_georges <- total_pharmacies_county(county = "Prince Georges", state = "MD", key = "WaPo")
+
+
+
 ```
 
-Notice that it creates a new object in our environment window. 
+Notice that it creates a new object in our environment window.
 
 We can use a different function to get all of the raw data for one county, in this case Mingo County, West Virginia.  
 
-This data should look familiar. There's one record per shipment for every shipment to Mingo County, West Virginia.  We previously downloaded it from the Washington Post website. 
+This data should look familiar. There's one record per shipment for every shipment to Mingo County, West Virginia.  We previously downloaded it from the Washington Post website.
 
 ```{r}
 mingo_raw <- county_raw(county="Mingo", state="WV", key = key)
@@ -141,7 +137,7 @@ There are many other ways the data is stored that you can access through the ARC
 
 **Task**: Try out three different functions detailed on the ARCOS API package to pull down a different slice of data. The different data sets are detailed here: [ARCOS API](https://wpinvestigative.github.io/arcos/). What looks useful for the questions you want to ask?
 
-Caution: do NOT use the raw_data() function, it will almost certainly crash your computer. 
+Caution: do NOT use the raw_data() function, it will almost certainly crash your computer.
 
 ## Analysis
 
