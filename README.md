@@ -412,7 +412,7 @@ No study session this week, Sean teaching at [NICAR](https://www.ire.org/events-
   * An alternative to loading files locally.  Have to follow specific rules or methods to get the data as determined by owner of the data. There is generally a guide/reference/documentation telling you what you can get and how to get it.
   * [Twitter API](https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets) and [RTweet R Package](https://rtweet.info/)
   * [ARCOS raw data download](https://github.com/wpinvestigative/arcos#download-the-raw-data) and [ARCOS R package](https://wpinvestigative.github.io/arcos/)
-  * [Census Data](https://data.census.gov/cedsci/) and [Tidycensus R Package](https://data.census.gov/cedsci/)
+  * [Census Data](https://data.census.gov/cedsci/) and [Tidycensus R Package](https://walkerke.github.io/tidycensus/)
 * Story Discussion - PVS + LM | [Pharmacies miss half of dangerous drug combinations 1](https://www.chicagotribune.com/investigations/ct-drug-interactions-pharmacy-met-20161214-story.html) and [Big data offers new way to find hidden drug interactions](https://www.chicagotribune.com/investigations/ct-drug-interactions-signal-detection-met-20160209-story.html)
 * In-class lab: finding stories in opioid data, with R and the Tidyverse.
   * Clone your class GitHub repo to your desktop.
