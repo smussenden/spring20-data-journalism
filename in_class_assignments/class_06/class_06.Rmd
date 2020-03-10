@@ -1,5 +1,5 @@
 ---
-title: "Class_05 | In-Class Assignment | R Continued"
+title: "Class_06 | In-Class Assignment | R Continued"
 author: "Sean Mussenden"
 date: "10/1/2019"
 output:
@@ -15,8 +15,7 @@ knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE, paged.print=TRU
 
 ## Objective
 
-The purpose of this in-class assignment is to allow you to do some exploratory analysis to get you started on your final data analysis project.
-
+The purpose of this in-class assignment is to give you practice analyzing data and visualizing data.
 
 ## Tasks, Turning it In, Getting Help
 
@@ -37,7 +36,7 @@ Need help?  You are welcome to do the following things:
   * [RStudio cheatsheet](https://www.rstudio.com/resources/cheatsheets/#ide)
   * [Readr and Tidyr cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-import.pdf) and [Readr documentation](https://readr.tidyverse.org/) and [Tidyr documentation](https://tidyr.tidyverse.org/reference/index.html).
   * [Dplyr cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf) and [Dplyr documentation](https://dplyr.tidyverse.org/)
-  * [Lubridate cheatsheet](https://rawgit.com/rstudio/cheatsheets/master/lubridate.pdf) and [Lubridate documentation](https://lubridate.tidyverse.org/).
+  * [GGplot cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf) and [GGPLot documentation](https://ggplot2.tidyverse.org/reference/).
   * [GitHub desktop help](https://help.github.com/en/desktop/getting-started-with-github-desktop)
 * After you've spent 5 minutes trying to solve the problem on your own, ask your neighbor and if they don't know, ask me!
 
@@ -45,28 +44,26 @@ Need help?  You are welcome to do the following things:
 
 Take the following steps to set up your document:
 
-1. Download the ZIP file and open the folder inside of your GitHub class assignments folder. It should contain this document, class_06.Rmd, and a data folder with several CSVs.
+1. Download the ZIP file and open the folder inside of your GitHub class assignments folder. It should contain this document, class_06.Rmd.
 2. Open this file in RStudio.
 3. Rename this file "class_06_FIRSTNAME_LASTNAME.Rmd".
 4. Create a new R project inside of this folder, which will set the working directory in this folder.   
 
 ## Load Packages
 
-We're also going to load a new package called "arcos". This is a package built by the Washington Post that makes it easy to download opioid data from the ARCOS database using something called an API.
+**Task**: Today, you need to load the following packages.
 
-Here are more details on the [arcos package](https://wpinvestigative.github.io/arcos/)
+* [Arcos package](https://wpinvestigative.github.io/arcos/)
+* tidyverse
+* janitor
+* lubridate
+* scales
+* ggrepel
 
-Run this:
 
 ```{r}
-# If you don't have one or both of these these, use install.packages()
+# Load the packages.  You only need to install first if you've never loaded them on this machine.
 
-install.packages('arcos')
-library(tidyverse)
-library(janitor)
-library(lubridate)
-
-library(arcos)
 ```
 
 ## Load Data
@@ -87,66 +84,81 @@ But you can also download data directly from the ARCOS API and work with it.  I'
 
 First, we need to store a password of sorts -- called an API key -- that will give us permission to access their data.  Here's a list of [API keys that will work](https://github.com/wpinvestigative/arcos-api/blob/master/keys/keys.txt).  
 
+Now we can pull down data, using the different functions in the ARCOS R package.
+
 ```{r}
 # store a password as an object called key
 key <- "uO4EK6I"
 ```
 
-Now we can pull down data, using the different functions in the ARCOS R package.
-
 Let's start by just getting the total pills and shipments for each county in the U.S. for each year.  
 
 We're going to store it as an object called "arcos_county_pills_per_year".  We're going to use a function called "summarized_county_annual" and we're going to set the key as equal to the key we just stored.  
 
-Q: Build a bar chart that shows 
-
-Q: Which state had the highest rate of 
-
 ```{r}
-drugs <- drug_list(key=key)
-state_population_2014 <- state_population(key=key) %>%
-  clean_names() %>%
-  filter(year==2014)
-
-
-
-
 arcos_county_pills_per_year <- summarized_county_annual(key = key) %>%
   clean_names()
-
-pills_pharmacy_maryland <- total_pharmacies_state(state="MD", key=key)
-
-pharmacies_prince_georges <- total_pharmacies_county(county = "Prince Georges", state = "MD", key = "WaPo")
-
-
-
 ```
 
-Notice that it creates a new object in our environment window.
+### Q1: Total pills by year in Maryland
 
-We can use a different function to get all of the raw data for one county, in this case Mingo County, West Virginia.  
+**Task**: A) Build a bar chart that shows the total number of pills shipped to Maryland (NOT the number of shipments) each year between 2006 and 2014. 
 
-This data should look familiar. There's one record per shipment for every shipment to Mingo County, West Virginia.  We previously downloaded it from the Washington Post website.
+The chart should:
+
+* Make use of arcos_county_pills_per_year data frame we created above. 
+* Consist of only one chart with totals for the state, NOT one chart per county.
+* Have 9 vertical bars, one for each year between 2006 and 2014. The bars can be any color you choose except royal blue. 
+* Label the x axis "Year" and the y axis "Total Pills".
+* Give it a title that explains the trend you see, and a source line for where the data came from. 
+* The numbers on the y axis should have commas in them.
+
+**Task**: B) Answer the following question: how does year-by-year trend in Maryland compare to the year-by-year trend in Baltimore City that you found in the lab you completed for last week? Is it the same? You don't need to rebuild that chart here, just look back at the lab.  
 
 ```{r}
-mingo_raw <- county_raw(county="Mingo", state="WV", key = key)
+
 
 ```
 
-There are many other ways the data is stored that you can access through the ARCOS API.  
+### Q2: Pills per person in U.S.
 
-**Task**: Try out three different functions detailed on the ARCOS API package to pull down a different slice of data. The different data sets are detailed here: [ARCOS API](https://wpinvestigative.github.io/arcos/). What looks useful for the questions you want to ask?
+**Task**: A) Build a scatterplot that creates a dot for each state (plus Washington, D.C.), its position determined by population in 2012 (x axis) and total pills in that state in 2012.  
 
-Caution: do NOT use the raw_data() function, it will almost certainly crash your computer.
+The chart should:
+* Make use of the arcos_county_pills_per_year dataframe we created above.  To get state population, use the state_population() function that is part of the ARCOS package.
+* Have 51 dots, one for each state plus D.C.
+* Have a trend line/line of best fit running through the data. 
+* Only label the dots for those five states that have a pills per person rate of 65 or greater. 
+* Label the x axis "2012 Population" and the y axis "Total Pills 2012".
+* Give it a title that explains the trend you see, and a source line for where the data came from. 
+* The numbers on the y axis and x axis should have commas in them.
 
-## Analysis
+**Task**: B) Answer the following question: which state had the highest pills per person rate in 2012?  What was the rate? 
 
-**Task** Use the rest of class to start doing exploratory queries for your data analysis project.  Do at least 5 queries to get started. I'll come around and talk to you about your ideas.  
+```{r}
+
+```
+
+### Q3 through infinity
+
+**Task**: This is free form practice.  Here's how you should proceed.
+
+* Develop a question you'd like to know the answer to.
+* Operationalize the question by writing code in a block below. 
+* Visualize your findings with a chart. 
+
+You can stick to using the data you've already pulled in above from the [ARCOS API](https://wpinvestigative.github.io/arcos/) if you want.  But you are encouraged to pull in other kinds of data and explore if you like.  Among the options detailed on the [ARCOS API](https://wpinvestigative.github.io/arcos/) reference page are:
+
+* total_distributors_state() - "Get total pills for each distributor in a state". Possible Q: Who were the top 10 distributors in Maryland? 
+* summarized_county_monthly() - "Get monthly summarized pill totals by county". Possible Q: Nationally, do we see a trend of pill shipments rising in December and falling in January? 
+* Caution: do NOT use the raw_data() function, it will crash your computer.
+
+You are also free to load other kinds of data, if you want.  Here's one idea: find a spreadsheet online from a reputable source showing opioid overdose deaths by state in 2012 and compare it to pills per person rate in 2012. 
 
 ## Output
 
-**Task**: Spellcheck your document in R Studio.  Save your file.  Knit it to an HTML document, making sure it compiles.  Open it in a browser to be sure. Push your changes to GitHub, and go to GitHub.com to make sure your changes got up to the browser.
+Spellcheck your document in R Studio.  Save your file.  Knit it to an HTML document, making sure it compiles.  Open it in a browser to be sure. Push your changes to GitHub, and go to GitHub.com to make sure your changes got up to the browser.
 
 ## Submission
 
-**Task**: On ELMS, post link to GitHub to the R Markdown file and html file.
+On ELMS, post link to GitHub to the R Markdown file and html file.

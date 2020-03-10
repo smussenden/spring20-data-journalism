@@ -1,0 +1,223 @@
+---
+title: "Class_06 | In-Class Assignment | R Continued"
+author: "Sean Mussenden"
+date: "10/1/2019"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE, paged.print=TRUE)
+```
+
+## Objective
+
+The purpose of this in-class assignment is to give you practice analyzing data and visualizing data.
+
+## Tasks, Turning it In, Getting Help
+
+At several points throughout this document, you will see the word **Task**.  
+
+This indicates that you need to do something, generally creating a code block and writing custom code.  
+
+When you are finished, you should save your R markdown file and Knit it as an HTML file.
+
+Upload links to your GitHub folder on ELMS.
+
+Need help?  You are welcome to do the following things:
+
+* Refer to the previous week's lab.
+* Use Google or search Stack Overflow. Try searching for your error message or translating your problem into basic terms.
+* Check out the excellent [R for Data Science](https://r4ds.had.co.nz/index.html)
+* Take a look at the [Cheatsheets](https://www.rstudio.com/resources/cheatsheets/) and [Tidyverse documentation](https://www.tidyverse.org/).
+  * [RStudio cheatsheet](https://www.rstudio.com/resources/cheatsheets/#ide)
+  * [Readr and Tidyr cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-import.pdf) and [Readr documentation](https://readr.tidyverse.org/) and [Tidyr documentation](https://tidyr.tidyverse.org/reference/index.html).
+  * [Dplyr cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf) and [Dplyr documentation](https://dplyr.tidyverse.org/)
+  * [GGplot cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf) and [GGPLot documentation](https://ggplot2.tidyverse.org/reference/).
+  * [GitHub desktop help](https://help.github.com/en/desktop/getting-started-with-github-desktop)
+* After you've spent 5 minutes trying to solve the problem on your own, ask your neighbor and if they don't know, ask me!
+
+## Setup
+
+Take the following steps to set up your document:
+
+1. Download the ZIP file and open the folder inside of your GitHub class assignments folder. It should contain this document, class_06.Rmd.
+2. Open this file in RStudio.
+3. Rename this file "class_06_FIRSTNAME_LASTNAME.Rmd".
+4. Create a new R project inside of this folder, which will set the working directory in this folder.   
+
+## Load Packages
+
+**Task**: Today, you need to load the following packages.
+
+* [Arcos package](https://wpinvestigative.github.io/arcos/)
+* tidyverse
+* janitor
+* lubridate
+* scales
+* ggrepel
+
+
+```{r}
+# Load the packages.  You only need to install first if you've never loaded them on this machine.
+
+library(tidyverse)
+library(janitor)
+library(lubridate)
+library(scales)
+library(ggrepel)
+library(arcos)
+```
+
+## Load Data
+
+For this exercise, we will be working with a small subset of the DEA's ARCOS database, which documented shipments of 76 billion opioid pills between 2006 and 2012, during the peak of the opioid epidemic.
+
+The data was obtained after a lengthy legal battle by the Washington Post and the Charleston Gazette-Mail, and released by the Washington Post in raw and aggregated form. [Washington Post "Digging into the DEA's pain pill database" page](https://www.washingtonpost.com/graphics/2019/investigations/dea-pain-pill-database/).
+
+A data dictionary is available here: [ARCOS Registrant Handbook](https://www.deadiversion.usdoj.gov/arcos/handbook/full.pdf).
+
+We will be loading in three different data sets today.  The data was obtained by me from the Washington Post's [ARCOS R package](https://cran.r-project.org/web/packages/arcos/readme/README.html), which allows you to easily download larger and more interesting slices of the data than what's available using the web interface.  
+
+## Loading Data from ARCOS R package
+
+The data above was obtained by me via the Washington Post's [ARCOS API](https://wpinvestigative.github.io/arcos/).  I then saved it as a CSV and made it available.   
+
+But you can also download data directly from the ARCOS API and work with it.  I'll show you how to do that now.
+
+First, we need to store a password of sorts -- called an API key -- that will give us permission to access their data.  Here's a list of [API keys that will work](https://github.com/wpinvestigative/arcos-api/blob/master/keys/keys.txt).  
+
+Now we can pull down data, using the different functions in the ARCOS R package.
+
+```{r}
+# store a password as an object called key
+key <- "uO4EK6I"
+```
+
+Let's start by just getting the total pills and shipments for each county in the U.S. for each year.  
+
+We're going to store it as an object called "arcos_county_pills_per_year".  We're going to use a function called "summarized_county_annual" and we're going to set the key as equal to the key we just stored.  
+
+```{r}
+arcos_county_pills_per_year <- summarized_county_annual(key = key) %>%
+  clean_names()
+```
+
+### Q1: Total pills by year in Maryland
+
+**Task**: A) Build a bar chart that shows the total number of pills shipped to Maryland (NOT the number of shipments) each year between 2006 and 2014. 
+
+The chart should:
+
+* Make use of arcos_county_pills_per_year data frame we created above. 
+* Consist of only one chart with totals for the state, NOT one chart per county.
+* Have 9 vertical bars, one for each year between 2006 and 2014. The bars can be any color you choose except royal blue. 
+* Label the x axis "Year" and the y axis "Total Pills".
+* Give it a title that explains the trend you see, and a source line for where the data came from. 
+* The numbers on the y axis should have commas in them.
+
+**Task**: B) Answer the following question: how does year-by-year trend in Maryland compare to the year-by-year trend in Baltimore City that you found in the lab you completed for last week? Is it the same? You don't need to rebuild that chart here, just look back at the lab.  
+
+```{r}
+
+# Filter the county pills data frame just for Maryland counties.  Then group by buyer state and year and add up pills to get a total for each state 
+
+maryland_pills_per_year <- arcos_county_pills_per_year %>%
+  filter(buyer_state == "MD") %>%
+  group_by(buyer_state, year) %>%
+  summarize(dosage_unit = sum(dosage_unit)) 
+  
+# Build the chart  
+  ggplot(maryland_pills_per_year) +
+  geom_bar(stat="identity", aes(year, dosage_unit), fill="royal blue") +
+  labs(x="Year", y="Total pills", title="In Maryland, opioids rise through 2011 before falling", subtitle = "Total pills shipped to Maryland by year", caption = "Source: DEA ARCOS database, via Washington Post") +
+  scale_x_continuous(breaks = c(2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014)) +
+  scale_y_continuous(labels = comma)
+  
+# The year-over-year-trend in Maryland and Baltimore are different.  In Baltimore, pills spiked sharpest in 2006, before falling. In Maryland, the rise was gradual through 2011, before falling.
+
+```
+
+### Q2: Pills per person in U.S.
+
+**Task**: A) Build a scatterplot that creates a dot for each state (plus Washington, D.C.), its position determined by population in 2012 (x axis) and total pills in that state in 2012.  
+
+The chart should:
+* Make use of the arcos_county_pills_per_year dataframe we created above.  To get state population, use the state_population() function that is part of the ARCOS package.
+* Have 51 dots, one for each state plus D.C.
+* Have a trend line/line of best fit running through the data. 
+* Only label the dots for those five states that have a pills per person rate of 65 or greater. 
+* Label the x axis "2012 Population" and the y axis "Total Pills 2012".
+* Give it a title that explains the trend you see, and a source line for where the data came from. 
+* The numbers on the y axis and x axis should have commas in them.
+
+**Task**: B) Answer the following question: which state had the highest pills per person rate in 2012?  What was the rate? 
+
+```{r}
+
+# Get state-by-state-population-data
+state_population_2012 <- state_population(key=key) %>%
+  clean_names() %>%
+  filter(year==2012)
+
+# Filter county-by-year totals just for 2012, then group by buyer_state and add up total pills
+state_pills_2012 <- arcos_county_pills_per_year %>%
+  filter(year == 2012) %>%
+  group_by(buyer_state) %>%
+  summarize(dosage_unit = sum(dosage_unit)) 
+
+# Join state_pills_per_year to county_by_year
+
+state_pills_population_2012 <- state_population_2012 %>%
+  inner_join(state_pills_2012) 
+
+# Create a "pills per person" column and sort sheet on that column, from highest to lowest
+  
+state_pills_population_2012 <- state_pills_population_2012 %>%
+  mutate(pills_per_person = dosage_unit/population) %>%
+  arrange(desc(pills_per_person))
+
+# Print out the dataframe showing Kentucky is the highest
+state_pills_population_2012
+
+# Make the chart
+ggplot(state_pills_population_2012) +
+  geom_point(aes(population, dosage_unit)) +
+  labs(x="2012 Population", y="Total pills in 2012", title="Kentucky, West Virginia have highest rate of pills per person in U.S.", caption = "Source: DEA ARCOS database, via Washington Post", fill="buyer_state") +
+  scale_y_continuous(labels = comma) +
+  scale_x_continuous(labels = comma) + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  geom_smooth(aes(population, dosage_unit), method = "lm", se = FALSE) +
+  geom_text_repel(aes(population, dosage_unit, label=buyer_state),
+                  subset(state_pills_population_2012, pills_per_person > 65))
+
+# Kentucky had the highest rate, at 72.1 pills per person
+
+```
+
+### Q3 through infinity
+
+**Task**: This is free form practice.  Here's how you should proceed.
+
+* Develop a question you'd like to know the answer to.
+* Operationalize the question by writing code in a block below. 
+* Visualize your findings with a chart. 
+
+You can stick to using the data you've already pulled in above from the [ARCOS API](https://wpinvestigative.github.io/arcos/) if you want.  But you are encouraged to pull in other kinds of data and explore if you like.  Among the options detailed on the [ARCOS API](https://wpinvestigative.github.io/arcos/) reference page are:
+
+* total_distributors_state() - "Get total pills for each distributor in a state". Possible Q: Who were the top 10 distributors in Maryland? 
+* summarized_county_monthly() - "Get monthly summarized pill totals by county". Possible Q: Nationally, do we see a trend of pill shipments rising in December and falling in January? 
+* Caution: do NOT use the raw_data() function, it will crash your computer.
+
+You are also free to load other kinds of data, if you want.  Here's one idea: find a spreadsheet online from a reputable source showing opioid overdose deaths by state in 2012 and compare it to pills per person rate in 2012. 
+
+## Output
+
+Spellcheck your document in R Studio.  Save your file.  Knit it to an HTML document, making sure it compiles.  Open it in a browser to be sure. Push your changes to GitHub, and go to GitHub.com to make sure your changes got up to the browser.
+
+## Submission
+
+On ELMS, post link to GitHub to the R Markdown file and html file.

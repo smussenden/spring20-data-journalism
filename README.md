@@ -402,22 +402,29 @@ No study session this week, Sean teaching at [NICAR](https://www.ire.org/events-
   * [ELMS Link](https://umd.instructure.com/courses/1278056/discussion_topics/3818905)    
 
 #### Week 7 - Mar. 10
-*Tuesday Class*
 
+*Tuesday Class*
+* Announcements
+* What's an API?
+  * An "Application programming interface" allows you to pull data from a third-party database directly into your environment.  
+  * An alternative to loading files locally.  Have to follow specific rules or methods to get the data as determined by owner of the data. There is generally a guide/reference/documentation telling you what you can get and how to get it.
+  * [Twitter API](https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets) and [RTweet R Package](https://rtweet.info/)
+  * [ARCOS raw data download](https://github.com/wpinvestigative/arcos#download-the-raw-data) and [ARCOS R package](https://wpinvestigative.github.io/arcos/)
+  * [Census Data](https://data.census.gov/cedsci/) and [Tidycensus R Package](https://data.census.gov/cedsci/)
 * Story Discussion - PVS + LM | [Pharmacies miss half of dangerous drug combinations 1](https://www.chicagotribune.com/investigations/ct-drug-interactions-pharmacy-met-20161214-story.html) and [Big data offers new way to find hidden drug interactions](https://www.chicagotribune.com/investigations/ct-drug-interactions-signal-detection-met-20160209-story.html)
 * In-class lab: finding stories in opioid data, with R and the Tidyverse.
   * Clone your class GitHub repo to your desktop.
-  * [Download this ZIP file](class_06/class_06.zip), which contains an R Markdown document and opioid data. Open it up, put it inside your class assignments folder.  Unzip the data.
+  * [Download this R Markdown file](class_06/class_06.Rmd), Open it up, put it inside your class assignments folder.
   * Open the class_06.Rmd file in R Studio.
   * Follow the instructions step-by-step.
   * When you're finished, push changes to GitHub.
-  * [Upload your links to edited Rmd file and html file to ELMS]()
+  * [Upload your links to edited Rmd file and html file to ELMS](https://umd.instructure.com/courses/1278056/assignments/5097068)
 
 *Online tutorial lab | Due by Sunday at 11:59 p.m.*
 * Data Analysis in R (visualizing geographic data)
   * [Download package of files you'll need to your local machine and unzip](labs/lab_07/lab_07.zip).
   * [Watch lab video and follow along with step-by-step instructions](https://www.youtube.com/watch?v=trsqB0HdNPk&t=4s).
-  * Open Lab_07.Rmd file, listen and watch video, and follow along.  Modify code or write new code where needed. Upload to GitHub and then the links to [ELMS when done](https://umd.instructure.com/courses/1268776/assignments/5007179?module_item_id=9730193).  
+  * Open Lab_07.Rmd file, listen and watch video, and follow along.  Modify code or write new code where needed. Upload to GitHub and then the links to [ELMS when done](https://umd.instructure.com/courses/1278056/assignments/5097077).  
 * Optional, if you feel like you need additional help: [DataCamp, Introduction to the Tidyverse](https://www.datacamp.com/courses/introduction-to-the-tidyverse) and [Data Visualization with ggplot2 (Part 1)](https://www.datacamp.com/courses/data-visualization-with-ggplot2-1) and [Data Visualization with ggplot2 (Part 2)](https://www.datacamp.com/courses/data-visualization-with-ggplot2-2) and [Working with geospatial data in R](https://www.datacamp.com/courses/working-with-geospatial-data-in-r)
 
 *Optional study session*
@@ -430,11 +437,11 @@ Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make th
 
 *Forum Posts | Due by Sunday at 11:59 p.m.*
 
-* In 150 words, summarize the main findings of the story "The thousands of U.S. locales where lead poisoning is worse than in Flint", to prepare for class discussion next week. [ELMS Link]()
+* In 150 words, summarize the main findings of the story "The thousands of U.S. locales where lead poisoning is worse than in Flint", to prepare for class discussion next week. [ELMS Link](https://umd.instructure.com/courses/1278056/discussion_topics/3852091)
 
 *Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
 
-* Data acquisition project | By Thursday, send follow up email to check on status of request.  Respond to questions from the agency to clarify your request.  If you get an estimate of payment, message Sean ASAP.  In a forum post of no more than 150 words, summarize your interactions this week.
+* Data acquisition project | By Thursday, send follow up email to check on status of request.  Respond to questions from the agency to clarify your request.  If you get an estimate of payment, message Sean ASAP.  In a forum post of no more than 150 words, summarize your interactions this week. [ELMS Link](https://umd.instructure.com/courses/1278056/discussion_topics/3852088)
 
 #### Week 8 - Mar. 17
 
@@ -444,7 +451,7 @@ Spring break, no class or study session this week.
 *Tuesday Class*
 
 * Data analysis project introduced.
-* Story Discussion | [The thousands of U.S. locales where lead poisoning is worse than in Flint | Reuters | December 2016](https://www.reuters.com/investigates/special-report/usa-lead-testing/)
+* Story Discussion | ACC + CTS | [The thousands of U.S. locales where lead poisoning is worse than in Flint | Reuters | December 2016](https://www.reuters.com/investigates/special-report/usa-lead-testing/)
 
 
 *Online tutorial lab | Due by Sunday at 11:59 p.m.*
@@ -458,6 +465,7 @@ Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make th
 *Readings | Complete by Sunday at 11:59 p.m.*
 
 TK
+* Opioid project readings
 
 *Forum Posts | Due by Sunday at 11:59 p.m.*
 
