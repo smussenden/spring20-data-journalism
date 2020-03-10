@@ -367,6 +367,7 @@ Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make th
   * Follow the instructions step-by-step.
   * When you're finished, push changes to GitHub.
   * [Upload your links to edited Rmd file and html file to ELMS](https://umd.instructure.com/courses/1278056/assignments/5097066?module_item_id=9855957)
+  * [Answer Key](in_class_assignments/class_05/key_class_05.Rmd)
 
 *Online tutorial lab | Due by Sunday at 11:59 p.m.*
 
@@ -374,6 +375,7 @@ Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make th
   * [Download package of files you'll need to your local machine and unzip](labs/lab_06/lab_06.zip).
   * [Watch lab video and follow along with step-by-step instructions](https://www.youtube.com/watch?v=Idb4R8dVlY0).
   * Open Lab_06.Rmd file, listen and watch video, and follow along.  Modify code or write new code where needed. Upload to GitHub and then the links to ELMS when done. [ELMS Link](https://umd.instructure.com/courses/1278056/assignments/5097076).
+  * [Answer Key](labs/lab_06/lab_06_key.Rmd)
 * Optional, if you feel like you need additional help: [DataCamp, Introduction to the Tidyverse](https://www.datacamp.com/courses/introduction-to-the-tidyverse) and [Data Visualization with ggplot2 (Part 1)](https://www.datacamp.com/courses/data-visualization-with-ggplot2-1) and [Data Visualization with ggplot2 (Part 2)](https://www.datacamp.com/courses/data-visualization-with-ggplot2-2)
 
 *Optional study session*
