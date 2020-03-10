@@ -416,7 +416,7 @@ No study session this week, Sean teaching at [NICAR](https://www.ire.org/events-
 * Story Discussion - PVS + LM | [Pharmacies miss half of dangerous drug combinations 1](https://www.chicagotribune.com/investigations/ct-drug-interactions-pharmacy-met-20161214-story.html) and [Big data offers new way to find hidden drug interactions](https://www.chicagotribune.com/investigations/ct-drug-interactions-signal-detection-met-20160209-story.html)
 * In-class lab: finding stories in opioid data, with R and the Tidyverse.
   * Clone your class GitHub repo to your desktop.
-  * [Download this R Markdown file](class_06/class_06.Rmd), Open it up, put it inside your class assignments folder.
+  * [Download this R Markdown file](in_class_assignments/class_06/class_06.Rmd), Open it up, put it inside your class assignments folder.
   * Open the class_06.Rmd file in R Studio.
   * Follow the instructions step-by-step.
   * When you're finished, push changes to GitHub.
