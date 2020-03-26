@@ -426,7 +426,8 @@ No study session this week, Sean teaching at [NICAR](https://www.ire.org/events-
 * Data Analysis in R (visualizing geographic data)
   * [Download package of files you'll need to your local machine and unzip](labs/lab_07/lab_07.zip).
   * [Watch lab video and follow along with step-by-step instructions](https://www.youtube.com/watch?v=trsqB0HdNPk&t=4s).
-  * Open Lab_07.Rmd file, listen and watch video, and follow along.  Modify code or write new code where needed. Upload to GitHub and then the links to [ELMS when done](https://umd.instructure.com/courses/1278056/assignments/5097077).  
+  * Open Lab_07.Rmd file, listen and watch video, and follow along.  Modify code or write new code where needed. Upload to GitHub and then the links to [ELMS when done](https://umd.instructure.com/courses/1278056/assignments/5097077).
+  * [Answer key](labs/lab_07/lab_07_key.Rmd)    
 * Optional, if you feel like you need additional help: [DataCamp, Introduction to the Tidyverse](https://www.datacamp.com/courses/introduction-to-the-tidyverse) and [Data Visualization with ggplot2 (Part 1)](https://www.datacamp.com/courses/data-visualization-with-ggplot2-1) and [Data Visualization with ggplot2 (Part 2)](https://www.datacamp.com/courses/data-visualization-with-ggplot2-2) and [Working with geospatial data in R](https://www.datacamp.com/courses/working-with-geospatial-data-in-r)
 
 *Optional study session*
@@ -447,213 +448,45 @@ Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make th
 
 #### Week 8 - Mar. 17
 
-Spring break, no class or study session this week.
+Spring break week 1, no class or study session this week.
 
 #### Week 9 - Mar. 24
-*Tuesday Class*
+
+Spring break week 2, no class or study session this week.
+
+#### Week 10 - Mar. 31
+* IN CLASS LAB
 
 * Data analysis project introduced.
 * Story Discussion | ACC + CTS | [The thousands of U.S. locales where lead poisoning is worse than in Flint | Reuters | December 2016](https://www.reuters.com/investigates/special-report/usa-lead-testing/)
-
-
-*Online tutorial lab | Due by Sunday at 11:59 p.m.*
-
-TK
-
-*Optional study session*
-
-Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
-
-*Readings | Complete by Sunday at 11:59 p.m.*
-
-TK
 * Opioid project readings
-
-*Forum Posts | Due by Sunday at 11:59 p.m.*
-
-TK
-
-*Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
-
+* Opioid forum posts
 * Data acquisition project | Send follow up email to check on status of request and/or quickly respond to questions from agency.
-
-
-#### Week 10 - Mar. 31
-*Tuesday Class*
-
-* Story Discussion | GT + MS | [Bussed Out: How America moves its homeless | Guardian US | December 2017](https://www.theguardian.com/us-news/ng-interactive/2017/dec/20/bussed-out-america-moves-homeless-people-country-study)
-
-*Online tutorial lab | Due by Sunday at 11:59 p.m.*
-
-TK
-
-*Optional study session*
-
-Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
-
-*Readings | Complete by Sunday at 11:59 p.m.*
-
-TK
-
-*Forum Posts | Due by Sunday at 11:59 p.m.*
-
-TK
-
-*Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
-
-* Data acquisition project | Send follow up email to check on status of request and/or quickly respond to questions from agency.
-
 
 #### Week 11 - Apr. 7
-*Tuesday Class*
-
-* Story Discussion | SM + JR | [The Tennis Racket | BuzzFeed.News | January 2016](https://www.buzzfeednews.com/article/heidiblake/the-tennis-racket)
-
-*Online tutorial lab | Due by Sunday at 11:59 p.m.*
-
-TK
-
-*Optional study session*
-
-Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
-
-*Readings | Complete by Sunday at 11:59 p.m.*
-
-TK
-
-*Forum Posts | Due by Sunday at 11:59 p.m.*
-
-TK
-
-*Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
-
-* Data acquisition project | Slide deck for project presentation and link to Google spreadsheet contact log.
-* Data analysis project | status memo outlining your idea for analysis.  
-
+* Story Discussion | GT + MS | [Bussed Out: How America moves its homeless | Guardian US | December 2017](https://www.theguardian.com/us-news/ng-interactive/2017/dec/20/bussed-out-america-moves-homeless-people-country-study)
+* Data acquisition project | Send follow up email to check on status of request and/or quickly respond to questions from agency.
 
 #### Week 12 - Apr. 14
-*Tuesday Class*
-
-* Data acquisition project | Final presentations in class.
-
-
-*Online tutorial lab | Due by Sunday at 11:59 p.m.*
-
-TK
-
-*Optional study session*
-
-Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
-
-*Readings | Complete by Sunday at 11:59 p.m.*
-
-TK
-
-*Forum Posts | Due by Sunday at 11:59 p.m.*
-
-TK
-
-*Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
-
+* Story Discussion | SM + JR | [The Tennis Racket | BuzzFeed.News | January 2016](https://www.buzzfeednews.com/article/heidiblake/the-tennis-racket)
+* Data acquisition project | Slide deck for project presentation and link to Google spreadsheet contact log.
+* Data analysis project | status memo outlining your idea for analysis.
 
 #### Week 13 - Apr. 21
-*Tuesday Class*
-
+* No in-class lab or out of class lab: data analysis project work session.
+* Data acquisition project | Final presentations in class.
 * Story Discussion | MX + CD | [Failure factories](https://projects.tampabay.com/projects/2015/investigations/pinellas-failure-factories/)
 
-*Online tutorial lab | Due by Sunday at 11:59 p.m.*
-
-TK
-
-*Optional study session*
-
-Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
-
-*Readings | Complete by Sunday at 11:59 p.m.*
-
-TK
-
-*Forum Posts | Due by Sunday at 11:59 p.m.*
-
-TK
-
-*Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
+#### Week 14 - Apr. 28
+* No in-class lab or out of class lab: data analysis project work session.
+* Story Discussion | BW + RF | [The Follower Factory](https://www.nytimes.com/interactive/2018/01/27/technology/social-media-bots.html)
 * Data analysis project | status memo outlining your idea for analysis and draft markdown file.  
 
-#### Week 14 - Apr. 28
-*Tuesday Class*
-
-* Story Discussion | BW + RF | [The Follower Factory](https://www.nytimes.com/interactive/2018/01/27/technology/social-media-bots.html)
-
-*Online tutorial lab | Due by Sunday at 11:59 p.m.*
-
-TK
-
-*Optional study session*
-
-Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
-
-*Readings | Complete by Sunday at 11:59 p.m.*
-
-TK
-
-*Forum Posts | Due by Sunday at 11:59 p.m.*
-
-TK
-
-*Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
-
+#### Week 15 - May 5
+* No in-class lab or out of class lab: data analysis project work session
+* Story Discussion | RM + DM | [Houston Astros Sign Stealing Scandal](http://signstealingscandal.com/) and [Does Electronic Sign Stealing Work? | The Athletic](https://theathletic.com/1573075/2020/01/31/does-electronic-sign-stealing-work-the-astros-numbers-are-eye-popping/)
 * Data analysis project | status memo outlining updating for analysis and updated draft markdown file.  
 
-
-#### Week 15 - May 5
-*Tuesday Class*
-
-* Story Discussion | RM + DM | [Houston Astros Sign Stealing Scandal](http://signstealingscandal.com/) and [Does Electronic Sign Stealing Work? | The Athletic](https://theathletic.com/1573075/2020/01/31/does-electronic-sign-stealing-work-the-astros-numbers-are-eye-popping/)
-
-
-*Online tutorial lab | Due by Sunday at 11:59 p.m.*
-
-TK
-
-*Optional study session*
-
-Held at regular time this week, Friday @ 12:00am - 1:50pm.  If you can't make the study session but need help, reach out before the session to set up a time to meet with me.  
-
-*Readings | Complete by Sunday at 11:59 p.m.*
-
-TK
-
-*Forum Posts | Due by Sunday at 11:59 p.m.*
-
-TK
-
-*Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
-* Data analysis project | final story pitch memo and clean GitHub repo with final R Markdown file.   
-
-
-
 #### Week 16 - May. 12
-
-*Tuesday Class*
-* Data acquisition project | "pitch your editor" presentations.  
-
-*Online tutorial lab | Due by Sunday at 11:59 p.m.*
-
-None.
-
-*Optional study session*
-
-None.
-
-*Readings | Complete by Sunday at 11:59 p.m.*
-
-None.
-
-*Forum Posts | Due by Sunday at 11:59 p.m.*
-
-None.
-
-*Major Assignment Milestones | Due by Sunday at 11:59 p.m.*
-
-None.
+* No classes - only thing is data analysis project due.
+* Data analysis project | final story pitch memo and clean GitHub repo with final R Markdown file.   
