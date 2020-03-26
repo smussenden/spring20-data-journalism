@@ -117,9 +117,13 @@ glimpse(arcos_county_population_per_year)
 
 ## Make some maps
 
-**Task**: Make a "static facet map", with one map per year between 2006 and 2014, *showing only West Virginia counties*. It should look like this:.  If you need help, refer to the last lab, where we created a similar map.  
+**Task**: Make a "static facet map", with one map per year between 2006 and 2014, *showing only West Virginia counties*. 
+
+If you need help, refer to the last lab, where we created a similar map.  
 
 You should have nine little maps of West Virginia, one for each year between 2006 and 2014. Each county should be shaded based on the number of pills per person shipped to each county in each year.  
+
+It should look like this: https://github.com/smussenden/spring20-data-journalism/blob/master/in_class_assignments/class_07/images/task1.png.  
 
 Then provide a short writeup on what you find. What trends do you see?
 
@@ -159,7 +163,9 @@ geo_pills_population_county_wv %>%
 
 ```
 
-**Task**: Modify the facet map you just created to *show West Virginia AND Kentucky counties*, and only show *2006, 2007, 2008 and 2009*, instead of all 9 years. It should look like this: 
+**Task**: Modify the facet map you just created to *show West Virginia AND Kentucky counties*, and only show *2006, 2007, 2008 and 2009*, instead of all 9 years. 
+
+It should look like this: https://github.com/smussenden/spring20-data-journalism/blob/master/in_class_assignments/class_07/images/task2.png
 
 ```{r}
 
