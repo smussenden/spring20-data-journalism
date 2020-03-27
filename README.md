@@ -455,38 +455,248 @@ Spring break week 1, no class or study session this week.
 Spring break week 2, no class or study session this week.
 
 #### Week 10 - Mar. 31
-* IN CLASS LAB
 
-* Data analysis project introduced.
-* Story Discussion | ACC + CTS | [The thousands of U.S. locales where lead poisoning is worse than in Flint | Reuters | December 2016](https://www.reuters.com/investigates/special-report/usa-lead-testing/)
-* Opioid project readings
-* Opioid forum posts
-* Data acquisition project | Send follow up email to check on status of request and/or quickly respond to questions from agency.
+**Open Support Hours in Zoom**
+*Sean will be hanging out in an open Zoom room, where you can get help on weekly practice assignments or labs, discuss readings, or really anything else that's on your mind. You are not required to attend these. They're only if you need help.*
+* Tuesday from 11:30 a.m. to 2 p.m.
+* Friday from 11:30 a.m. to 2 p.m.
+* Other hours by appointment (ELMS message, text or call)  
+
+**Videos to watch and supporting materials**
+*Things I would have reviewed during in-person classes, if we were meeting in person.  You should watch these, and if there are things you don't understand, come to open support hours, or reach out to me by ELMS message, text or phone*
+* Sean reviews changes to the syllabus, key assignments, and other course features to account for distance learning.
+  * Last week's answer key.
+  * Updated syllabus.
+  * Guide to changes to syllabus, key assignments, and other course features.
+* Sean goes over what's due this week.
+* Sean introduces data analysis project.    
+* (Optional) Using R Studio Cloud, if your personal machine can't handle R Studio for desktop.
+  * RStudioCloud link
+  * Using R Studio Cloud
+
+**Weekly data journalism practice assignment**
+*This would be our weekly in-class assignment, if we were meeting in person*
+* Class 07: practice with visualizing geographic data. Spend an hour and a half working on this, get as far as you can.
+
+**Weekly data journalism lab**
+* Lab 08: loading data (APIs, web scraping, downloading).
+
+**Weekly story discussion materials**
+* Watch: Flint lead poisoning presentation by AAC+CTS
+* Forum Post: Respond to a flint lead presentation discussion question posed by AAC+CTS.   
+* Read: [Bussed Out: How America moves its homeless | Guardian US | December 2017](https://www.theguardian.com/us-news/ng-interactive/2017/dec/20/bussed-out-america-moves-homeless-people-country-study)
+* Watch: Bussed out presentation by GT + MS
+* Forum Post: Respond to a homeless bussing discussion question posed by GT and MS.
+
+**Weekly reading and forum post**
+* Read [Florida’s opioid crisis: billions of pills, millions in campaign cash | Tampa Bay Times](https://www.tampabay.com/florida-politics/buzz/2019/07/25/floridas-opioid-crisis-billions-of-pills-millions-in-campaign-cash/)
+* Forum Post: In 150 words, explain how journalists at the Tampa Bay Times used an "enterprise join" approach to combine the ARCOS opioid data with another data set to find a trend that served as the foundation for a news story.
+
+**Major assignments due**
+* Nothing due on data analysis project this week.
+* Data acquisition forum post: Send follow up email or call to check on status of request. Post less than 150 words about your contacts, and indicate if I need to get involved to talk about payment.  If you have your data, attach it.
+
+**Weekly Poll**
+* Fill out a short weekly poll about your the course and your well-being.
 
 #### Week 11 - Apr. 7
-* Story Discussion | GT + MS | [Bussed Out: How America moves its homeless | Guardian US | December 2017](https://www.theguardian.com/us-news/ng-interactive/2017/dec/20/bussed-out-america-moves-homeless-people-country-study)
-* Data acquisition project | Send follow up email to check on status of request and/or quickly respond to questions from agency.
+
+**Open Support Hours in Zoom**
+*Sean will be hanging out in an open Zoom room, where you can get help on weekly practice assignments or labs, discuss readings, or really anything else that's on your mind. You are not required to attend these. They're only if you need help.*
+* Tuesday from 11:30 a.m. to 2 p.m.
+* Friday from 11:30 a.m. to 2 p.m.
+* Other hours by appointment (ELMS message, text or call)  
+
+**Videos to watch and supporting materials**
+*Things I would have reviewed during in-person classes, if we were meeting in person.  You should watch these, and if there are things you don't understand, come to open support hours, or reach out to me by ELMS message, text or phone*
+* Sean reviews common errors from previous assignment and lab.
+* Sean goes over what's due this week.   
+
+**Weekly data journalism practice assignment**
+*This would be our weekly in-class assignment, if we were meeting in person*
+* Class 08: practice with loading data. Spend an hour and a half working on this, get as far as you can.
+
+**Weekly data journalism lab**
+* Lab 09: relationship tests.  
+
+**Weekly story discussion materials**
+*Read the story, watch the presentation, respond to the forum post*
+* Read: [The Tennis Racket | BuzzFeed.News | January 2016](https://www.buzzfeednews.com/article/heidiblake/the-tennis-racket)
+* Watch: Tennis racket presentation by SM + JR
+* Forum Post: Respond to a tennis racket discussion question posed by SM + JR.
+
+**Weekly reading and forum post**
+* Read [Opioid death rates soared in communities where pain pills flowed | Washington Post](https://www.washingtonpost.com/investigations/opioid-death-rates-soared-in-communities-where-pain-pills-flowed/2019/07/17/f3595da4-a8a4-11e9-a3a6-ab670962db05_story.html)
+* In 150 words, explain how Washington Post journalists used an "enterprise join" to combine the ARCOS opioid data with another data set to find a trend that served as the foundation for a news story.
+
+**Major assignment information**
+* Data analysis forum post: In about 400-500 words, write up a memo that explains how you plan to proceed with your data analysis project. You should hit the following points:
+  * Share the questions you'd like to investigate for your data analysis project.  What's your hypothesis for what you think you'll find? What gives you confidence that your hypothesis is correct?  
+  * Include at least a few references (and links if applicable) to academic research; government or non-profit organization reports; or news stories that give you some confidence that your ideas are worth investigating. Have other news organizations written a story you could "localize"?
+  * Explain what geographic area you plan to look into, at least initially. Will you start by looking at national trends? At one state? Or drill into one local area?
+  * Explain what other data, beyond the ARCOS data, you will need to analyze.  You should use at least one other data set in reporting this out.  Does the data exist?  If you don't have it yet, how will you get it?
+  * Include a few names of people or organizations who you can talk with as you go about doing this analysis and reporting out a story. Are there academics who have done similar studies?
+  * Explain why you think your analysis will likely lead to something newsworthy.  
+* Data acquisition forum post: Nothing due.
+
+**Weekly Poll**
+* Fill out a short weekly poll about your the course and your well-being.
 
 #### Week 12 - Apr. 14
-* Story Discussion | SM + JR | [The Tennis Racket | BuzzFeed.News | January 2016](https://www.buzzfeednews.com/article/heidiblake/the-tennis-racket)
-* Data acquisition project | Slide deck for project presentation and link to Google spreadsheet contact log.
-* Data analysis project | status memo outlining your idea for analysis.
+
+**Open Support Hours in Zoom**
+*Sean will be hanging out in an open Zoom room, where you can get help on weekly practice assignments or labs, discuss readings, or really anything else that's on your mind. You are not required to attend these. They're only if you need help.*
+* Tuesday from 11:30 a.m. to 2 p.m.
+* Friday from 11:30 a.m. to 2 p.m.
+* Other hours by appointment (ELMS message, text or call)  
+
+**Videos to watch and supporting materials**
+*Things I would have reviewed during in-person classes, if we were meeting in person.  You should watch these, and if there are things you don't understand, come to open support hours, or reach out to me by ELMS message, text or phone*
+* Sean reviews common errors from previous assignment and lab.
+* Sean goes over what's due this week.   
+
+**Weekly data journalism practice assignment**
+*This would be our weekly in-class assignment, if we were meeting in person*
+* Class 09: practice with relationship tests. Spend an hour and a half working on this, get as far as you can.
+
+**Weekly data journalism lab**
+* Lab 10: cleaning data.  
+
+**Weekly story discussion materials**
+*Read the story, watch the presentation, respond to the forum post*
+* Read: [Failure factories](https://projects.tampabay.com/projects/2015/investigations/pinellas-failure-factories/)
+* Watch: Failure factories presentation by MX + CD
+* Forum Post: Respond to a failure factories discussion question posed by MX + CD.
+
+**Weekly reading and forum post**
+* Read [The Quartz Guide to Bad Data](https://github.com/Quartz/bad-data-guide)
+* Forum post: The Quartz Guide to Bad Data provides a nice primer on the kinds of problems you might encounter in a data set.  Think of an example of a flaw you've encountered in a data set we've used in this class -- or that you've encountered elsewhere -- that is detailed by this guide. In 150 words, explain the flaw you encountered, and explain what the guide says about how to work around the problem.  
+
+**Major assignment information**
+* Data analysis assignment: nothing due.
+* Data acquisition forum post: Send follow up email or call to check on status of request. Post less than 150 words about your contacts, and indicate if I need to get involved to talk about payment.  If you have your data, attach it.
+
+**Weekly Poll**
+* Fill out a short weekly poll about the course and your well-being.
 
 #### Week 13 - Apr. 21
-* No in-class lab or out of class lab: data analysis project work session.
-* Data acquisition project | Final presentations in class.
-* Story Discussion | MX + CD | [Failure factories](https://projects.tampabay.com/projects/2015/investigations/pinellas-failure-factories/)
+
+**Open Support Hours in Zoom**
+*Sean will be hanging out in an open Zoom room, where you can get help on weekly practice assignments or labs, discuss readings, or really anything else that's on your mind. You are not required to attend these. They're only if you need help.*
+* Tuesday from 11:30 a.m. to 2 p.m.
+* Friday from 11:30 a.m. to 2 p.m.
+* Other hours by appointment (ELMS message, text or call)  
+
+**Videos to watch and supporting materials**
+*Things I would have reviewed during in-person classes, if we were meeting in person.  You should watch these, and if there are things you don't understand, come to open support hours, or reach out to me by ELMS message, text or phone*
+* Sean reviews common errors from previous assignment and lab.
+* Sean goes over what's due this week.  
+
+**Weekly data journalism practice assignment**
+*This would be our weekly in-class assignment, if we were meeting in person*
+* Class 10: practice with data cleaning. Spend an hour and a half working on this, get as far as you can.
+
+**Weekly data journalism lab**
+* None required. For those who are interested, there will be an optional lab 11: writing your own functions.  
+
+**Weekly story discussion materials**
+*Read the story, watch the presentation, respond to the forum post*
+* Read: [The Follower Factory](https://www.nytimes.com/interactive/2018/01/27/technology/social-media-bots.html)
+* Watch: Follower factories presentation by BW + RF
+* Forum Post: Respond to a failure factories discussion question posed by BW + RF.
+
+**Weekly reading and forum post**
+* None
+
+**Major assignment information**
+* Data analysis assignment: data analysis memo 1 due.   
+* Data acquisition forum post: nothing due.
 
 #### Week 14 - Apr. 28
-* No in-class lab or out of class lab: data analysis project work session.
-* Story Discussion | BW + RF | [The Follower Factory](https://www.nytimes.com/interactive/2018/01/27/technology/social-media-bots.html)
-* Data analysis project | status memo outlining your idea for analysis and draft markdown file.  
+
+**Open Support Hours in Zoom**
+*Sean will be hanging out in an open Zoom room, where you can get help on weekly practice assignments or labs, discuss readings, or really anything else that's on your mind. You are not required to attend these. They're only if you need help.*
+* Tuesday from 11:30 a.m. to 2 p.m.
+* Friday from 11:30 a.m. to 2 p.m.
+* Other hours by appointment (ELMS message, text or call)  
+
+**Videos to watch and supporting materials**
+*Things I would have reviewed during in-person classes, if we were meeting in person.  You should watch these, and if there are things you don't understand, come to open support hours, or reach out to me by ELMS message, text or phone*
+* Sean goes over what's due this week.   
+
+**Weekly data journalism practice assignment**
+*This would be our weekly in-class assignment, if we were meeting in person*
+* None.  Use time to work on your data analysis project.
+
+**Weekly data journalism lab**
+* None. Use time to work on your data analysis project.   
+
+**Weekly story discussion materials**
+*Read the story, watch the presentation, respond to the forum post*
+* Read:  [Houston Astros Sign Stealing Scandal](http://signstealingscandal.com/) and [Does Electronic Sign Stealing Work? | The Athletic](https://theathletic.com/1573075/2020/01/31/does-electronic-sign-stealing-work-the-astros-numbers-are-eye-popping/)
+* Watch: Sign stealing presentation by RM and DK.
+* Forum Post: Respond to a failure factories discussion question posed by RM and DK.
+
+**Weekly reading and forum post**
+* None.
+
+**Major assignment information**
+* Data analysis assignment: none.   
+* Data acquisition assignment: data acquisition final memo due.
 
 #### Week 15 - May 5
-* No in-class lab or out of class lab: data analysis project work session
-* Story Discussion | RM + DM | [Houston Astros Sign Stealing Scandal](http://signstealingscandal.com/) and [Does Electronic Sign Stealing Work? | The Athletic](https://theathletic.com/1573075/2020/01/31/does-electronic-sign-stealing-work-the-astros-numbers-are-eye-popping/)
-* Data analysis project | status memo outlining updating for analysis and updated draft markdown file.  
+**Open Support Hours in Zoom**
+*Sean will be hanging out in an open Zoom room, where you can get help on weekly practice assignments or labs, discuss readings, or really anything else that's on your mind. You are not required to attend these. They're only if you need help.*
+* Tuesday from 11:30 a.m. to 2 p.m.
+* Friday from 11:30 a.m. to 2 p.m.
+* Other hours by appointment (ELMS message, text or call)  
 
-#### Week 16 - May. 12
-* No classes - only thing is data analysis project due.
+**Videos to watch and supporting materials**
+*Things I would have reviewed during in-person classes, if we were meeting in person.  You should watch these, and if there are things you don't understand, come to open support hours, or reach out to me by ELMS message, text or phone*
+* Sean goes over what's due this week.   
+
+**Weekly data journalism practice assignment**
+*This would be our weekly in-class assignment, if we were meeting in person*
+* None.  Use time to work on your data analysis project.
+
+**Weekly data journalism lab**
+* None. Use time to work on your data analysis project.   
+
+**Weekly story discussion materials**
+*Read the story, watch the presentation, respond to the forum post*
+* None.
+
+**Weekly reading and forum post**
+* None.
+
+**Major assignment information**
+* Data analysis assignment: data analysis memo 2 due.
+
+#### Week 16 - May 12
+
+**Open Support Hours in Zoom**
+*Sean will be hanging out in an open Zoom room, where you can get help on weekly practice assignments or labs, discuss readings, or really anything else that's on your mind. You are not required to attend these. They're only if you need help.*
+* Tuesday from 11:30 a.m. to 2 p.m.
+* Friday from 11:30 a.m. to 2 p.m.
+* Other hours by appointment (ELMS message, text or call)  
+
+**Videos to watch and supporting materials**
+*Things I would have reviewed during in-person classes, if we were meeting in person.  You should watch these, and if there are things you don't understand, come to open support hours, or reach out to me by ELMS message, text or phone*
+* Sean goes over what's due this week.   
+
+**Weekly data journalism practice assignment**
+*This would be our weekly in-class assignment, if we were meeting in person*
+* None.  Use time to work on your data analysis project.
+
+**Weekly data journalism lab**
+* None. Use time to work on your data analysis project.   
+
+**Weekly story discussion materials**
+*Read the story, watch the presentation, respond to the forum post*
+* None.
+
+**Weekly reading and forum post**
+* None.
+
+**Major assignment information**
 * Data analysis project | final story pitch memo and clean GitHub repo with final R Markdown file.   
