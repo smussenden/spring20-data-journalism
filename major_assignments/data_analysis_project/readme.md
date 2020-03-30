@@ -14,14 +14,13 @@ To obtain the data, you will work with the ARCOS R package produced by the Washi
 
 ### 2) Work with COVID-19 data
 
-* https://covidtracking.com/ and https://www.nytimes.com/article/coronavirus-county-data-us.html and https://coronavirus.jhu.edu/map.html
-* Use Rtweet to pull in president trump or other tweets.
-* Stanford's BIG LOCAL NEWS project is also collecting interesting data_acquisition_project https://biglocalnews.org/#
-  * Tweets by governors
-  * CDC Social Vulnerability Index The index indicates the relative vulnerability of each Census tract or county. Social vulnerability refers to the resilience of communities when confronted by external stresses on human health, stresses such as natural or human-caused disasters, or disease outbreaks.
-  * AHA hospital beds data at state and metro areas provided by USA TODAY for use by journalists in Coronavirus reporting.
-  * https://www.cdc.gov/asthma/asthmadata.htm
-* https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge
+You can work with the broad array of COVID-19/coronavirus data that has been released, including:
+
+* Data tracking cases, tests and deaths from the [COVID Tracking Project](https://covidtracking.com/), the [New York Times coronavirus data project](https://www.nytimes.com/article/coronavirus-county-data-us.html) and [Johns Hopkins](https://coronavirus.jhu.edu/map.html)
+* Information on what public officials, including President Trump and the nations' governors have said about the virus as its effects intensified on Twitter, using an R package like [rTweet](https://rtweet.info/)
+* Information on the availability of hospital and ICU beds from several sources.  Stanford's [Big Local News]( https://biglocalnews.org/) project has this data and lots of other interesting stuff, which you can get with a free account.  
+* Information on prevalence of health conditions that could make people uniquely vulnerable, [like asthma, is available from the CDC](https://www.cdc.gov/asthma/asthmadata.htm)
+* [A free-text repository of thousands of academic papers on COVID-19](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge)
 
 ### 3) Work with some other data
 
