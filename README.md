@@ -469,7 +469,8 @@ Spring break week 2, no class or study session this week.
   * Updated syllabus.
   * Guide to changes to syllabus, key assignments, and other course features.
 * Sean goes over what's due this week.
-* Sean introduces data analysis project.    
+* Sean introduces data analysis project.
+    * You can use opioid data, COVID data or data from stories you've analyzed or something else.
 * (Optional) Using R Studio Cloud, if your personal machine can't handle R Studio for desktop.
   * RStudioCloud link
   * Using R Studio Cloud
