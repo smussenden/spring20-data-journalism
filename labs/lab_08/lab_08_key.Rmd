@@ -1,7 +1,7 @@
 ---
 title: "Lab 08 | R continued"
 author: "Sean Mussenden"
-date: "10/26/2019"
+date: "3/31/2020"
 output:
   html_document:
     toc: true
@@ -17,27 +17,13 @@ knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE, paged.print=TRU
 
 The purpose of this lab is to continue learning a journalistic approach to data analysis in R. 
 
-We will continue to do things learned in previous labs:
-
-* Writing R code for data analysis and exploration in the R Studio environment, using R projects (.Rproj) and R markdown files (.Rmd).  
-* Loading, cleaning, making sense of and analyzing data using the Tidyverse framework of packages by selecting certain columns, sorting and filtering
-* Create new columns in our data set based on information in other columns.   
-* Summarizing data by grouping and calculating min, max, median and mean values.    
-* Store changes on GitHub.
-* Join together two related data sets on a common field.  
-* Do some additional data cleaning, including fixing dates so we can work with them. 
-* To make visualizations.
-
-Today, we'll also learn:
-
-* To get data a variety of ways: downloading, pulling from an API, and some light scraping. 
+Today, we'll learn to get data a variety of ways: downloading, pulling from an API, and some light web scraping. 
 
 ## How this works, tasks, turning it in, getting help
 
 This document is mostly set up for you to follow along and run code that I have written, and listen to me explain it.  
 
 At several points throughout this document, you will see the word **Task**.  
-
 That indicates I'm expecting you to modify the file I've given you, usually by creating a codeblock and writing some custom code. 
 
 When you are finished, you should save your R markdown file and Knit it as an HTML file. 
@@ -54,9 +40,7 @@ Need help?  You are welcome to do the following things:
   * [RStudio cheatsheet](https://www.rstudio.com/resources/cheatsheets/#ide)
   * [Readr and Tidyr cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-import.pdf) and [Readr documentation](https://readr.tidyverse.org/) and [Tidyr documentation](https://tidyr.tidyverse.org/reference/index.html).
   * [Dplyr cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf) and [Dplyr documentation](https://dplyr.tidyverse.org/)
-  * [Lubridate cheatsheet](https://rawgit.com/rstudio/cheatsheets/master/lubridate.pdf) and [Lubridate documentation](https://lubridate.tidyverse.org/).
-  * [GGPlot cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf) and [GGplot Documentation](https://ggplot2.tidyverse.org/reference/)
-  * [Mapping Tutorials](https://walkerke.github.io/tidycensus/articles/spatial-data.html)
+  * [Rvest package](https://github.com/tidyverse/rvest)
   * [GitHub desktop help](https://help.github.com/en/desktop/getting-started-with-github-desktop)
 * If you're really stuck, message me on ELMS. 
 
@@ -72,15 +56,19 @@ Take the following steps to set up your document:
 
 ## Load Packages
 
-We're loading seven packages today. five of these we've loaded previously: the Tidyverse (for general data science goodness and visualizing charts and maps), janitor (for data cleaning), arcos (for loading WaPo opioid data) and tidycensus.
-
-We're also going to load two new packages: [mapview](https://r-spatial.github.io/mapview/) (for making interactive maps) and [ggthemes](https://rdrr.io/cran/ggthemes/) (for doing cool styling stuff).  
+We're loading five packages today. 
+* the Tidyverse (for general data science goodness and visualizing charts and maps)
+* janitor (for data cleaning)
+* arcos (for loading WaPo opioid data)
+* tidycensus (for loading census data)
+* rvest (for web scraping)
 
 **Task**: In the code block below, load the packages we'll need for today. 
 
 ```{r}
 
-# Load Tidyverse, janitor and arcos, tidycensus, mapview, ggthemes, scales
+# Load Tidyverse, janitor and arcos, tidycensus, rvest
+# Use install.packages if necessary
 library(tidyverse)
 library(janitor)
 library(arcos)
@@ -89,40 +77,170 @@ library(rvest)
 
 ```
 
-## Using the ARCOS R Package
+## Uploading local data
 
-For this exercise, we will be working with subsets of the DEA's ARCOS database, which documented shipments of 76 billion opioid pills between 2006 and 2012, during the peak of the opioid epidemic. 
+During this course, we've repeatedly uploaded data stored on our local machine.  
 
-The data was obtained after a lengthy legal battle by the Washington Post and the Charleston Gazette-Mail, and released by the Washington Post in raw and aggregated form. [Washington Post "Digging into the DEA's pain pill database" page](https://www.washingtonpost.com/graphics/2019/investigations/dea-pain-pill-database/).
-
-A data dictionary is available here: [ARCOS Registrant Handbook](https://www.deadiversion.usdoj.gov/arcos/handbook/full.pdf).
-
-We're going to load the data exclusively from the arcos R package API [ARCOS API](https://wpinvestigative.github.io/arcos/) produced by the Washington Post, instead of uploading csvs and tsvs. 
-
-Remember, we need to store a password of sorts -- called an API key -- that will give us permission to access their data.  Here's a list of [API keys that will work](https://github.com/wpinvestigative/arcos-api/blob/master/keys/keys.txt).  
-
-Let's store the key first. 
+In the example below, we use the read_tsv() function to read in shipments of opioids to Mingo, West Virginia and store it as an object called mingo. The file is in our data folder.  
 
 ```{r}
+
+mingo <- read_tsv("data/arcos-wv-mingo-54059-itemized.tsv")
+
+```
+
+## Downloading data from a remote server
+
+We can also download download a file directly from a file stored on a remote server.  
+
+That same tab-separated file we just loaded, of shipments to Mingo, exists on a remote server (the class GitHub repo).
+
+Take a look at [the file](https://raw.githubusercontent.com/smussenden/spring20-data-journalism/master/labs/lab_04/data/arcos-wv-mingo-54059-itemized.tsv)
+
+First, we'll store the location (the url) as an object we'll call mingo_url
+
+```{r}
+
+mingo_url <- 'https://raw.githubusercontent.com/smussenden/spring20-data-journalism/master/labs/lab_04/data/arcos-wv-mingo-54059-itemized.tsv'
+
+```
+
+Then, we'll pass the mingo_url to a read_tsv() function, and store it as a new object we'll call mingo_downloaded
+
+```{r}
+mingo_downloaded <- read_tsv(mingo_url)
+```
+
+***Task***: A CSV (comma separated value) file with the average number pills shipped to each county in the U.S. per year between 2006 and 2012 exists at [this url](https://raw.githubusercontent.com/smussenden/spring20-data-journalism/master/labs/lab_05/data/county_pills_per_year.csv) 
+
+Write the necessary code to download it directly from that URL and bring it into R as an object called average_county_pills_per_year. Remember, it's a CSV, not a TSV
+
+```{r}
+
+average_county_pills_url <- 'https://raw.githubusercontent.com/smussenden/spring20-data-journalism/master/labs/lab_05/data/county_pills_per_year.csv'
+
+average_county_pills_per_year <- read_csv(average_county_pills_url)
+
+
+```
+
+## Using API Packages
+
+We're already used APIs (Application programming interfaces) to pull down data in a proscribed way from a remote server. 
+
+### ARCOS API
+
+For example, we've used the Washington Posts's ARCOS API package to pull down lots of data. 
+
+First, we have to store an API key to access the ARCOS API tool.
+
+```{r}
+
 # store one of our API keys as an object called key
 key <- "uO4EK6I"
 ```
 
+Then, we can pull down tables using different functions.  For example, the summarized_county_annual() function allows us to pull down a table with one row per county per year (between 2006 and 2012) with total pills (dosage unit) in that county in that year.  
 
-### Scraping Data from the Internet
-
-There's lots of great information on the web that is not available for download as a CSV, but instead exists as data on an HTML page. 
-
-Fortunately, the handy rvest package makes it easy to scrape that data into a format we can work with in R. 
-If you go to the [GitHub repo](https://github.com/rtburg/NICAR2020-Intro-to-R) for this course, then into the data folder, then click on grandparentsR1.csv, we see an html table that contains the information we've been working with on grandparents caring for grandchildren. 
-
-If we use our web browser to inspect element, we see it's an html table.  Which means it should be fairly trivial to scrape it. 
-
-First, let's use the read_html function in rvest to pull in the raw html content from the page, and store it as an object called grandparents_scrape. 
+Here, we're storing it as an object called arcos_county_pills_per_year, and cleaning up the column names. 
 
 ```{r}
-# http://bit.ly/r3_data
-# grandparents_scrape <-read_html("https://github.com/rtburg/NICAR2020-Intro-to-R/blob/master/data/grandparentsR1.csv")
+arcos_county_pills_per_year <- summarized_county_annual(key = key) %>%
+  clean_names()
+```
+
+The ARCOS API also has a table with county population estimates for each year between 2006 and 2012.  Let's pull that down and clean and standardize the names. Remember to include the key.
+
+```{r}
+arcos_county_population_per_year <- county_population(key = key) %>%
+  clean_names()
+```
+
+Since both tables have a shared "countyfips" field, we can join them together. 
+
+
+### U.S. Census API
+
+In previous labs, we've made use of the very handy tidycensus package to access U.S. Census data.  In those labs, we only made use of a very small portion of the tidycensus package, to get shapefiles needed to build maps. 
+
+Today, I'm going to show you how to get demographic and economic information that you can use in future projects. 
+
+First, we need to store our census API key, using the census_api_key() function from tidycensus. You can get your own API key [here](https://api.census.gov/data/key_signup.html) or use mine (below)
+
+```{r}
+# Define your census API key
+census_api_key("549950d36c22ff16455fe196bbbd01d63cfbe6cf")
+
+```
+
+Now, let's pull down a table with the median household income for each county in the U.S. in 2012. And let's store it as an object called county_median_household_income.  
+
+First, run the code, then we'll examine what's happening. 
+
+```{r}
+county_median_household_income <- get_acs(geography = "county", 
+              variables="B19013_001", year=2012, geometry = FALSE )
+```
+
+We get a table with 5 columns: 
+
+* GEOID (a FIPS code, or unique ID for each county)
+* NAME (County and state)
+* variable (the name of the bit of information we're pulling from the census; B109013_001 is median household income)
+* estimate (the median household income estimate for each county)
+* and moe (Margin of Error)
+
+This data comes from a census product called the Amercian Community Survey or acs, so the values are estimates, with a margin of error.  The real value could be higher or lower than the estimate. 
+
+To get this information, we used the [get_acs function](https://walkerke.github.io/tidycensus/reference/get_acs.html).  
+
+And we fed it some arguments:
+
+* geography - we chose county, but we could have gone bigger (states, or national) or smaller (census tract)
+* variables - we chose B19013_001 for median household income, but we could have picked B00001_001 for a total population count, or B06012_002 for total population living below the poverty level. 
+* year - we chose 2012, but we could have picked any year between 2009 and 2019. 
+* geometry - we chose false.  We only need to pick true if we're going to later use it for mapping. 
+
+How do we know which variables are available? 
+
+The census has thousands, and it can be a bit confusing.  The tidycensus has a function called load_variables which pulls up a table of available variables for each census product. 
+
+This function pulls all the avaiable variables for 2012 from the acs, with data from the previous 5 years averaged into a single estimate.  Here's a [good discussion of what that means](https://www.census.gov/data/developers/data-sets/acs-5year.html)
+
+```{r}
+acs_variables <- load_variables(2012, "acs5")
+
+```
+
+Let's examine this table together.  Be sure to watch the video where I'll review how to select variables using the data browswer in R Studio. 
+
+***Task***: using a similar method as we used above to create a table of county by county median household income estimates, create a table with the total estimated population of people who identify as white only and no other race in each state in 2014. The name of the label you'll need is:  Estimate!!Total!!White alone. 
+
+```{r}
+state_white_alone <- get_acs(geography = "state", 
+              variables="B02001_002", year=2014, geometry = FALSE )
+```
+
+We're just scratching the surface of what you can do with tidycensus.  There are variables on economics, race, demographics and so much more.  
+
+Again, there's lots more you can do with this package.  This is just scratching the surface. 
+
+## Web Scraping
+
+Lastly, we're going to walk through the process of scraping data displayed on a web page on the Internet, using the rvest package.  
+
+This will be a pretty simple example, but it will get you started with web scraping.  If you get good at this, you can build up to more complex projects. I've scraped entire court databases this way, when public officials wouldn't simply give me the data through a public records request. 
+
+First, let's take a look at the page we're going to scrape: 
+[a table of opioid death rates](https://www.drugabuse.gov/drugs-abuse/opioids/opioid-summaries-by-state) from the CDC.  
+
+Be sure to watch the video for this next part. If we inspect the page, we can see there's an html table that contains the information we need.  
+
+That's good! It means rvest has some built in functions that will make it easy to pull it in.  
+
+First, let's use the read_html function in rvest to pull in the raw html content from the page, and store it as an object called opioid_scrape. 
+
+```{r}
 
 opioid_scrape <-read_html("https://www.drugabuse.gov/drugs-abuse/opioids/opioid-summaries-by-state")
 
@@ -130,7 +248,7 @@ opioid_scrape <-read_html("https://www.drugabuse.gov/drugs-abuse/opioids/opioid-
 
 In our environment window, we see it comes in as a "nested list".  We can examine it in our environment window, and see it's structured like an HTML page. 
 
-Now, let's strip out all the junk we don't want, and just keep the thing we want: the table with our info. 
+Now, let's strip out all the junk we don't want, and just keep the thing we want: the table with our info. We're going to modify the function we wrote above, and add a new function html_nodes('table') to just pull out the table. 
 
 ```{r}
 opioid_scrape <-read_html("https://www.drugabuse.gov/drugs-abuse/opioids/opioid-summaries-by-state") %>%
@@ -154,244 +272,20 @@ opioid_scrape <- read_html("https://www.drugabuse.gov/drugs-abuse/opioids/opioid
   as.data.frame()
 ```
 
-STILL HAVE TO CLEAN IT UP
+Okay, it's in now, but it's still kind of a mess. In next week's lab, which is dedicated to data cleaning, we'll work on cleaning this up a bit. 
 
-It's got one extra blank column. We can remove that with a select() statement, saying drop the first column. 
+***Task***: On this page, https://www.cdc.gov/drugoverdose/data/analysis.html, there's a table of national opioid death rates by year from 2000 to 2016.  To see it, click Data Table below the map.  Using the method above, scrape it in and store it as an object called opioid_states_scrap.  
 
 ```{r}
-grandparents_scrape <- read_html("https://github.com/rtburg/NICAR2020-Intro-to-R/blob/master/data/grandparentsR1.csv") %>%
+
+opioid_states_scrape <- read_html("https://www.cdc.gov/drugoverdose/data/analysis.html") %>%
   html_nodes('table') %>%
-  html_table(header=1) %>%
-  as.data.frame() %>%
-  select(-1)
-```
-
-
-
-### Loading Local Data
-
-If you've taken earlier classes in this sequence, you'll have a good sense of how to load data locally using the read_csv() function from the readr package.
-
-We're going to read in the same data set we've been working with in earlier classes, of grandparents in Louisiana counties who are living with or are responsible for their grandchildren. 
-
-Let's read in the data now, and store it as an object called grandparents_local
-grandparents_local <- read_csv("data/grandparentsR1.csv")
-
-```{r}
-# Note: the path may be different on class pcs
-
-
-
-
-```{r}
-
-arcos_county_pills_per_year <- summarized_county_annual(key = key) %>%
-  clean_names()
-
-arcos_county_population_per_year <- county_population(key = key) %>%
-  clean_names()
-
-pills_population <- arcos_county_population_per_year %>%
-  left_join(arcos_county_pills_per_year, by = c("countyfips", "year", "buyer_county","buyer_state")) %>%
-  group_by(countyfips, buyer_county, buyer_state) %>%
-  summarise(average_pills_per_year = mean(dosage_unit),
-            average_population_per_year = mean(population)) %>%
-  mutate(average_pills_per_person = round(average_pills_per_year/average_population_per_year,2))
+  html_table(header=1, fill=TRUE)  %>%
+  as.data.frame()
 
 ```
 
-# Load Death Rate Data
-
-```{r}
-opioid_deaths <- read_tsv("data/2006-2012.txt") %>%
-  clean_names() %>%
-  filter(!str_detect(age_adjusted_rate, "Unreliable|Suppressed|Missing")) %>%
-  select(county_code, county, deaths, age_adjusted_rate) %>%
-  mutate(deaths = as.numeric(deaths),
-         age_adjusted_rate = as.numeric(age_adjusted_rate))
-
-```
-
-# Join 
-
-End up with about 1066 records.  For smallest counties, where weren't lot of pill shipments, death rate data is unreliable. 
-
-```{r}
-death_rate_pills <- pills_population %>%
-  inner_join(opioid_deaths, by=c("countyfips" = "county_code"))
-
-```
-
-# Examine Table
-
-
-# Explore relationship
-Fairly tightly packed, but lots of exceptions, line moving up
-
-```{r}
-ggplot(death_rate_pills) +
-  geom_point(aes(average_pills_per_person, age_adjusted_rate)) +
-  geom_smooth(aes(average_pills_per_person, age_adjusted_rate), method = "lm", se = FALSE)  +
-  scale_y_continuous(labels = comma) +
-  scale_x_continuous(labels = comma)  +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-  labs(x="Average Annual Pills Per Person", y="age_adjusted Annual Opioid Death Rate", title="", caption = "Source: DEA ARCOS database, via Washington Post")
-```
-
-# Exact Correlation
-
-```{r}
-
-death_rate_pills %>%
-  ungroup() %>%
-  select(age_adjusted_rate, average_pills_per_person) %>%
-  correlate()
-
-```
-
-```{r}
-death_rate_pills %>%
-  ungroup() %>%
-  select_if(is.numeric) %>%
-  correlate()
-
-```
-
-# Now let's pull in census data 
-
-```{r}
-census_api_key("549950d36c22ff16455fe196bbbd01d63cfbe6cf")
-# acs_variables <- load_variables(2017, "acs5" )
-county_median_household_income <- get_acs(geography = "county", 
-              variables="B19013_001", year=2012, geometry = FALSE)
-
-```
-
-# Join it to our other data
-
-```{r}
-death_rate_pills_income <- death_rate_pills %>%
-  inner_join(county_median_household_income, by=c("countyfips" = "GEOID")) %>%
-  rename(median_household_income = estimate)
-
-glimpse(death_rate_pills_income)
-```
-
-# Task: make a scatterplot for deaths vs income
-
-```{r}
-ggplot(death_rate_pills_income) +
-  geom_point(aes(median_household_income, age_adjusted_rate)) +
-  geom_smooth(aes(median_household_income, age_adjusted_rate), method = "lm", se = FALSE)  +
-  scale_y_continuous(labels = comma) +
-  scale_x_continuous(labels = comma)  +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-  labs(x="Average Annual Pills Per Person", y="age_adjusted Annual Opioid Death Rate", title="", caption = "Source: DEA ARCOS database, via Washington Post")
-```
-
-# Task: make a scatterplot for shipments v income
-
-```{r}
-ggplot(death_rate_pills_income) +
-  geom_point(aes(average_pills_per_person, age_adjusted_rate)) +
-  geom_smooth(aes(average_pills_per_person, age_adjusted_rate), method = "lm", se = FALSE)  +
-  scale_y_continuous(labels = comma) +
-  scale_x_continuous(labels = comma)  +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-  labs(x="Average Annual Pills Per Person", y="age_adjusted Annual Opioid Death Rate", title="", caption = "Source: DEA ARCOS database, via Washington Post")
-```
-
-# Build a table that has all three. 
-
-```{r}
-death_rate_pills_income %>%
-  ungroup() %>%
-  select(median_household_income, age_adjusted_rate, average_pills_per_person) %>%
-  correlate()
-```
-
-# Task: Go out and get one more census variable. What is it
-
-# For Loops
-
-Repeatable 
-
-```{r}
-
-statelist <- c("Maryland", "Virginia","Texas")
-
-for (state in statelist) {
-  print(state)
-}
-
-```
-
-```{r}
-statelist <- c("Maryland", "Virginia","Texas")
-
-for (name in statelist) {
-  print(name)
-}
-
-```
-
-```{r}
-
-arcos_state_pills_per_year <- arcos_county_pills_per_year %>%
-  group_by(buyer_state, year) %>%
-  summarise(total_pills = sum(dosage_unit))
-
-```
-
-``` {r}
-
-arcos_state_pills_per_year %>%
-  filter(buyer_state == "MD") %>%
-  ggplot() + 
-  geom_bar(stat="identity", aes(year, total_pills), fill="royal blue") +
-  labs(x="Year", y="Total pills", title="") +
-  scale_x_continuous(breaks = c(2006, 2007, 2008, 2009, 2010, 2011, 2012)) +
-  scale_y_continuous(labels = comma)
-
-```
-```{r}
-
-arcos_state_pills_per_year %>%
-  filter(buyer_state == "MD" | buyer_state == "TX" | buyer_state == "VA") %>%
-  ggplot() + 
-  geom_bar(stat="identity", aes(year, total_pills), fill="royal blue") +
-  facet_grid(. ~ buyer_state) +
-  labs(x="Year", y="Total pills", title="") +
-  scale_x_continuous(breaks = c(2006, 2007, 2008, 2009, 2010, 2011, 2012)) +
-  scale_y_continuous(labels = comma)
-
-```
-
-```{r}
-
-statelist <- c("MD", "VA","TX")
-
-for (state in statelist) {
-
-plot <- arcos_state_pills_per_year %>%
-  filter(buyer_state == state) %>%
-  ggplot() + 
-  geom_bar(stat="identity", aes(year, total_pills), fill="royal blue") +
-  facet_grid(. ~ buyer_state) +
-  labs(x="Year", y="Total pills", title="") +
-  scale_x_continuous(breaks = c(2006, 2007, 2008, 2009, 2010, 2011, 2012)) +
-  scale_y_continuous(labels = comma)
-
-print(plot)
-
-}
-
-
-
-```
-
-# Task: what other cases could using a forloop be good for.  
-
+Again, this will come in a little messy.  We'll clean it up in a future lab.
 
 ## Submission
 

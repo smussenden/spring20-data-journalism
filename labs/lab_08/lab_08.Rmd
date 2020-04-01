@@ -1,0 +1,278 @@
+---
+title: "Lab 08 | R continued"
+author: "Sean Mussenden"
+date: "3/31/2020"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE, paged.print=TRUE)
+```
+
+## Objective
+
+The purpose of this lab is to continue learning a journalistic approach to data analysis in R. 
+
+Today, we'll learn to get data a variety of ways: downloading, pulling from an API, and some light web scraping. 
+
+## How this works, tasks, turning it in, getting help
+
+This document is mostly set up for you to follow along and run code that I have written, and listen to me explain it.  
+
+At several points throughout this document, you will see the word **Task**.  
+That indicates I'm expecting you to modify the file I've given you, usually by creating a codeblock and writing some custom code. 
+
+When you are finished, you should save your R markdown file and Knit it as an HTML file. 
+
+You should upload it to GitHub, using GitHub desktop. 
+
+And the links to your project is what you'll post on ELMS. 
+
+Need help?  You are welcome to do the following things:
+
+* Use Google or search Stack Overflow. Try searching for your error message or translating your problem into basic terms.
+* Check out the excellent [R for Data Science](https://r4ds.had.co.nz/index.html)
+* Take a look at the [Cheatsheets](https://www.rstudio.com/resources/cheatsheets/) and [Tidyverse documentation](https://www.tidyverse.org/).
+  * [RStudio cheatsheet](https://www.rstudio.com/resources/cheatsheets/#ide)
+  * [Readr and Tidyr cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-import.pdf) and [Readr documentation](https://readr.tidyverse.org/) and [Tidyr documentation](https://tidyr.tidyverse.org/reference/index.html).
+  * [Dplyr cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf) and [Dplyr documentation](https://dplyr.tidyverse.org/)
+  * [Rvest package](https://github.com/tidyverse/rvest)
+  * [GitHub desktop help](https://help.github.com/en/desktop/getting-started-with-github-desktop)
+* If you're really stuck, message me on ELMS. 
+
+## Setup
+
+Take the following steps to set up your document:
+
+1. Download the ZIP file and open the folder on your desktop. 
+2. Create a new folder in your git repo and move it in there. Unzip the folder.
+3. Open this file in RStudio.
+4. Rename this file "lab_08_FIRSTNAME_LASTNAME.Rmd".
+5. Create a new R project inside of this folder, which will set the working directory in this folder.   
+
+## Load Packages
+
+We're loading five packages today. 
+* the Tidyverse (for general data science goodness and visualizing charts and maps)
+* janitor (for data cleaning)
+* arcos (for loading WaPo opioid data)
+* tidycensus (for loading census data)
+* rvest (for web scraping)
+
+**Task**: In the code block below, load the packages we'll need for today. 
+
+```{r}
+
+# Load Tidyverse, janitor and arcos, tidycensus, rvest
+# Use install.packages if necessary
+
+
+```
+
+## Uploading local data
+
+During this course, we've repeatedly uploaded data stored on our local machine.  
+
+In the example below, we use the read_tsv() function to read in shipments of opioids to Mingo, West Virginia and store it as an object called mingo. The file is in our data folder.  
+
+```{r}
+
+mingo <- read_tsv("data/arcos-wv-mingo-54059-itemized.tsv")
+
+```
+
+## Downloading data from a remote server
+
+We can also download download a file directly from a file stored on a remote server.  
+
+That same tab-separated file we just loaded, of shipments to Mingo, exists on a remote server (the class GitHub repo).
+
+Take a look at [the file](https://raw.githubusercontent.com/smussenden/spring20-data-journalism/master/labs/lab_04/data/arcos-wv-mingo-54059-itemized.tsv)
+
+First, we'll store the location (the url) as an object we'll call mingo_url
+
+```{r}
+
+mingo_url <- 'https://raw.githubusercontent.com/smussenden/spring20-data-journalism/master/labs/lab_04/data/arcos-wv-mingo-54059-itemized.tsv'
+
+```
+
+Then, we'll pass the mingo_url to a read_tsv() function, and store it as a new object we'll call mingo_downloaded
+
+```{r}
+mingo_downloaded <- read_tsv(mingo_url)
+```
+
+***Task***: A CSV (comma separated value) file with the average number pills shipped to each county in the U.S. per year between 2006 and 2012 exists at [this url](https://raw.githubusercontent.com/smussenden/spring20-data-journalism/master/labs/lab_05/data/county_pills_per_year.csv) 
+
+Write the necessary code to download it directly from that URL and bring it into R as an object called average_county_pills_per_year. Remember, it's a CSV, not a TSV
+
+```{r}
+
+
+
+```
+
+## Using API Packages
+
+We're already used APIs (Application programming interfaces) to pull down data in a proscribed way from a remote server. 
+
+### ARCOS API
+
+For example, we've used the Washington Posts's ARCOS API package to pull down lots of data. 
+
+First, we have to store an API key to access the ARCOS API tool.
+
+```{r}
+
+# store one of our API keys as an object called key
+key <- "uO4EK6I"
+```
+
+Then, we can pull down tables using different functions.  For example, the summarized_county_annual() function allows us to pull down a table with one row per county per year (between 2006 and 2012) with total pills (dosage unit) in that county in that year.  
+
+Here, we're storing it as an object called arcos_county_pills_per_year, and cleaning up the column names. 
+
+```{r}
+arcos_county_pills_per_year <- summarized_county_annual(key = key) %>%
+  clean_names()
+```
+
+The ARCOS API also has a table with county population estimates for each year between 2006 and 2012.  Let's pull that down and clean and standardize the names. Remember to include the key.
+
+```{r}
+arcos_county_population_per_year <- county_population(key = key) %>%
+  clean_names()
+```
+
+
+### U.S. Census API
+
+In previous labs, we've made use of the very handy tidycensus package to access U.S. Census data.  In those labs, we only made use of a very small portion of the tidycensus package, to get shapefiles needed to build maps. 
+
+Today, I'm going to show you how to get demographic and economic information that you can use in future projects. 
+
+First, we need to store our census API key, using the census_api_key() function from tidycensus. You can get your own API key [here](https://api.census.gov/data/key_signup.html) or use mine (below)
+
+```{r}
+# Define your census API key
+census_api_key("549950d36c22ff16455fe196bbbd01d63cfbe6cf")
+
+```
+
+Now, let's pull down a table with the median household income for each county in the U.S. in 2012. And let's store it as an object called county_median_household_income.  
+
+First, run the code, then we'll examine what's happening. 
+
+```{r}
+county_median_household_income <- get_acs(geography = "county", 
+              variables="B19013_001", year=2012, geometry = FALSE )
+```
+
+We get a table with 5 columns: 
+
+* GEOID (a FIPS code, or unique ID for each county)
+* NAME (County and state)
+* variable (the name of the bit of information we're pulling from the census; B109013_001 is median household income)
+* estimate (the median household income estimate for each county)
+* and moe (Margin of Error)
+
+This data comes from a census product called the Amercian Community Survey or acs, so the values are estimates, with a margin of error.  The real value could be higher or lower than the estimate. 
+
+To get this information, we used the [get_acs function](https://walkerke.github.io/tidycensus/reference/get_acs.html).  
+
+And we fed it some arguments:
+
+* geography - we chose county, but we could have gone bigger (states, or national) or smaller (census tract)
+* variables - we chose B19013_001 for median household income, but we could have picked B00001_001 for a total population count, or B06012_002 for total population living below the poverty level. 
+* year - we chose 2012, but we could have picked any year between 2009 and 2019. 
+* geometry - we chose false.  We only need to pick true if we're going to later use it for mapping. 
+
+How do we know which variables are available? 
+
+The census has thousands, and it can be a bit confusing.  The tidycensus has a function called load_variables which pulls up a table of available variables for each census product. 
+
+This function pulls all the avaiable variables for 2012 from the acs, with data from the previous 5 years averaged into a single estimate.  Here's a [good discussion of what that means](https://www.census.gov/data/developers/data-sets/acs-5year.html)
+
+```{r}
+acs_variables <- load_variables(2012, "acs5")
+
+```
+
+Let's examine this table together.  Be sure to watch the video where I'll review how to select variables using the data browswer in R Studio. 
+
+***Task***: using a similar method as we used above to create a table of county by county median household income estimates, create a table with the total estimated population of people who identify as white only and no other race in each state in 2014. The name of the label you'll need is:  Estimate!!Total!!White alone. 
+
+```{r}
+
+```
+
+We're just scratching the surface of what you can do with tidycensus.  There are variables on economics, race, demographics and so much more.  
+
+Again, there's lots more you can do with this package.  This is just scratching the surface. 
+
+## Web Scraping
+
+Lastly, we're going to walk through the process of scraping data displayed on a web page on the Internet, using the rvest package.  
+
+This will be a pretty simple example, but it will get you started with web scraping.  If you get good at this, you can build up to more complex projects. I've scraped entire court databases this way, when public officials wouldn't simply give me the data through a public records request. 
+
+First, let's take a look at the page we're going to scrape: 
+[a table of opioid death rates](https://www.drugabuse.gov/drugs-abuse/opioids/opioid-summaries-by-state) from the CDC.  
+
+Be sure to watch the video for this next part. If we inspect the page, we can see there's an html table that contains the information we need.  
+
+That's good! It means rvest has some built in functions that will make it easy to pull it in.  
+
+First, let's use the read_html function in rvest to pull in the raw html content from the page, and store it as an object called opioid_scrape. 
+
+```{r}
+
+opioid_scrape <- read_html("https://www.drugabuse.gov/drugs-abuse/opioids/opioid-summaries-by-state")
+
+```
+
+In our environment window, we see it comes in as a "nested list".  We can examine it in our environment window, and see it's structured like an HTML page. 
+
+Now, let's strip out all the junk we don't want, and just keep the thing we want: the table with our info. We're going to modify the function we wrote above, and add a new function html_nodes('table') to just pull out the table. 
+
+```{r}
+opioid_scrape <- read_html("https://www.drugabuse.gov/drugs-abuse/opioids/opioid-summaries-by-state") %>%
+  html_nodes('table')
+```
+
+We can examine the results in the environment window.  It kept the table head and table body, but it's kinda unreadable. Luckily, we can use the html_table() convenience function to clean it up. header=1 says to use the first row as a header. 
+
+```{r}
+opioid_scrape <- read_html("https://www.drugabuse.gov/drugs-abuse/opioids/opioid-summaries-by-state") %>%
+  html_nodes('table') %>%
+  html_table(header=1, fill=TRUE) 
+```
+
+We're getting closer.  But it's still a nested list, not super usable for our purposes. We can add an as.data.frame() function to make it a data frame. When you view it in the environment window, it looks like a dataframe now. 
+
+```{r}
+opioid_scrape <- read_html("https://www.drugabuse.gov/drugs-abuse/opioids/opioid-summaries-by-state") %>%
+  html_nodes('table') %>%
+  html_table(header=1, fill=TRUE)  %>%
+  as.data.frame()
+```
+
+Okay, it's in now, but it's still kind of a mess. In next week's lab, which is dedicated to data cleaning, we'll work on cleaning this up a bit. 
+
+***Task***: On this page, https://www.cdc.gov/drugoverdose/data/analysis.html, there's a table of national opioid death rates by year from 2000 to 2016.  To see it, click Data Table below the map.  Using the method above, scrape it in and store it as an object called opioid_states_scrape.  
+
+```{r}
+
+
+```
+
+Again, this will come in a little messy.  We'll clean it up in a future lab.
+
+## Submission
+
+Save the R Markdown file.  Knit it to HTML and make sure it compiles correctly. Upload to GitHub, as instructed.  Provide links to GitHub in ELMS.   
