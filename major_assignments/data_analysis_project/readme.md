@@ -47,6 +47,9 @@ Here are two examples of a COVID-19 story with analysis that would be appropriat
 
 * [US hospitals will run out of beds if coronavirus cases spike](https://www.usatoday.com/in-depth/news/investigations/2020/03/13/us-hospitals-overwhlemed-coronavirus-cases-result-in-too-few-beds/5002942002/)
 * [A likely but hidden coronavirus risk factor: pollution](https://publicintegrity.org/health/coronavirus-and-inequality/a-likely-but-hidden-coronavirus-risk-factor-pollution/)
+* [Early Data Shows African Americans Have Contracted and Died of Coronavirus at an Alarming Rate](https://www.propublica.org/article/early-data-shows-african-americans-have-contracted-and-died-of-coronavirus-at-an-alarming-rate)
+* [Location Data Says It All: Staying at Home During Coronavirus Is a Luxury](https://www.nytimes.com/interactive/2020/04/03/us/coronavirus-stay-home-rich-poor.html)
+* [Where America Didn’t Stay Home Even as the Virus Spread](https://www.nytimes.com/interactive/2020/04/02/us/coronavirus-social-distancing.html)
 
 ## Motivating questions
 

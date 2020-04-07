@@ -1,0 +1,323 @@
+---
+title: "Lab 09 | R continued"
+author: "Sean Mussenden"
+date: "4/6/2020"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE, paged.print=TRUE)
+```
+
+## Objective
+
+The purpose of this lab is to continue learning a journalistic approach to data analysis in R. 
+
+Today we will learn to safely explore relationships between two variables with both graphs and with a statistical test.
+
+## How this works, tasks, turning it in, getting help
+
+This document is mostly set up for you to follow along and run code that I have written, and listen to me explain it.  
+
+At several points throughout this document, you will see the word **Task**.  
+
+That indicates I'm expecting you to modify the file I've given you, usually by creating a codeblock and writing some custom code. 
+
+When you are finished, you should save your R markdown file and Knit it as an HTML file. 
+
+You should upload it to GitHub, using GitHub desktop. 
+
+And the links to your project is what you'll post on ELMS. 
+
+Need help?  You are welcome to do the following things:
+
+* Use Google or search Stack Overflow. Try searching for your error message or translating your problem into basic terms.
+* Check out the excellent [R for Data Science](https://r4ds.had.co.nz/index.html)
+* Take a look at the [Cheatsheets](https://www.rstudio.com/resources/cheatsheets/) and [Tidyverse documentation](https://www.tidyverse.org/).
+  * [RStudio cheatsheet](https://www.rstudio.com/resources/cheatsheets/#ide)
+  * [Readr and Tidyr cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-import.pdf) and [Readr documentation](https://readr.tidyverse.org/) and [Tidyr documentation](https://tidyr.tidyverse.org/reference/index.html).
+  * [Dplyr cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf) and [Dplyr documentation](https://dplyr.tidyverse.org/)
+  * [GGPlot cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf) and [GGplot Documentation](https://ggplot2.tidyverse.org/reference/)
+  * [GitHub desktop help](https://help.github.com/en/desktop/getting-started-with-github-desktop)
+  * [Corrr Package](https://github.com/tidymodels/corrr)
+* If you're really stuck, message me on ELMS. 
+
+## Setup
+
+Take the following steps to set up your document:
+
+1. Download the ZIP file and open the folder on your desktop. 
+2. Create a new folder in your git repo and move it in there. Unzip the folder.
+3. Open this file in RStudio.
+4. Rename this file "lab_09_FIRSTNAME_LASTNAME.Rmd".
+5. Create a new R project inside of this folder, which will set the working directory in this folder.   
+
+## Load Packages
+
+We're loading six packages today. 
+
+Five of these we've loaded previously: 
+
+* the Tidyverse (for general data science goodness and visualizing charts and maps)
+* janitor (for data cleaning)
+* arcos (for loading WaPo opioid data) 
+* tidycensus (for loading census data) 
+* scales for cleaning up axis labels and legends.
+
+We're also going to load one new package: [corrr](https://github.com/tidymodels/corrr), which is a package that helps us calculate the correlation coefficient between two variables, for examining relationships.
+
+**Task**: In the code block below, load the packages we'll need for today. 
+
+```{r}
+
+# Load Tidyverse, janitor and arcos, tidycensus, scales and corrr
+
+
+```
+
+## What we're doing
+
+We're going to learn to responsibly examine relationships in data, by examining the relationship between the rate of opioid pills sent to a community with the death rate from opioids in that community.  And on your own, you'll compare other variables. 
+
+The Washington Post examined this relationship in a [story in 2019](https://www.washingtonpost.com/investigations/opioid-death-rates-soared-in-communities-where-pain-pills-flowed/2019/07/17/f3595da4-a8a4-11e9-a3a6-ab670962db05_story.html) and found that the communities that got the most pills per person also had the highest death rates. 
+
+## Loading Data 
+
+### Using the ARCOS R Package
+
+For this exercise, we will be working with subsets of the DEA's ARCOS database, which documented shipments of 76 billion opioid pills between 2006 and 2014, during the peak of the opioid epidemic. 
+
+The data was obtained after a lengthy legal battle by the Washington Post and the Charleston Gazette-Mail, and released by the Washington Post in raw and aggregated form. [Washington Post "Digging into the DEA's pain pill database" page](https://www.washingtonpost.com/graphics/2019/investigations/dea-pain-pill-database/).
+
+A data dictionary is available here: [ARCOS Registrant Handbook](https://www.deadiversion.usdoj.gov/arcos/handbook/full.pdf).
+
+We're going to load the data exclusively from the arcos R package API [ARCOS API](https://wpinvestigative.github.io/arcos/) produced by the Washington Post, instead of uploading csvs and tsvs. 
+
+Remember, we need to store a password of sorts -- called an API key -- that will give us permission to access their data.  Here's a list of [API keys that will work](https://github.com/wpinvestigative/arcos-api/blob/master/keys/keys.txt).  
+
+Let's store the key first. 
+
+```{r}
+# store one of our API keys as an object called key
+key <- "uO4EK6I"
+```
+
+### Load and Clean ARCOS data
+
+Now let's load the ARCOS data that we'll need for this.    
+
+```{r}
+
+# Data frame of pills shipped per year per county
+arcos_county_pills_per_year <- summarized_county_annual(key = key) %>%
+  clean_names()
+
+# Data frame of population by county by year
+arcos_county_population_per_year <- county_population(key = key) %>%
+  clean_names()
+
+```
+
+From these data frames, let's make a dataframe that has one row per county with the average number of pills per person over the 2006 to 2014 period, called pills_population.   
+
+```{r}
+
+pills_population <- arcos_county_population_per_year %>%
+  left_join(arcos_county_pills_per_year, by = c("countyfips", "year", "buyer_county","buyer_state")) %>%
+  group_by(countyfips, buyer_county, buyer_state) %>%
+  summarise(average_pills_per_year = mean(dosage_unit),
+            average_population_per_year = mean(population)) %>%
+  mutate(average_pills_per_person = round(average_pills_per_year/average_population_per_year,2))
+
+```
+
+### Load and Clean Death Rate Data
+
+The data folder contains a tab delimited text file, 2006-2012.txt.  It contains data I scraped from the CDC, with the opioid-related death rate in each per 100K population, during the 2006-2012 period.  A full writeup is in the readme.md file in the data folder.
+
+The code below reads in the data, cleans it up a bit and removes counties where there wasn't a reported death rate value by the CDC.  
+
+We're left with about 1000 counties where we have enough data to analyze.
+
+```{r}
+opioid_deaths <- read_tsv("data/2006-2012.txt") %>%
+  clean_names() %>%
+  filter(!str_detect(age_adjusted_rate, "Unreliable|Suppressed|Missing")) %>%
+  select(county_code, county, deaths, age_adjusted_rate) %>%
+  mutate(deaths = as.numeric(deaths),
+         age_adjusted_rate = as.numeric(age_adjusted_rate))
+
+```
+
+### Join together death rate data with pills per person data
+
+Now, let's put together our pills_poulation_table with our opioid_deaths table. 
+
+We end up with 1066 records where we can examine the relationship. 
+
+```{r}
+death_rate_pills <- pills_population %>%
+  inner_join(opioid_deaths, by=c("countyfips" = "county_code"))
+
+```
+
+## Examine relationships
+
+Our central question for this analysis is: in communities that received more pills (relative to population) did more people die of opioid related deaths?
+
+We're not doing the kind of analysis to establish a causal relationship here, just looking at whether there's some general pattern worth reporting out further. 
+
+There are several ways we can explore this relationship. 
+
+### Buckets
+
+One way we can look at the relationship is to group our counties into buckets and see if there are any evident patterns.  The code below takes our 1066 counties and sorts them by the death rate, and then groups them into 5 buckets (called "qunitiles").  It then calculates the average death rate and average pills per person rate for that group.      
+
+```{r}
+
+death_rate_pills %>%
+ ungroup() %>%
+ mutate(quintile = ntile(age_adjusted_rate, 5)) %>%
+ group_by(quintile) %>%
+ summarise(age_adjusted_rate = mean(age_adjusted_rate),
+            average_pills_per_person = mean(average_pills_per_person))  
+
+```
+
+There's a pretty clear pattern here! Group 5 is the place with the highest death rate -- about twice as high as group 4.  And it also got way more pills than any other group.  
+
+### Scatterplot
+
+We can also make a scatterplot to explore the relationship between the two variables.  
+
+The code below has the death rate on the y axis, and the pills per person on the x axis. 
+
+Each dot is a county, positioned according to its death rate and pills per person rate. 
+
+The blue line running through it is the "line of best fit", a trendline that best explains the overall dot cloud. 
+
+```{r}
+ggplot(death_rate_pills) +
+  geom_point(aes(average_pills_per_person, age_adjusted_rate)) +
+  geom_smooth(aes(average_pills_per_person, age_adjusted_rate), method = "lm", se = FALSE)  +
+  scale_y_continuous(labels = comma) +
+  scale_x_continuous(labels = comma)  +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(x="Average Annual Pills Per Person", y="age_adjusted Annual Opioid Death Rate", title="", caption = "Source: DEA ARCOS database, via Washington Post")
+```
+
+How to intepret this?  
+
+* The slope of the trend line is up, inidicating a positive correlation. More on that below.  As the pills per person rate goes up in a community, so does the death rate (and vice versa).  But there are exceptions.  
+* The dots are pretty densely packed close to the trend line, indicating at least a moderate relationship.  But there are definitely exceptions that don't fit the general trend.  
+
+### Exact Correlation
+
+We can also compute precise values that help us understand relationships, called the correlation coefficient or r.
+
+There are three things we're looking for: the strength of the correlation, the direction of the correlation (positive or negative) and statistical significance. 
+
+Let's use the correlate() function to determine r. 
+
+```{r}
+
+death_rate_pills %>%
+  ungroup() %>%
+  select(age_adjusted_rate, average_pills_per_person) %>%
+  correlate()
+
+```
+
+First, strength. 
+
+The correlation coefficient (r) is always a number between 1 and -1, indicating the degree to which two variables move in unison. The closer the value is to 1 or -1, the stronger the correlation.
+
+An r of .62 could be considered a moderately strong relationship, interesting enough in this case to do some further reporting. 
+
+Next, direction.  
+
+At one extreme, an r of 1 indicates a perfect positive relationship. We'd expect to find a very strong positive relationship between an area's average age and the percentage of people in an area who get social security retirement benefits.  
+
+At the other extreme, an r of -1 indicates a perfect negative relationship.  We'd expect to find a negative relationship between an area's median household income and its poverty rate.  The richer an area on average, the lower its poverty rate on average.   
+
+In the middle, an r of 0 indicates no relationship.
+
+The r we've calculated is positive: as pills per person increases, so to does the death rate (and vice versa).
+
+Finally, statistical significance.  We may get what looks like an interesting result, but it may not be statistically meaningful.  
+
+We can examine statistical signficiance by deriving the p value. The code for this is a bit more complicated.     
+
+```{r}
+# Store a dataframe with two columns, death rate, and pills rate. 
+correlation_death_pills <- death_rate_pills %>%
+  ungroup() %>%
+  select(age_adjusted_rate, average_pills_per_person) 
+
+# Test the relationship
+cor.test(correlation_death_pills$age_adjusted_rate, correlation_death_pills$average_pills_per_person)
+
+```
+
+For our purposes, if the p value is less than .05, we can consider this a significant result. The p value of 2.2e-16 or 0.00000000000000022...which is a lot smaller than .05.  
+
+***Task***: Now, it's your turn to give this a try by attempting to answer the question: did lower income areas tend to get flooded with pills more than wealthier areas? To answer this question, you should use the three methods we did above to determine whether there's an interesting trend you could build upon with more reporting:
+
+* Group in to buckets and calculate averages for median income and pills per person.
+* Build a scatterplot with a line of best fit, with median income on one axis and pills per person on the other. 
+* Calculate the correlation coefficient between median income and pills per person. 
+
+Then write up a few paragraphs on what you see. 
+
+To get started, load the data you'll need from the Tidycensus package of median income in each U.S. county. 
+
+```{r}
+census_api_key("549950d36c22ff16455fe196bbbd01d63cfbe6cf")
+# acs_variables <- load_variables(2017, "acs5" )
+
+county_median_household_income <- get_acs(geography = "county", 
+              variables="B19013_001", year=2012, geometry = FALSE)
+```
+
+Then, join it to our pills_population table.  We're going to do a little cleaning here, renaming the "estimate" column that comes in from Tidycensus as median_household_income, to make it more readable. We're also going to filter out the handful of counties that didn't have median_household_income data.   
+
+```{r}
+pills_population_income <- pills_population %>%
+  inner_join(county_median_household_income, by=c("countyfips" = "GEOID")) %>%
+  rename(median_household_income = estimate) %>%
+  filter(!is.na(average_pills_per_person))
+
+```
+
+
+Using this joined table, pills_population_income, get to work examining relationships the three ways detailed above. 
+
+```{r}
+
+# Group into five buckets and calculate median household income and average pills per person
+
+
+```
+
+```{r}
+# Make a scatterplot with median household income on one axis, average pills per person on the other.  Each dot is a county. 
+
+```
+
+
+```{r}
+
+# Calculate correlation coefficient
+
+# And calculate significance
+
+```
+
+
+## Submission
+
+Save the R Markdown file.  Knit it to HTML and make sure it compiles correctly. Upload to GitHub, as instructed.  Provide links to GitHub in ELMS.   
