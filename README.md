@@ -72,7 +72,7 @@ The tutorials were written using these specific software programs, so if you use
 * Participation - 5%
 * Story discussion lead - 10% - teams of two will present and lead discussion on a data journalism story.
 * Data Acquisition Project - 20% - a project where you will learn to get data out of (often) reluctant government.
-* Data Analysis Project - 30% - a project where you will learn to do complex, journalistic data analysis.
+* Data Analysis Project - 30% - a project where you will learn to do complex, journalistic data analysis. NOTE: This is now optional. Watch [this video](https://umd.instructure.com/courses/1278056/modules/items/9921010) for a breakdown of how you will be graded if you choose not to do it.   
 * Homework and In-Class Lab Assignments - 35% (Not Turned In (0)/Unsatisfactory (1)/Satisfactory(2))
 * Note: there is no final exam in this course.
 
@@ -515,7 +515,7 @@ Spring break week 2, no class or study session this week.
 
 **Weekly data journalism practice assignment**
 *This would be our weekly in-class assignment, if we were meeting in person*
-* Class 08: practice with loading data. Spend an hour and a half working on this, get as far as you can.
+* None.  These are cancelled for the semester.
 
 **Weekly data journalism lab**
 * Lab 09: relationship tests.  
@@ -558,7 +558,7 @@ Spring break week 2, no class or study session this week.
 
 **Weekly data journalism practice assignment**
 *This would be our weekly in-class assignment, if we were meeting in person*
-* Class 09: practice with relationship tests. Spend an hour and a half working on this, get as far as you can.
+* None.  These are cancelled for the semester.
 
 **Weekly data journalism lab**
 * Lab 10: cleaning data.  
@@ -595,7 +595,7 @@ Spring break week 2, no class or study session this week.
 
 **Weekly data journalism practice assignment**
 *This would be our weekly in-class assignment, if we were meeting in person*
-* Class 10: practice with data cleaning. Spend an hour and a half working on this, get as far as you can.
+* None.  These are cancelled for the semester.
 
 **Weekly data journalism lab**
 * None required. For those who are interested, there will be an optional lab 11: writing your own functions.  
