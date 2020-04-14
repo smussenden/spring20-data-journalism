@@ -1,0 +1,378 @@
+---
+title: "Lab 10 | R continued"
+author: "Sean Mussenden"
+date: "4/13/2020"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE, paged.print=TRUE)
+```
+
+## Objective
+
+The purpose of this lab is to continue learning a journalistic approach to data analysis in R.
+
+Today we will learn to dive deep on cleaning messy data. It's one of the most important things you can learn as a data journalist. We spend way more time cleaning data and verifying it than we do analyzing that data. 
+
+## How this works, tasks, turning it in, getting help
+
+This document is mostly set up for you to follow along and run code that I have written, and listen to me explain it.  
+
+At several points throughout this document, you will see the word **Task**.  
+
+That indicates I'm expecting you to modify the file I've given you, usually by creating a codeblock and writing some custom code.
+
+When you are finished, you should save your R markdown file and Knit it as an HTML file.
+
+You should upload it to GitHub, using GitHub desktop.
+
+And the links to your project is what you'll post on ELMS.
+
+Need help?  You are welcome to do the following things:
+
+* Use Google or search Stack Overflow. Try searching for your error message or translating your problem into basic terms.
+* Check out the excellent [R for Data Science](https://r4ds.had.co.nz/index.html)
+* Take a look at the [Cheatsheets](https://www.rstudio.com/resources/cheatsheets/) and [Tidyverse documentation](https://www.tidyverse.org/).
+  * [RStudio cheatsheet](https://www.rstudio.com/resources/cheatsheets/#ide)
+  * [Readr and Tidyr cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-import.pdf) and [Readr documentation](https://readr.tidyverse.org/) and [Tidyr documentation](https://tidyr.tidyverse.org/reference/index.html).
+  * [Dplyr cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf) and [Dplyr documentation](https://dplyr.tidyverse.org/)
+  * [Stringr cheatsheet](https://github.com/rstudio/cheatsheets/blob/master/strings.pdf) and [documentation](https://stringr.tidyverse.org/)
+ 
+## Setup
+
+Take the following steps to set up your document:
+
+1. Download the ZIP file and open the folder on your desktop.
+2. Create a new folder in your git repo and move it in there. Unzip the folder.
+3. Open this file in RStudio.
+4. Rename this file "lab_10_FIRSTNAME_LASTNAME.Rmd".
+5. Create a new R project inside of this folder, which will set the working directory in this folder.   
+
+## Load Packages
+
+We're loading three packages today.
+
+Five of these we've loaded previously:
+
+* the Tidyverse (for general data science goodness, including lots of data cleaning functions)
+* janitor (for data cleaning)
+* rvest (for data scraping)
+
+**Task**: In the code block below, load the packages we'll need for today.
+
+```{r}
+
+# Load Tidyverse, janitor and rvest
+
+
+```
+
+## Load in dirty data
+
+This code from lab 8 pulls in a dataframe from the drugabuse.gov website, with state-by-state death rates from opioids.  For a deep dive on how that process works, refer to the earlier lab.  
+
+```{r}
+
+opioid_scrape <- read_html("https://www.drugabuse.gov/drugs-abuse/opioids/opioid-summaries-by-state") %>%
+  html_nodes('table') %>%
+  html_table(header=1, fill=TRUE)  %>%
+  as.data.frame() %>%
+  as_data_frame()
+
+opioid_scrape 
+```
+
+For now, let's look at the table.  It's pretty messy:
+
+* The column names are very complicated
+* It's got a blank row in the middle, plus a row with a bunch of meaningless text.
+* Half of the death rate values have an asterisk, instead of being a proper N/A value. 
+
+We're going to cleqn these things up one-by-one. Failure to do this will mean problems down the road.  
+
+As we work, I'm going to build a function, and then keep adding to it, as we do additional cleaning. I'll end up with a single cleaning script I can run whenever I want.  
+
+This is how we always want to do cleaning.  We never want to edit the original data outside of R, if we can help it. We just want to import it, and clean it up as we go, with a documented record -- a function -- that shows us each step.  
+
+If we make a mistake, we can just tweak the function and reload the data. 
+
+Let's start by cleaning up those funky column names, using clean_names() from the janitor package.
+
+```{r}
+opioid_scrape_working <- opioid_scrape %>%
+  clean_names()
+  
+opioid_scrape_working 
+```
+
+Take a look at the data.  Those column names are a bit more managable. 
+
+Now let's use another janitor function, remove_empty_rows(), to get rid of that row of NAs in the middle. 
+
+```{r}
+opioid_scrape_working <- opioid_scrape %>%
+  clean_names() %>%
+  remove_empty_rows()
+
+opioid_scrape_working 
+  
+```
+
+Notice that we've gone from 53 to 52 rows.  The N/A-only row is gone. 
+
+Now let's get rid of row 36, the one that says only "*Not included - Did not meet inclusion criteria". We're using filter and str_detect (string detect) from the stringr package (which loads as part of the Tidyverse). 
+There's another way we could do it, by directly targeting the row number.  This is almost always true when it comes to any data cleaning task: there's almost ALWAYS another way to do something. 
+
+```{r}
+opioid_scrape_working <- opioid_scrape %>%
+  clean_names() %>%
+  remove_empty_rows() %>%
+  filter(!str_detect(state, "Not included"))
+  
+opioid_scrape_working 
+
+# An alternate way of doing it:  filter(row_number() != 36)
+
+```
+
+What about all those asterisks in the opioid death rate for about half of the states.  Those are missing values -- N/As -- but they're not stored as proper N/As, in a format R can recognize.  If we leave them, it will make it hard to do calculations to that column. 
+
+The tidyverse has a nice function called na_if() which allows us to convert values that match a certain pattern to a real N/A.  
+```{r}
+
+opioid_scrape_working <- opioid_scrape %>%
+  clean_names() %>%
+  remove_empty_rows() %>%
+  filter(row_number() != 36) %>%
+  mutate(opioid_involved_overdose_deaths_100_000_persons1_2017 = na_if(opioid_involved_overdose_deaths_100_000_persons1_2017, "*"))
+
+opioid_scrape_working 
+  
+  
+```
+
+Those column names are pretty unwieldy.  Let's use the rename function to make them a little easier to understand: death_rate and rx_rate
+
+```{r}
+
+opioid_scrape_working <- opioid_scrape %>%
+  clean_names() %>%
+  remove_empty_rows() %>%
+  filter(row_number() != 36) %>%
+  mutate(opioid_involved_overdose_deaths_100_000_persons1_2017 = na_if(opioid_involved_overdose_deaths_100_000_persons1_2017, "*")) %>%
+  rename(death_rate = opioid_involved_overdose_deaths_100_000_persons1_2017) %>%
+  rename(rx_rate = opioid_prescriptions_100_persons2_2017)
+
+opioid_scrape_working 
+  
+```
+
+Okay, looking pretty clean!  Now we can actually work with it.  
+
+Let's write a little bit of code to calculate the average prescribing rate for each state.
+
+```{r}
+
+opioid_scrape_working %>%
+  summarise(mean_rx_rate = mean(rx_rate))
+
+```
+
+Oof, this is no good. We get an N/A value.  Something has gone wrong here.  Let's use glimpse to look at our data.
+
+```{r}
+
+glimpse(opioid_scrape_working)
+
+```
+
+Aha! Here's what went wrong.  We were trying to do math on a column that looked like it was filled with numbers.  But R, when it read in the data, stored it as another data type: character.  We need to convert it before we can do real math to it. 
+
+```{r}
+
+
+opioid_scrape_working <- opioid_scrape %>%
+  clean_names() %>%
+  remove_empty_rows() %>%
+  filter(row_number() != 36) %>%
+  mutate(opioid_involved_overdose_deaths_100_000_persons1_2017 = na_if(opioid_involved_overdose_deaths_100_000_persons1_2017, "*")) %>%
+  rename(death_rate = opioid_involved_overdose_deaths_100_000_persons1_2017) %>%
+  rename(rx_rate = opioid_prescriptions_100_persons2_2017) %>%
+  mutate(rx_rate = as.numeric(rx_rate),
+         death_rate = as.numeric(death_rate))
+
+opioid_scrape_working 
+  
+```
+
+Let's examine the column types again with the glimpse function.
+
+```{r}
+glimpse(opioid_scrape_working)
+```
+
+Now they're double format (dbl). that's a kind of number. When we do math, it works.
+
+```{r}
+
+opioid_scrape_working %>%
+  summarise(mean_rx_rate = mean(rx_rate))
+
+```
+
+This is often how it goes with data cleaning.  You clean up as much as you can before you start trying to analyze it, but you won't always catch everything.  Sometimes, problems only become apparent when you ask them a certain way.  
+
+The beauty of cleaning data inside an R script file is that when you discover a problem, you can simply go back to the top of your script and clean it, then return to analysis. 
+
+## Load more dirty data
+
+Let's now read in a data set we used in last week's lab 9, with opioid death rates by county. 
+
+```{r}
+opioid_deaths_county <- read_tsv("data/2006-2012.txt")
+
+opioid_deaths_county
+```
+
+It has a lot of issues, including:
+
+* Messy column names. 
+* A host of counties with "Unreliable", "Suppressed" or "Missing" age adjusted death rates
+* A bunch of na_columns at the end.
+* Number columns stored as characters.
+
+We just learned how to fix all of those above.  Go ahead and run the code below to fix those problems.  
+
+```{r}
+opioid_deaths_county <- read_tsv("data/2006-2012.txt") %>%
+  clean_names() %>%
+  filter(!str_detect(age_adjusted_rate, "Unreliable|Suppressed|Missing")) %>%
+  select(county_code, county, deaths, age_adjusted_rate) %>%
+  mutate(deaths = as.numeric(deaths),
+         age_adjusted_rate = as.numeric(age_adjusted_rate)) %>%
+  filter(!is.na(county))
+
+opioid_deaths_county
+```
+
+But, there's still a lot we can do with this sheet to make it easier to analyze later. 
+
+Let's start by splitting the county, state combo column into two columns, one for county and the other for state, using separate()
+
+
+```{r}
+
+opioid_deaths_county_working <- opioid_deaths_county %>%
+  separate(county, into=c("county","state"), sep=",")
+
+opioid_deaths_county_working
+
+```
+
+That worked pretty well, but when we split it, it added some extra whitespace at the front of the column.  That could affect our ability to do joins later, so let's fix it with the str_trim function from the stringr package. 
+
+```{r}
+opioid_deaths_county_working <- opioid_deaths_county %>%
+  separate(county, into=c("county","state"), sep=",") %>%
+  mutate(state = str_trim(state))
+  
+opioid_deaths_county_working
+```
+
+And if we want to convert the county names to all lowercase values -- something we might need to do to allow us to join it to another table with only lowercase values -- we can use the tolower() function.
+
+```{r}
+opioid_deaths_county_working <- opioid_deaths_county %>%
+  separate(county, into=c("county","state"), sep=",") %>%
+  mutate(state = str_trim(state)) %>%
+  mutate(county = tolower(county))
+
+opioid_deaths_county_working
+```
+
+And, let's suppose to be able to join it to another table, we needed to remove the words "county" from the county column, leaving us with only the names of the counties.  In Louisiana they call counties a parish, so we need to strip that out too.  Same with borough, a word often used in Alaska.  
+
+```{r}
+opioid_deaths_county_working <- opioid_deaths_county %>%
+  separate(county, into=c("county","state"), sep=",") %>%
+  mutate(state = str_trim(state)) %>%
+  mutate(county = tolower(county)) %>%
+  mutate(county = str_remove(county, "county|parish|borough")) %>%
+  mutate(county = str_trim(county))
+
+opioid_deaths_county_working
+```
+
+And, let's suppose it would be useful to extract the state code from the five digit fips code (Two digit state plus three digit county).
+
+We can use the str_sub function to strip out the first two characters. 
+
+```{r}
+opioid_deaths_county_working <- opioid_deaths_county %>%
+  separate(county, into=c("county","state"), sep=",") %>%
+  mutate(state = str_trim(state)) %>%
+  mutate(county = tolower(county)) %>%
+  mutate(county = str_remove(county, "county|parish|borough")) %>%
+  mutate(state_code = str_sub(county_code, start=1L, end=2L)) %>%
+  select(state_code, everything())
+
+opioid_deaths_county_working
+```
+
+## Your task
+
+Now it's time to practice on your own with some messy data. 
+
+This is is a dataframe of the rate of opioids prescribed to Medicare recipients in Maryland. 
+
+It was pulled from [here](https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/OpioidMap_Medicare_PartD)
+
+```{r}
+medicare_opioids <- read_csv("data/medicare_opioids_dirty.csv")
+
+medicare_opioids
+```
+
+It has several problems: 
+* Wordy column names with spaces
+* A totally empty row that needs to be removed
+* A row of "statewide averages" that should be removed
+* N/A values that say "NO VALUE PROVIDED" instead of being a proper N/A
+
+You should fix these problems. 
+
+You should also:
+* Break apart the column that combines the county name plus state into two separate columns. 
+* Fix the inconsistent capitalization in the newly created county-only column. Make everything lowercase.   
+* Trim any extra whitespace that shows up in any of the columns. 
+* Make a new column called state_code that strips off the first two digits from fips code. 
+
+When you finish, your dataframe should look like this:
+
+```{r}
+
+# Read this in to see what your finished product should look like.  
+medicare_opioids_clean <- read_csv("data/medicare_opioids_clean.csv")
+
+medicare_opioids_clean
+```
+
+Write your code to clean up medicare_opioids here.
+
+```{r}
+
+
+
+
+```
+
+
+
+## Submission
+
+Save the R Markdown file.  Knit it to HTML and make sure it compiles correctly. Upload to GitHub, as instructed.  Provide links to GitHub in ELMS.   

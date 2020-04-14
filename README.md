@@ -575,7 +575,7 @@ Spring break week 2, no class or study session this week.
 
 **Major assignment information**
 * Data analysis assignment: nothing due.
-* Data acquisition forum post: Send follow up email or call to check on status of request. Post less than 150 words about your contacts, and indicate if I need to get involved to talk about payment.  If you have your data, attach it.
+* Data acquisition forum post: nothing due.
 
 **Weekly Poll**
 * Fill out a short weekly poll about the course and your well-being.
